@@ -7534,7 +7534,7 @@ const locations = [
 ];
 import { useState } from "react";
 // Sample markers data
-const markers = locations.filter(item => item.hasOwnProperty('coordinates'));
+// const markers = locations.filter(item => item.hasOwnProperty('coordinates'));
 
 export default function MapWrapper() {
   const [selectedMarker, setSelectedMarker] = useState(null);
