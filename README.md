@@ -2,12 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## demo
 
-<a
-  href="https://next-pays-prefere-francais-map.vercel.app/"
-  target="_blank"
-  rel="noopener noreferrer">
-  https://next-pays-prefere-francais-map.vercel.app/
-</a>
+https://next-pays-prefere-francais-map.vercel.app/
 
 ## development server
 
