@@ -5,14 +5,9 @@ import { memo } from "react";
 
 import { PlaceThumbnail } from "@/components/place-thumbnail";
 import { SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
-import {
-  placeId,
-  placeLocation,
-  placeThumbnail,
-  type Place,
-  type PlaceId,
-} from "@/lib/place";
+import { placeId, placeThumbnail, type Place, type PlaceId } from "@/lib/place";
 import { highlightRanges } from "@/lib/place-utils";
+import { cn } from "@/lib/utils";
 
 /** Renders `text` with the parts matching the search query marked. */
 function Highlight({ text, query }: { text: string; query: string }) {
@@ -57,7 +52,9 @@ export const PlaceListItem = memo(function PlaceListItem({
 }: PlaceListItemProps) {
   const id = placeId(place);
   const thumbnail = placeThumbnail(place);
-  const location = placeLocation(place);
+  // The region is the heading of the section the row sits in, so the row only
+  // adds the département (an overseas département is its own region: skip it).
+  const department = place.department === place.region ? "" : place.department;
 
   return (
     <SidebarMenuItem
@@ -75,7 +72,14 @@ export const PlaceListItem = memo(function PlaceListItem({
         isActive={selected}
         aria-current={selected ? "true" : undefined}
         onClick={() => onSelect(id)}
-        className="h-auto items-start gap-3 rounded-lg py-2 data-active:shadow-[inset_2px_0_0_var(--primary)]"
+        // The selected row is the loudest thing in the list: a tinted fill, a
+        // 2px ring in the primary color, a bolder title and a pin on its thumbnail.
+        // The ring is inset because rows use `content-visibility: auto`, whose
+        // paint containment would clip anything drawn outside the row.
+        className={cn(
+          "h-auto items-start gap-3 rounded-lg py-2",
+          selected && "bg-primary/10! ring-2 ring-primary! ring-inset",
+        )}
       >
         <span className="relative aspect-video w-20 shrink-0 overflow-hidden rounded-md bg-muted">
           {thumbnail ? (
@@ -88,15 +92,25 @@ export const PlaceListItem = memo(function PlaceListItem({
               <MapPin aria-hidden />
             </span>
           )}
+          {selected && (
+            <span className="absolute right-1 bottom-1 grid size-5 place-items-center rounded-full bg-primary text-primary-foreground shadow-sm">
+              <MapPin className="size-3!" aria-hidden />
+            </span>
+          )}
         </span>
         <span className="flex min-w-0 flex-1 flex-col gap-0.5">
           {/* Titles can be long; two lines rather than cutting them off. */}
-          <span className="line-clamp-2 text-sm leading-snug font-medium whitespace-normal">
+          <span
+            className={cn(
+              "line-clamp-2 text-sm leading-snug whitespace-normal",
+              selected ? "font-semibold" : "font-medium",
+            )}
+          >
             <Highlight text={place.title} query={query} />
           </span>
-          {location && (
+          {department && (
             <span className="truncate text-xs text-sidebar-foreground/80">
-              <Highlight text={location} query={query} />
+              <Highlight text={department} query={query} />
             </span>
           )}
           {place.type && (

@@ -4,7 +4,7 @@ import type { Place } from "@/lib/place";
 import {
   DEFAULT_FILTERS,
   filterPlaces,
-  groupByLetter,
+  groupByRegion,
   hasActiveFilters,
   normalize,
   sortPlaces,
@@ -28,7 +28,7 @@ export function usePlaceFilters<T extends Place>(places: readonly T[]) {
     () => sortPlaces(filterPlaces(places, filters), sort),
     [places, filters, sort],
   );
-  const groups = useMemo(() => groupByLetter(results), [results]);
+  const groups = useMemo(() => groupByRegion(results, sort), [results, sort]);
 
   // Changes only when the user edits a filter (not the sort order), so the
   // map is only re-framed on deliberate filtering.

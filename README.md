@@ -17,7 +17,8 @@ An interactive map of travel videos about France. Every place is a marker: open 
 **Floating sidebar**
 
 - Accent-insensitive search across title, département, region, series and tagline (try `Occitanie`, `Tarn` or `bretagne`), with matches highlighted
-- Sort A to Z or Z to A; places are grouped under sticky letter headers, with thumbnails and each place's département and region
+- Places are grouped under sticky region headers, each with its count, and show a thumbnail and their département. Sort A to Z or Z to A: it orders the regions and the places inside them. Places whose region is unknown come last
+- The selected place stands out in the list with a ring, a tinted fill, a bolder title and a pin on its thumbnail, matching the marker's popup on the map
 - Selecting a place flies the map to it (un-clustering if needed) and opens its popup; picking a marker on the map highlights and scrolls to its row. The camera accounts for the sidebar so nothing hides behind it
 - "Surprise me" picks a random place from the current results
 - Shareable deep links: opening a place puts `?place=<video id>` in the URL
@@ -165,7 +166,7 @@ Append an object to the array in `data/places.ts`:
 },
 ```
 
-Use empty strings for unknown `type`, `description`, `department` and `region`, and leave `coordinates` out until you know them. Then run `pnpm test`: it checks that every link is a YouTube watch URL, that each video appears only once, that coordinates are in range and ordered `[lat, lng]`, and that text has no stray whitespace. Search and the letter sections pick the new place up automatically.
+Use empty strings for unknown `type`, `description`, `department` and `region`, and leave `coordinates` out until you know them. Then run `pnpm test`: it checks that every link is a YouTube watch URL, that each video appears only once, that coordinates are in range and ordered `[lat, lng]`, and that text has no stray whitespace. Search and the region sections pick the new place up automatically.
 
 ### Adding a UI component
 

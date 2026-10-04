@@ -1,3 +1,4 @@
+import type { Region } from "@/lib/departments";
 import type { Place } from "@/lib/place";
 
 export const SORT_ORDERS = ["az", "za"] as const;
@@ -16,10 +17,10 @@ export const DEFAULT_FILTERS: PlaceFilters = {
   query: "",
 };
 
-/** One alphabetical section of the list. */
-export type LetterGroup = Readonly<{
-  /** `A`–`Z`, or `#` for titles that do not start with a letter. */
-  letter: string;
+/** One region's section of the list. */
+export type RegionGroup = Readonly<{
+  /** The region's name, or `""` for places whose region is unknown. */
+  region: Region | "";
   places: readonly Place[];
 }>;
 
@@ -93,22 +94,31 @@ export function sortPlaces<T extends Place>(
   );
 }
 
-/** The section a place belongs to in the list: its title's first letter, or `#`. */
-export function placeLetter(place: Place): string {
-  const first = normalize(place.title).charAt(0).toUpperCase();
-  return /^[A-Z]$/.test(first) ? first : "#";
-}
-
-/** Groups consecutive places by their letter, keeping the input order. */
-export function groupByLetter(places: readonly Place[]): LetterGroup[] {
-  const groups: { letter: string; places: Place[] }[] = [];
+/**
+ * Groups places by region, keeping the input order inside each group. The
+ * regions are alphabetical (reversed for `za`), ignoring case and accents, so
+ * "Île-de-France" sits among the I's. Places whose region is unknown come last
+ * in either direction.
+ */
+export function groupByRegion<T extends Place>(
+  places: readonly T[],
+  order: SortOrder,
+): { region: Region | ""; places: T[] }[] {
+  const groups = new Map<Region | "", T[]>();
   for (const place of places) {
-    const letter = placeLetter(place);
-    const last = groups.at(-1);
-    if (last?.letter === letter) last.places.push(place);
-    else groups.push({ letter, places: [place] });
+    const group = groups.get(place.region);
+    if (group) group.push(place);
+    else groups.set(place.region, [place]);
   }
-  return groups;
+
+  const direction = order === "az" ? 1 : -1;
+  return [...groups]
+    .sort(([a], [b]) => {
+      if (a === "") return 1;
+      if (b === "") return -1;
+      return collator.compare(a, b) * direction;
+    })
+    .map(([region, group]) => ({ region, places: group }));
 }
 
 /**

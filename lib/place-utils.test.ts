@@ -5,13 +5,12 @@ import type { Place } from "./place";
 import {
   DEFAULT_FILTERS,
   filterPlaces,
-  groupByLetter,
+  groupByRegion,
   hasActiveFilters,
   highlightRanges,
   isSortOrder,
   matchesQuery,
   normalize,
-  placeLetter,
   sortPlaces,
   tokenize,
 } from "./place-utils";
@@ -167,35 +166,72 @@ describe("sortPlaces", () => {
   });
 });
 
-describe("placeLetter / groupByLetter", () => {
-  it("uses the first letter, ignoring accents and case", () => {
-    expect(placeLetter(make({ title: "Écrins" }))).toBe("E");
-    expect(placeLetter(make({ title: "île d'Yeu" }))).toBe("I");
-  });
+describe("groupByRegion", () => {
+  const albi = make(
+    { title: "Albi" },
+    { department: "Tarn", region: "Occitanie" },
+  );
+  const carcassonne = make(
+    { title: "Carcassonne" },
+    { department: "Aude", region: "Occitanie" },
+  );
+  const quimper = make(
+    { title: "Quimper" },
+    { department: "Finistère", region: "Bretagne" },
+  );
+  const sainteChapelle = make(
+    { title: "Sainte-Chapelle" },
+    { department: "Paris", region: "Île-de-France" },
+  );
+  const hellBourg = make(
+    { title: "Hell-Bourg" },
+    { department: "La Réunion", region: "La Réunion" },
+  );
+  const lost = make({ title: "Nulle part" });
 
-  it("files titles that do not start with a letter under #", () => {
-    expect(placeLetter(make({ title: "1000 pays en un" }))).toBe("#");
-    expect(placeLetter(make({ title: "🇫🇷 Discover France" }))).toBe("#");
-    expect(placeLetter(make({ title: "" }))).toBe("#");
-  });
+  const summary = (groups: ReturnType<typeof groupByRegion>) =>
+    groups.map((group) => [group.region, titles(group.places)]);
 
-  it("groups consecutive places by letter in the given order", () => {
-    const groups = groupByLetter(
-      sortPlaces(
-        [
-          make({ title: "Bayonne" }),
-          make({ title: "Albi" }),
-          make({ title: "Arles" }),
-          make({ title: "1000 pays" }),
-        ],
-        "az",
-      ),
-    );
-    expect(groups.map((g) => [g.letter, titles(g.places)])).toEqual([
-      ["#", ["1000 pays"]],
-      ["A", ["Albi", "Arles"]],
-      ["B", ["Bayonne"]],
+  it("puts all the places of a region together, even when not adjacent", () => {
+    expect(summary(groupByRegion([albi, quimper, carcassonne], "az"))).toEqual([
+      ["Bretagne", ["Quimper"]],
+      ["Occitanie", ["Albi", "Carcassonne"]],
     ]);
+  });
+
+  it("keeps the input order inside a region", () => {
+    const groups = groupByRegion([carcassonne, quimper, albi], "az");
+    expect(titles(groups[1]?.places ?? [])).toEqual(["Carcassonne", "Albi"]);
+  });
+
+  it("orders regions alphabetically, ignoring accents, and reverses for Z to A", () => {
+    const all = [albi, hellBourg, sainteChapelle, quimper];
+    expect(groupByRegion(all, "az").map((g) => g.region)).toEqual([
+      "Bretagne",
+      "Île-de-France",
+      "La Réunion",
+      "Occitanie",
+    ]);
+    expect(groupByRegion(all, "za").map((g) => g.region)).toEqual([
+      "Occitanie",
+      "La Réunion",
+      "Île-de-France",
+      "Bretagne",
+    ]);
+  });
+
+  it("puts places with an unknown region last, in either direction", () => {
+    for (const order of ["az", "za"] as const) {
+      const groups = groupByRegion([lost, albi, quimper], order);
+      expect(groups.at(-1)?.region, order).toBe("");
+      expect(titles(groups.at(-1)?.places ?? []), order).toEqual([
+        "Nulle part",
+      ]);
+    }
+  });
+
+  it("returns nothing for no places", () => {
+    expect(groupByRegion([], "az")).toEqual([]);
   });
 });
 

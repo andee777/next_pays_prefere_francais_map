@@ -27,7 +27,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { placeId, type PlaceId } from "@/lib/place";
-import type { LetterGroup, PlaceFilters, SortOrder } from "@/lib/place-utils";
+import type { PlaceFilters, RegionGroup, SortOrder } from "@/lib/place-utils";
 
 import { PlaceListItem } from "./place-list-item";
 import { FiltersPanel } from "./filters-panel";
@@ -36,7 +36,7 @@ import { ThemeToggle } from "./theme-toggle";
 type PlaceSidebarProps = {
   totalCount: number;
   resultCount: number;
-  groups: readonly LetterGroup[];
+  groups: readonly RegionGroup[];
   filters: PlaceFilters;
   onFiltersChange: (changes: Partial<PlaceFilters>) => void;
   onFiltersReset: () => void;
@@ -155,10 +155,12 @@ export function PlaceSidebar({
             </Empty>
           ) : (
             groups.map((group) => (
-              <SidebarGroup key={group.letter} className="p-0">
+              <SidebarGroup key={group.region || "unknown"} className="p-0">
                 <SidebarGroupLabel className="sticky top-0 z-10 h-8 rounded-none bg-sidebar/80 px-4 text-[11px] font-semibold tracking-wider text-muted-foreground uppercase backdrop-blur-md">
-                  {group.letter}
-                  <span className="ml-auto font-normal tabular-nums">
+                  <span className="truncate">
+                    {group.region || "Location unknown"}
+                  </span>
+                  <span className="ml-auto pl-2 font-normal tabular-nums">
                     {group.places.length}
                   </span>
                 </SidebarGroupLabel>

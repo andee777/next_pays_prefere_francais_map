@@ -76,7 +76,8 @@ page.tsx (Server)  ──►  PlaceExplorer (client)
 - **Map → list:** marker `click` sets `selected`; an effect scrolls the matching row into view. `popupclose` clears `selected`, so **`selected` means "this popup is open"**. Use a functional `setSelected(cur => cur === id ? null : cur)` when clearing, so a late `popupclose` from the previous marker cannot wipe a newer selection.
 - **Hover:** hovering a row sets `hovered`; `MapView` adds the `place-marker-hover` class to that marker, or to the cluster currently hiding it (`getVisibleParent`).
 - **Search:** `results` feed both the list and the map's markers. When the query changes (not the sort order), the map re-frames to the results after a 350 ms debounce.
-- **List sections:** results are sorted by title and grouped by first letter (`groupByLetter`), with `#` for titles that do not start with a letter.
+- **List sections:** results are sorted by title and grouped by region (`groupByRegion`). The sort toggle orders the regions too (A–Z or Z–A, ignoring accents, so "Île-de-France" sits among the I's), and places with no region form a "Location unknown" section that is always last. A row shows only its département, since the region is the section heading (an overseas département is its own region, so it shows nothing).
+- **Selected row:** the open place's row gets a 2px inset ring and a tinted fill in the primary color, a semibold title and a pin badge on its thumbnail. The ring must stay `ring-inset`: rows use `content-visibility: auto`, whose paint containment clips anything drawn outside the row (an outer ring or shadow disappears).
 
 ### Responsive modes
 
@@ -101,13 +102,13 @@ The layout has three regimes, defined once in `lib/viewport.ts` (`COMPACT_QUERY`
 | `app/layout.tsx`                              | Root layout: Geist font (`--font-sans`), `ThemeProvider`, `TooltipProvider`, `metadata`.                                                                           |
 | `app/globals.css`                             | Tailwind + shadcn theme tokens, layered Leaflet CSS, `.place-popup` and `.place-marker-hover` rules.                                                               |
 | `components/explorer/place-explorer.tsx`      | Top-level client component: state, selection, deep links, hotkeys, map framing, `getInsets`.                                                                       |
-| `components/explorer/place-sidebar.tsx`       | The shadcn `Sidebar` (floating, offcanvas): header, search, letter-grouped list, footer, arrow-key navigation.                                                     |
+| `components/explorer/place-sidebar.tsx`       | The shadcn `Sidebar` (floating, offcanvas): header, search, region-grouped list, footer, arrow-key navigation.                                                     |
 | `components/explorer/place-list-item.tsx`     | One list row (memoized): thumbnail, title, "département · region", series label, search-match highlighting, hover/focus → `hovered`.                               |
 | `components/explorer/filters-panel.tsx`       | Search field, result count, sort menu.                                                                                                                             |
 | `components/explorer/map-controls.tsx`        | Zoom and fit buttons (replace Leaflet's default control).                                                                                                          |
 | `components/explorer/sidebar-open-button.tsx` | Floating "Places" pill, visible when the sidebar is collapsed or on mobile.                                                                                        |
 | `components/explorer/theme-toggle.tsx`        | Light / dark / system menu.                                                                                                                                        |
-| `components/explorer/use-place-filters.ts`    | Search and sort state; derives `results`, letter `groups`, and `filtersKey`.                                                                                       |
+| `components/explorer/use-place-filters.ts`    | Search and sort state; derives `results`, region `groups`, and `filtersKey`.                                                                                       |
 | `components/place-map/place-map.tsx`          | Client wrapper: `dynamic(() => import("./map-view"), { ssr: false })` with a Skeleton fallback.                                                                    |
 | `components/place-map/map-view.tsx`           | `MapContainer`, OSM `TileLayer`, `MarkerClusterGroup`, `PlaceMarker` (memoized), and `MapBridge` (the imperative API).                                             |
 | `components/place-map/place-popup.tsx`        | Popup content built from shadcn `Card`, `Badge`, `Button`, `AspectRatio`; location, series badge, tagline, "Watch video" link.                                     |
@@ -120,7 +121,7 @@ The layout has three regimes, defined once in `lib/viewport.ts` (`COMPACT_QUERY`
 | `data/places.test.ts`, `lib/*.test.ts`        | Data integrity tests; unit tests for place helpers, search, sort, grouping and highlighting.                                                                       |
 | `lib/departments.ts`                          | `DEPARTMENTS` (every département with its region), the `Department`, `Region` and `Territory` types, and `regionOf()`. `lib/departments.test.ts` checks the table. |
 | `lib/place.ts`                                | `Place`, `MappablePlace`, `Coordinates`, `YouTubeLink` types; `placeId`, `placeThumbnail`, `placeLocation`, `hasCoordinates`, `isInMetropolitanFrance`.            |
-| `lib/place-utils.ts`                          | Pure functions: `normalize`, `matchesQuery`, `filterPlaces`, `sortPlaces`, `isSortOrder`, `placeLetter`, `groupByLetter`, `highlightRanges`.                       |
+| `lib/place-utils.ts`                          | Pure functions: `normalize`, `matchesQuery`, `filterPlaces`, `sortPlaces`, `isSortOrder`, `groupByRegion`, `highlightRanges`.                                      |
 | `lib/place.test-d.ts`                         | Compile-time type tests (`expectTypeOf`, `@ts-expect-error`), checked by `pnpm typecheck`; never executed.                                                         |
 | `types/react-css.d.ts`                        | Lets `style` props take CSS custom properties (`"--sidebar-width"`) without a cast.                                                                                |
 | `types/next-image.d.ts`                       | Pulls in Next's image-module types (`*.png`) so lint doesn't depend on the generated, git-ignored `next-env.d.ts`.                                                 |
@@ -136,7 +137,7 @@ The layout has three regimes, defined once in `lib/viewport.ts` (`COMPACT_QUERY`
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
 | Add or edit a place                                                      | `data/places.ts` (then `pnpm test`)                                                          |
 | Change what search matches (title, series, tagline, département, region) | `haystack()` in `lib/place-utils.ts` (and its tests)                                         |
-| Change how the list is sorted or grouped                                 | `sortPlaces` / `groupByLetter` in `lib/place-utils.ts`                                       |
+| Change how the list is sorted or grouped                                 | `sortPlaces` / `groupByRegion` in `lib/place-utils.ts`                                       |
 | Change sidebar layout or width                                           | `place-sidebar.tsx`; width is `--sidebar-width` on `SidebarProvider` in `place-explorer.tsx` |
 | Change a list row                                                        | `components/explorer/place-list-item.tsx`                                                    |
 | Change popup content or layout                                           | `components/place-map/place-popup.tsx`                                                       |

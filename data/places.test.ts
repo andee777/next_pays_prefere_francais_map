@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { regionOf } from "@/lib/departments";
-import { groupByLetter, sortPlaces } from "@/lib/place-utils";
+import { groupByRegion, sortPlaces } from "@/lib/place-utils";
 import { hasCoordinates, isInMetropolitanFrance, placeId } from "@/lib/place";
 
 import { places } from "./places";
@@ -66,13 +66,20 @@ describe("places data", () => {
     expect(places.filter(hasCoordinates).length).toBeGreaterThan(500);
   });
 
-  it("files the located places into unique alphabetical sections, either way", () => {
+  it("files the located places into one section per region, either way", () => {
     const located = places.filter(hasCoordinates);
+    const regions = new Set(located.map((place) => place.region));
     for (const order of ["az", "za"] as const) {
-      const letters = groupByLetter(sortPlaces(located, order)).map(
-        (group) => group.letter,
-      );
-      expect(new Set(letters).size, order).toBe(letters.length);
+      const groups = groupByRegion(sortPlaces(located, order), order);
+      const names = groups.map((group) => group.region);
+      expect(new Set(names).size, order).toBe(names.length);
+      expect(names.length, order).toBe(regions.size);
+      // Nobody is lost or listed twice, and the unknown-region section is last.
+      expect(
+        groups.reduce((total, group) => total + group.places.length, 0),
+        order,
+      ).toBe(located.length);
+      expect(names.indexOf(""), order).toBe(names.length - 1);
     }
   });
 });
