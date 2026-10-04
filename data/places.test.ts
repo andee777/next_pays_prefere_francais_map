@@ -120,6 +120,16 @@ describe("places data: département and region", () => {
     ["Candes-Saint-Martin", "Indre-et-Loire", "Centre-Val de Loire"],
     ["Mussy-sur-Seine", "Aube", "Grand Est"],
     ["Hell-Bourg", "La Réunion", "La Réunion"],
+    // Formerly pinned at the centre of France.
+    ["Le viaduc de Gabarit", "Cantal", "Auvergne-Rhône-Alpes"],
+    ["Le jardin des Songes", "Haut-Rhin", "Grand Est"],
+    ["Les jardins de la Boirie", "Charente-Maritime", "Nouvelle-Aquitaine"],
+    ["Les jardins du couvent Saint-François", "Haute-Corse", "Corse"],
+    [
+      "La Bergerie, graine et Ficelle",
+      "Alpes-Maritimes",
+      "Provence-Alpes-Côte d'Azur",
+    ],
   ] as const)("puts %s in %s (%s)", (title, department, region) => {
     const matches = places.filter((place) => place.title === title);
     expect(matches.length, title).toBeGreaterThan(0);
@@ -139,11 +149,12 @@ describe("places data: département and region", () => {
   });
 
   it("does not add places pinned at the placeholder position", () => {
-    // 103 places sit at [46, 2], the centre of France, because their position was
-    // never found. Don't add more; fix their coordinates and lower this number.
+    // 40 places still sit at [46, 2], the centre of France: their position was
+    // never found and their videos name no place (23 of the videos are gone).
+    // Don't add more; fix their coordinates and lower this number.
     const pinned = places.filter(
       (place) => place.coordinates?.join(",") === PLACEHOLDER,
     );
-    expect(pinned.length).toBeLessThanOrEqual(103);
+    expect(pinned.length).toBeLessThanOrEqual(40);
   });
 });

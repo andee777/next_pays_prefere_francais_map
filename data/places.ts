@@ -568,14 +568,15 @@ export const places: readonly Place[] = [
     region: "Occitanie",
     coordinates: [44.855, 3.331],
   },
+  // Approximate position: the middle of Bas-Rhin; the video names only the département.
   {
     title: "Rencontre avec un artiste équestre",
     link: "https://www.youtube.com/watch?v=RHiUxMqhc9Q",
     type: "Julie Raynaud",
     description: "",
-    department: "",
-    region: "",
-    coordinates: [46, 2],
+    department: "Bas-Rhin",
+    region: "Grand Est",
+    coordinates: [48.74, 7.596],
   },
   {
     title: "Une escapade à Colmar",
@@ -603,14 +604,15 @@ export const places: readonly Place[] = [
     department: "",
     region: "",
   },
+  // Approximate position: Sainte-Croix-en-Bresse, d'Artagnan's wife's estate, named in the video.
   {
     title: "L'amazone qui danse avec les chevaux",
     link: "https://www.youtube.com/watch?v=WTL6HX0Muro",
     type: "Julie Raynaud",
     description: "",
-    department: "",
-    region: "",
-    coordinates: [46, 2],
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
+    coordinates: [46.5724, 5.2452],
   },
   {
     title: "La Grave",
@@ -621,14 +623,15 @@ export const places: readonly Place[] = [
     region: "Provence-Alpes-Côte d'Azur",
     coordinates: [45.045, 6.305],
   },
+  // Approximate position: the middle of Cantal; the video names only the département.
   {
     title: "Sur la route des fromages",
     link: "https://www.youtube.com/watch?v=Ey4yNHJAkxE",
     type: "Julie Raynaud",
     description: "",
-    department: "",
-    region: "",
-    coordinates: [46, 2],
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
+    coordinates: [45.156, 2.603],
   },
   {
     title: "The island of Oléron",
@@ -5058,15 +5061,17 @@ export const places: readonly Place[] = [
     region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.7, 7.3],
   },
+  // Approximate position: the village of Saint-Jeannet, near Vence.
   {
     title: "La Bergerie, graine et Ficelle",
     link: "https://www.youtube.com/watch?v=eFU7R1bTOPo",
     type: "Saint-Jeannet",
     description: "",
-    department: "",
-    region: "",
-    coordinates: [46, 2],
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
+    coordinates: [43.7476, 7.1428],
   },
+  // Approximate position: Louhans, in the Bresse the video describes (a Bresse farm).
   {
     title: "La ferme de Marie-Eugénie",
     link: "https://www.youtube.com/watch?v=VBucXJR3s6A",
@@ -5074,8 +5079,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Saône-et-Loire",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [46.6291, 5.2232],
   },
+  // Approximate position: the Kochersberg plain the video describes.
   {
     title: "La ferme de Marie",
     link: "https://www.youtube.com/watch?v=OwLex1AxmQI",
@@ -5083,8 +5089,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Bas-Rhin",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [48.6406, 7.5379],
   },
+  // Approximate position: the middle of Indre-et-Loire; the property's address is not public.
   {
     title: "La ferme blanche",
     link: "https://www.youtube.com/watch?v=HdOt4VJzz0Q",
@@ -5092,7 +5099,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Indre-et-Loire",
     region: "Centre-Val de Loire",
-    coordinates: [46, 2],
+    coordinates: [47.317, 0.633],
   },
   {
     title: "Etxegaraïa, la maison basque",
@@ -5130,6 +5137,7 @@ export const places: readonly Place[] = [
     region: "Bretagne",
     coordinates: [48.202, -2.932],
   },
+  // Approximate position: the middle of Corrèze; the property's address is not public.
   {
     title: "La Grange Del Sur",
     link: "https://www.youtube.com/watch?v=vv9NL31aUWQ",
@@ -5137,8 +5145,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Corrèze",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [45.304, 1.787],
   },
+  // Approximate position: the middle of Puy-de-Dôme; the property's address is not public.
   {
     title: "La chapelle du couvent",
     link: "https://www.youtube.com/watch?v=qKQkKiyvLBA",
@@ -5146,8 +5155,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Puy-de-Dôme",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [45.727, 3.028],
   },
+  // Approximate position: the middle of Somme; the property's address is not public.
   {
     title: "La Datcha",
     link: "https://www.youtube.com/watch?v=pw4QEH8so8I",
@@ -5155,8 +5165,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Somme",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [49.952, 2.082],
   },
+  // Approximate position: the middle of Jura; the property's address is not public.
   {
     title: "La Grange à Nicolas",
     link: "https://www.youtube.com/watch?v=h18TSyrR7io",
@@ -5164,8 +5175,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Jura",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [46.721, 5.735],
   },
+  // Approximate position: the middle of Pyrénées-Orientales; the property's address is not public.
   {
     title: "La Casa Torreillane",
     link: "https://www.youtube.com/watch?v=WnvQ28X8ano",
@@ -5173,8 +5185,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Pyrénées-Orientales",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [42.614, 2.606],
   },
+  // Approximate position: the middle of Ardennes; the property's address is not public.
   {
     title: "La ferme Zen, O Sixieme Sens",
     link: "https://www.youtube.com/watch?v=SjWgJw8q6sc",
@@ -5182,8 +5195,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Ardennes",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [49.572, 4.591],
   },
+  // Approximate position: the middle of Vosges; the property's address is not public.
   {
     title: "La ferme de Marion",
     link: "https://www.youtube.com/watch?v=OxTgXPeP8qk",
@@ -5191,8 +5205,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Vosges",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [48.173, 6.529],
   },
+  // Approximate position: the middle of Oise; the property's address is not public.
   {
     title: "La Charmeraie",
     link: "https://www.youtube.com/watch?v=Gmg9CDr-71M",
@@ -5200,7 +5215,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Oise",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [49.441, 2.19],
   },
   {
     title: "La ferme alsacienne",
@@ -5211,6 +5226,7 @@ export const places: readonly Place[] = [
     region: "Grand Est",
     coordinates: [48.318, 7.441],
   },
+  // Approximate position: the middle of Haute-Savoie; the property's address is not public.
   {
     title: "La ferme d’alpage",
     link: "https://www.youtube.com/watch?v=Apdl38t1dF4",
@@ -5218,8 +5234,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Haute-Savoie",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [46.104, 6.507],
   },
+  // Approximate position: Pontarlier, in the Haut-Doubs the video describes.
   {
     title: "Chez les Colin, la ferme comtoise",
     link: "https://www.youtube.com/watch?v=0RbT7e8tlUw",
@@ -5227,7 +5244,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Doubs",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [46.904, 6.3546],
   },
   {
     title: "L'abbaye de Clairvaux",
@@ -5490,6 +5507,7 @@ export const places: readonly Place[] = [
     region: "Nouvelle-Aquitaine",
     coordinates: [45, -0.75],
   },
+  // Approximate position: the middle of Cantal; the property's address is not public.
   {
     title: "L'ancienne école, la Fontaine de Grégoire",
     link: "https://www.youtube.com/watch?v=rpEDzfy5fnM",
@@ -5497,7 +5515,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Cantal",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [45.156, 2.603],
   },
   {
     title: "Le domaine de la Creuse",
@@ -5517,6 +5535,7 @@ export const places: readonly Place[] = [
     region: "Corse",
     coordinates: [42.3, 8.75],
   },
+  // Approximate position: the middle of Haute-Garonne; the property's address is not public.
   {
     title: "Le couvent des Ursulines",
     link: "https://www.youtube.com/watch?v=OaVZ8X3syuY",
@@ -5524,8 +5543,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Haute-Garonne",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [43.51, 1.462],
   },
+  // Approximate position: the middle of Indre; the property's address is not public.
   {
     title: "L'ancien relais de poste, la Croix Verte",
     link: "https://www.youtube.com/watch?v=D7mvdG_3qrA",
@@ -5533,8 +5553,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Indre",
     region: "Centre-Val de Loire",
-    coordinates: [46, 2],
+    coordinates: [46.767, 1.567],
   },
+  // Approximate position: the middle of Moselle; the property's address is not public.
   {
     title: "La Maison de Famille",
     link: "https://www.youtube.com/watch?v=jQz9VCGEs0g",
@@ -5542,8 +5563,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Moselle",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [49.147, 6.373],
   },
+  // Approximate position: the middle of Yvelines; the property's address is not public.
   {
     title: "La Maison Cocon",
     link: "https://www.youtube.com/watch?v=h6sua2wtBEM",
@@ -5551,8 +5573,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Yvelines",
     region: "Île-de-France",
-    coordinates: [46, 2],
+    coordinates: [48.84, 1.867],
   },
+  // Approximate position: the middle of Seine-et-Marne; the property's address is not public.
   {
     title: "La Luciole",
     link: "https://www.youtube.com/watch?v=eQXeKsoHlAg",
@@ -5560,7 +5583,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Seine-et-Marne",
     region: "Île-de-France",
-    coordinates: [46, 2],
+    coordinates: [48.642, 3.003],
   },
   {
     title: "L'Ancienne Bergerie Corse",
@@ -5580,6 +5603,7 @@ export const places: readonly Place[] = [
     region: "Nouvelle-Aquitaine",
     coordinates: [46.2, -1.367],
   },
+  // Approximate position: the middle of Nord; the property's address is not public.
   {
     title: "La meunière",
     link: "https://www.youtube.com/watch?v=YazVhGW45x4",
@@ -5587,8 +5611,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Nord",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [50.229, 3.468],
   },
+  // Approximate position: the middle of Corrèze; the property's address is not public.
   {
     title: "La maison Grand Champ",
     link: "https://www.youtube.com/watch?v=SnI_WNkrjSI",
@@ -5596,8 +5621,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Corrèze",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [45.304, 1.787],
   },
+  // Approximate position: the Saumur stretch of the Loire the video describes.
   {
     title: "La troglo à plumes",
     link: "https://www.youtube.com/watch?v=NnDgo0vE5wI",
@@ -5605,8 +5631,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Maine-et-Loire",
     region: "Pays de la Loire",
-    coordinates: [46, 2],
+    coordinates: [47.2596, -0.0785],
   },
+  // Approximate position: the middle of Drôme; the property's address is not public.
   {
     title: "Le Lavoir du Lauzon",
     link: "https://www.youtube.com/watch?v=GqpJhGZM2jQ",
@@ -5614,8 +5641,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Drôme",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [44.656, 5.149],
   },
+  // Approximate position: the middle of Aveyron; the property's address is not public.
   {
     title: "Le Pigeonnier",
     link: "https://www.youtube.com/watch?v=GcMtMXIkGIc",
@@ -5623,8 +5651,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Aveyron",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [44.352, 2.66],
   },
+  // Approximate position: the calanques of Marseille the video describes.
   {
     title: "La Maison en couleur",
     link: "https://www.youtube.com/watch?v=6foyWSfyl_4",
@@ -5632,8 +5661,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Bouches-du-Rhône",
     region: "Provence-Alpes-Côte d'Azur",
-    coordinates: [46, 2],
+    coordinates: [43.2294, 5.4034],
   },
+  // Approximate position: Mortagne-au-Perche, in the Perche the video describes.
   {
     title: "La Maison d'Hector",
     link: "https://www.youtube.com/watch?v=5PTFWlCfQcQ",
@@ -5641,8 +5671,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Orne",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [48.5205, 0.5501],
   },
+  // Approximate position: the middle of Landes; the property's address is not public.
   {
     title: "La Maison dans les Pins",
     link: "https://www.youtube.com/watch?v=4-QC-2Rs4hI",
@@ -5650,16 +5681,17 @@ export const places: readonly Place[] = [
     description: "",
     department: "Landes",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [43.972, -0.805],
   },
+  // Approximate position: the Cévennes the video describes.
   {
     title: "La magnanerie de Fougairolles",
     link: "https://www.youtube.com/watch?v=2t2XRnKkqj8",
     type: "Languedoc-Roussillon",
     description: "",
-    department: "",
+    department: "Lozère",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [44.3509, 3.8584],
   },
   {
     title: "Le château de Pierrefonds",
@@ -5949,6 +5981,7 @@ export const places: readonly Place[] = [
     region: "Grand Est",
     coordinates: [48.633, -2.05],
   },
+  // Approximate position: the middle of Côte-d'Or; the property's address is not public.
   {
     title: "Les Hêtres Rouges",
     link: "https://www.youtube.com/watch?v=579ZHZfoEM4",
@@ -5956,8 +5989,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Côte-d'Or",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [47.341, 4.806],
   },
+  // Approximate position: the middle of Eure; the property's address is not public.
   {
     title: "L'Epicerie du Pape",
     link: "https://www.youtube.com/watch?v=xiOezZ68iBI",
@@ -5965,8 +5999,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Eure",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [49.007, 0.917],
   },
+  // Approximate position: the middle of Charente-Maritime; the property's address is not public.
   {
     title: "Les Persiennes",
     link: "https://www.youtube.com/watch?v=v6KjmDnDm00",
@@ -5974,8 +6009,9 @@ export const places: readonly Place[] = [
     description: "",
     department: "Charente-Maritime",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [45.909, -0.721],
   },
+  // Approximate position: the Côte d'Opale coast of Pas-de-Calais the video describes.
   {
     title: "Villa Providence",
     link: "https://www.youtube.com/watch?v=Vu0kZ39tzA4",
@@ -5983,7 +6019,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Pas-de-Calais",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [50.4467, 1.586],
   },
   {
     title: "La maison de l'Armateur au Havre",
@@ -5994,6 +6030,7 @@ export const places: readonly Place[] = [
     region: "Normandie",
     coordinates: [49.483, 0.117],
   },
+  // Approximate position: the middle of Calvados; the property's address is not public.
   {
     title: "Les loups, la longère paysanne",
     link: "https://www.youtube.com/watch?v=FOD2E-5g0ws",
@@ -6001,7 +6038,7 @@ export const places: readonly Place[] = [
     description: "",
     department: "Calvados",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [49.112, -0.515],
   },
   {
     title: "L'église souterraine Saint-Jean d'Aubeterre",
@@ -6215,9 +6252,9 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RtWiva6oMPk",
     type: "Région Auvergne",
     description: "",
-    department: "",
+    department: "Cantal",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [44.9746, 3.1775],
   },
   {
     title: "Notre-Dame-du-Haut de Le Corbusier",
@@ -6323,9 +6360,9 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bTTOqNTOflo",
     type: "Région Languedoc-Roussillon",
     description: "",
-    department: "",
+    department: "Hérault",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [43.3978, 3.3252],
   },
   {
     title: "LE VAR",
@@ -6350,36 +6387,37 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HXTffBDJ6Is",
     type: "Région Basse Normandie",
     description: "",
-    department: "",
+    department: "Manche",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [49.3841, -1.7071],
   },
   {
     title: "Jardins du mont des Recollets",
     link: "https://www.youtube.com/watch?v=A0OxYT-lsig",
     type: "Région Nord-Pas-de-Calais",
     description: "",
-    department: "",
+    department: "Nord",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [50.8004, 2.5058],
   },
   {
     title: "La bonne maison",
     link: "https://www.youtube.com/watch?v=NwuZn211QzM",
     type: "Région Rhone Alpes",
     description: "",
-    department: "",
+    department: "Rhône",
     region: "Auvergne-Rhône-Alpes",
-    coordinates: [46, 2],
+    coordinates: [45.7415, 4.8095],
   },
+  // Approximate position: Lévis-Saint-Nom, where the Yvette rises, as the video describes.
   {
     title: "La Grenouillère",
     link: "https://www.youtube.com/watch?v=LIr8Q4JQt14",
     type: "Région Ile de France",
     description: "",
-    department: "",
+    department: "Yvelines",
     region: "Île-de-France",
-    coordinates: [46, 2],
+    coordinates: [48.7207, 1.9514],
   },
   {
     title: "Tourtour",
@@ -6431,9 +6469,9 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Fvo2O2IbmNs",
     type: "Région Aquitaine",
     description: "",
-    department: "",
+    department: "Pyrénées-Atlantiques",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [43.1721, -0.1567],
   },
   {
     title: "Le clos de Saint-Saturnin",
@@ -6458,18 +6496,19 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XeSVjI994_U",
     type: "Région Lorraine",
     description: "",
-    department: "",
+    department: "Meurthe-et-Moselle",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [48.7512, 6.1999],
   },
+  // Approximate position: the town of Dole; the garden is described as close to it.
   {
     title: "Le jardin d'Anabelle",
     link: "https://www.youtube.com/watch?v=-eLlKpM12Xw",
     type: "Région Franche Comté",
     description: "",
-    department: "",
+    department: "Jura",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [47.0921, 5.4925],
   },
   {
     title: "Le jardin d'atmosphère de Bordeaux",
@@ -6480,14 +6519,15 @@ export const places: readonly Place[] = [
     region: "Pays de la Loire",
     coordinates: [44.842, -0.573],
   },
+  // Approximate position: Mercurey, in the Côte chalonnaise the garden looks over.
   {
     title: "Le jardin de Cassandra",
     link: "https://www.youtube.com/watch?v=AZDrmmJBkMI",
     type: "Région Bourgogne",
     description: "",
-    department: "",
+    department: "Saône-et-Loire",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [46.8397, 4.7189],
   },
   {
     title: "Le jardin de la Ganille",
@@ -6503,9 +6543,9 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7nLFSBryd3M",
     type: "Région Bourgogne",
     description: "",
-    department: "",
+    department: "Nièvre",
     region: "Bourgogne-Franche-Comté",
-    coordinates: [46, 2],
+    coordinates: [47.0983, 3.7541],
   },
   {
     title: "Le jardin de Liliane",
@@ -6525,32 +6565,35 @@ export const places: readonly Place[] = [
     region: "Grand Est",
     coordinates: [46, 2],
   },
+  // Approximate position: between Sancerre and Menetou-Salon, the vineyards the garden overlooks.
   {
     title: "Le jardin de Marie",
     link: "https://www.youtube.com/watch?v=rahdixkraXE",
     type: "Région Centre",
     description: "",
-    department: "",
+    department: "Cher",
     region: "Centre-Val de Loire",
-    coordinates: [46, 2],
+    coordinates: [47.2811, 2.6638],
   },
+  // Approximate position: the middle of Seine-Maritime; the property's address is not public.
   {
     title: "Le jardin de Valerianes",
     link: "https://www.youtube.com/watch?v=mUVBNn-MJc8",
     type: "Région Haute Normandie",
     description: "",
-    department: "",
+    department: "Seine-Maritime",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [49.652, 1.07],
   },
+  // Approximate position: the town of Auch; the garden is described as close to it.
   {
     title: "Le jardin d'Enteoulet",
     link: "https://www.youtube.com/watch?v=SBMRyeilyxY",
     type: "Région Midi Pyrénées",
     description: "",
-    department: "",
+    department: "Gers",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [43.6464, 0.5851],
   },
   {
     title: "U Giardinu di l'Isuli",
@@ -6561,14 +6604,15 @@ export const places: readonly Place[] = [
     region: "Corse",
     coordinates: [42.3, 8.75],
   },
+  // Approximate position: the town of Libourne; the garden is described as close to it.
   {
     title: "Le jardin du fond de l'or",
     link: "https://www.youtube.com/watch?v=VpvJKF_OerQ",
     type: "Région Aquitaine",
     description: "",
-    department: "",
+    department: "Gironde",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [44.9134, -0.2427],
   },
   {
     title: "Le jardin des Lianes",
@@ -6593,36 +6637,38 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XIrt5-r1hbk",
     type: "Région Alsace",
     description: "",
-    department: "",
+    department: "Haut-Rhin",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [47.5816, 7.1256],
   },
+  // Approximate position: halfway between Guingamp and Paimpol, as the video describes.
   {
     title: "Le jardin des mélanges",
     link: "https://www.youtube.com/watch?v=P2zSWb055zw",
     type: "Région Bretagne",
     description: "",
-    department: "",
+    department: "Côtes-d'Armor",
     region: "Bretagne",
-    coordinates: [46, 2],
+    coordinates: [48.6707, -3.0993],
   },
   {
     title: "Le jardin du Pellinec",
     link: "https://www.youtube.com/watch?v=pxl7-IgFKE0",
     type: "Région Bretagne",
     description: "",
-    department: "",
+    department: "Côtes-d'Armor",
     region: "Bretagne",
-    coordinates: [46, 2],
+    coordinates: [48.8312, -3.2966],
   },
+  // Approximate position: the foot of Mont Lozère on the Gard side, near the village the video mentions.
   {
     title: "Le jardin du mas de l'abris",
     link: "https://www.youtube.com/watch?v=DBhlI5MTmkc",
     type: "Région Languedoc Roussillon",
     description: "",
-    department: "",
+    department: "Gard",
     region: "Occitanie",
-    coordinates: [46, 2],
+    coordinates: [44.3694, 3.9233],
   },
   {
     title: "Le jardin mosaïque",
@@ -6638,18 +6684,18 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lofSjC263kE",
     type: "Région Picardie",
     description: "",
-    department: "",
+    department: "Oise",
     region: "Hauts-de-France",
-    coordinates: [46, 2],
+    coordinates: [49.4202, 2.0066],
   },
   {
     title: "Les jardins de la Boirie",
     link: "https://www.youtube.com/watch?v=-QSupKe3Nto",
     type: "Région Poitou Charentes",
     description: "",
-    department: "",
+    department: "Charente-Maritime",
     region: "Nouvelle-Aquitaine",
-    coordinates: [46, 2],
+    coordinates: [45.9434, -1.2887],
   },
   {
     title: "Les jardins de la Croze",
@@ -6665,9 +6711,9 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FDnsoNktPuE",
     type: "Région Basse Normandie",
     description: "",
-    department: "",
+    department: "Orne",
     region: "Normandie",
-    coordinates: [46, 2],
+    coordinates: [48.3844, -0.0509],
   },
   {
     title: "Les jardins de la Poterie Hillen",
@@ -6691,36 +6737,37 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VDHA1a6V0Ss",
     type: "Région Corse",
     description: "",
-    department: "",
+    department: "Haute-Corse",
     region: "Corse",
-    coordinates: [46, 2],
+    coordinates: [42.6371, 9.3479],
   },
   {
     title: "Les jardins de mon Moulin",
     link: "https://www.youtube.com/watch?v=Foa91C4GnvA",
     type: "Région Champagne-Ardenne",
     description: "",
-    department: "",
+    department: "Haute-Marne",
     region: "Grand Est",
-    coordinates: [46, 2],
+    coordinates: [48.4583, 5.1807],
   },
   {
     title: "Les près de Gittonville",
     link: "https://www.youtube.com/watch?v=m3jy9gs9vYM",
     type: "Région Ile de France",
     description: "",
-    department: "",
+    department: "Essonne",
     region: "Île-de-France",
-    coordinates: [46, 2],
+    coordinates: [48.3549, 2.1151],
   },
+  // Approximate position: Menetou-Salon, the vineyard the garden is described as next to.
   {
     title: "Le jardin des Dietzs",
     link: "https://www.youtube.com/watch?v=XYbeLz8GtLo",
     type: "Région Centre",
     description: "",
-    department: "",
+    department: "Cher",
     region: "Centre-Val de Loire",
-    coordinates: [46, 2],
+    coordinates: [47.2315, 2.4886],
   },
   {
     title: "L'Isle sur la Sorgue",
