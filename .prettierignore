@@ -1,0 +1,9 @@
+# Generated / vendored
+.next
+coverage
+node_modules
+pnpm-lock.yaml
+next-env.d.ts
+
+# shadcn components are owned by the shadcn CLI; keep them byte-for-byte upstream
+components/ui

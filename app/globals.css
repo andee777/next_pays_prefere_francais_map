@@ -1,105 +1,232 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Vendor CSS is imported into the `base` layer so Tailwind utilities and the
+ * shadcn components can override it. Unlayered vendor rules (for example
+ * `.leaflet-container a { color }`) would otherwise beat every utility class.
+ */
+@import "leaflet/dist/leaflet.css" layer(base);
+@import "react-leaflet-cluster/dist/assets/MarkerCluster.css" layer(base);
+@import "react-leaflet-cluster/dist/assets/MarkerCluster.Default.css"
+  layer(base);
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Responsive variants shared with JavaScript (see lib/viewport.ts; keep the
+ * numbers in sync).
+ *  - `compact`: the sidebar is a sheet and its content is condensed (phones, and
+ *    anything short).
+ *  - `short`: little vertical space, e.g. a phone held sideways.
+ */
+@custom-variant compact {
+  /* Block form: the shorthand splits on the comma in a media query list. */
+  @media (max-width: 767px), (max-height: 560px) {
+    @slot;
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@custom-variant short {
+  @media (max-height: 560px) {
+    @slot;
   }
 }
 
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+/* Place popup: the shadcn Card is the popup surface, so strip Leaflet's chrome. */
+@layer components {
+  .place-popup {
+    @apply font-sans leading-normal;
+  }
+
+  .place-popup .leaflet-popup-content-wrapper {
+    @apply rounded-xl bg-transparent p-0 text-card-foreground shadow-none;
+  }
+
+  .place-popup .leaflet-popup-content {
+    @apply m-0 text-sm leading-normal;
+  }
+
+  .place-popup .leaflet-popup-tip {
+    @apply bg-card shadow-none ring-1 ring-foreground/10;
+  }
+}
+
+/* Hovering a place in the sidebar highlights its marker (or cluster) on the map. */
+@layer components {
+  .place-marker-hover {
+    filter: drop-shadow(
+        0 0 6px color-mix(in oklch, var(--primary) 70%, transparent)
+      )
+      brightness(1.15);
+  }
+
+  .marker-cluster.place-marker-hover > div {
+    box-shadow: 0 0 0 3px var(--primary);
+  }
+}
+
+/*
+ * Responsive polish.
+ *
+ * Unlayered on purpose: the shadcn sheet sets `w-3/4 sm:max-w-sm` through
+ * variant utilities, and only unlayered CSS beats utilities regardless of
+ * specificity. A 75% sheet is only 240px on a 320px phone, too narrow for the
+ * place rows; this makes it fluid instead.
+ */
+[data-slot="sidebar"][data-mobile="true"] {
+  width: min(88vw, 22rem);
+  max-width: none;
+}
+
+/* Dragging the map must never pull the page to refresh or bounce on touch devices. */
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior: none;
 }
 
-
-/* app/globals.css */
-.leaflet-container {
-  height: 100%;
-  width: 100%;
+/* Keep Leaflet's corner controls (attribution) clear of notches and home indicators. */
+@layer components {
+  .leaflet-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .leaflet-right {
+    padding-right: env(safe-area-inset-right);
+  }
+  .leaflet-left {
+    padding-left: env(safe-area-inset-left);
+  }
 }
 
-.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
-	-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
-	-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
-	-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
-	transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+/*
+ * Ocean-colored map background, so the bands above and below the world (shown
+ * on tall, narrow screens where every place must fit) read as sea, not grey.
+ */
+@layer components {
+  .leaflet-container {
+    background-color: #aad3df;
+  }
 }
-
-.leaflet-cluster-spider-leg {
-	/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
-	-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
-	-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
-	-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
-	transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
-}
-
-
-.marker-cluster-small {
-	background-color: rgba(181, 226, 140, 0.6);
-	}
-.marker-cluster-small div {
-	background-color: rgba(110, 204, 57, 0.6);
-	}
-
-.marker-cluster-medium {
-	background-color: rgba(241, 211, 87, 0.6);
-	}
-.marker-cluster-medium div {
-	background-color: rgba(240, 194, 12, 0.6);
-	}
-
-.marker-cluster-large {
-	background-color: rgba(253, 156, 115, 0.6);
-	}
-.marker-cluster-large div {
-	background-color: rgba(241, 128, 23, 0.6);
-	}
-
-	/* IE 6-8 fallback colors */
-.leaflet-oldie .marker-cluster-small {
-	background-color: rgb(181, 226, 140);
-	}
-.leaflet-oldie .marker-cluster-small div {
-	background-color: rgb(110, 204, 57);
-	}
-
-.leaflet-oldie .marker-cluster-medium {
-	background-color: rgb(241, 211, 87);
-	}
-.leaflet-oldie .marker-cluster-medium div {
-	background-color: rgb(240, 194, 12);
-	}
-
-.leaflet-oldie .marker-cluster-large {
-	background-color: rgb(253, 156, 115);
-	}
-.leaflet-oldie .marker-cluster-large div {
-	background-color: rgb(241, 128, 23);
-}
-
-.marker-cluster {
-	background-clip: padding-box;
-	border-radius: 20px;
-	}
-.marker-cluster div {
-	width: 30px;
-	height: 30px;
-	margin-left: 5px;
-	margin-top: 5px;
-
-	text-align: center;
-	border-radius: 15px;
-	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
-	}
-.marker-cluster span {
-	line-height: 30px;
-	}

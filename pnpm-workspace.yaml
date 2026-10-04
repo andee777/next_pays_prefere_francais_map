@@ -1,0 +1,5 @@
+# pnpm blocks dependency install scripts unless explicitly allowed.
+# unrs-resolver (used by eslint-config-next) ships its native binding as a
+# prebuilt optional dependency, so its postinstall script is not needed.
+allowBuilds:
+  unrs-resolver: false
