@@ -10,6 +10,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=aIpaeTkgR_0",
     type: "100 places to see",
     description: "Journeys through time",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [42.965, 1.6],
   },
   {
@@ -17,6 +19,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zi3owFrI67E",
     type: "1000 Countries in one",
     description: "Crossing the longest river in France",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.468, -0.554],
   },
   {
@@ -24,6 +28,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kXB--PfQ8lM",
     type: "The 100 places you must see",
     description: "A medieval past",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.357, -1.706],
   },
   {
@@ -31,6 +37,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=v3Lfno0ZANU",
     type: "The 100 places you must see",
     description: "Massifs and grandiose landscapes",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.049, 2.667],
   },
   {
@@ -38,6 +46,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oMpLrQmTlEo",
     type: "1000 Countries in one",
     description: "Land of wines and hedonism",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.3, 4.833],
   },
   {
@@ -45,6 +55,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TmaRpOhn2i8",
     type: "100 places to see",
     description: "Heading for the Mediterranean",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.68, 3.36],
   },
   {
@@ -52,6 +64,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UGLsOh7nmP8",
     type: "The 100 places you must see",
     description: "Discovering the Midi Rose",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [43.929, 2.148],
   },
   {
@@ -59,6 +73,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BC7hiTsqDvo",
     type: "100 Places to See",
     description: "A Surfers' Paradise",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44, -0.833],
   },
   {
@@ -66,6 +82,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8dAsTxvWvPE",
     type: "The 100 places you must see",
     description: "In Upper Brittany",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.176, -1.683],
   },
   {
@@ -73,6 +91,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=qGAqAwuwBBs",
     type: "The 100 places you must see",
     description: "Riches of the land",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.92, 7.25],
   },
   {
@@ -80,12 +100,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UHWbMKbqVZI",
     type: "",
     description: "Where Wilderness Meets Heritage! 🌿",
+    department: "",
+    region: "",
   },
   {
     title: "Langres",
     link: "https://www.youtube.com/watch?v=IMgZXm0W18Q",
     type: "1000 Countries in one",
     description: "The largest fortified enclosure in Europe",
+    department: "Haute-Marne",
+    region: "Grand Est",
     coordinates: [47.85, 5.333],
   },
   {
@@ -93,6 +117,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=U95npmzDh0s",
     type: "The 100 places you must see",
     description: "Between land and sea",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.5, 0.5],
   },
   {
@@ -100,6 +126,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OyPVwubBg-0",
     type: "1000 Countries in one",
     description: "The vibrant heart of Corrèze",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.158, 1.533],
   },
   {
@@ -107,6 +135,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IvtxzeG6uGA",
     type: "The 100 places you must see",
     description: "A winter getaway",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 6.5],
   },
   {
@@ -114,6 +144,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=O_sz2Y8IHlQ",
     type: "The 100 places you must see",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.5, 6.5],
   },
   {
@@ -121,12 +153,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=takYKxyrtI4",
     type: "1000 Countries in One",
     description: "Heading for the island of sensations 🐚 🌴",
+    department: "La Réunion",
+    region: "La Réunion",
   },
   {
     title: "Aveyron",
     link: "https://www.youtube.com/watch?v=ERbo9O_FfDY",
     type: "The 100 places you must see",
     description: "A land of history",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [44.25, 2.667],
   },
   {
@@ -134,6 +170,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-BCIqLhE4Uw",
     type: "The 100 places you must see",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.083, 2.4],
   },
   {
@@ -141,6 +179,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pkewFSIQ5r0",
     type: "1000 Countries in one",
     description: "Secret spots by the sea",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.202, -2.932],
   },
   {
@@ -148,6 +188,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9OyutsZr6NU",
     type: "The 100 places you must see",
     description: "Old towns of Alsace",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.583, 7.75],
   },
   {
@@ -155,6 +197,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=cncq-EgYXX0",
     type: "100 Places to See",
     description: "Green Peaks and Valleys",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.167, 6.417],
   },
   {
@@ -162,12 +206,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=drbrb-PkreQ",
     type: "1000 Countries in one",
     description: "The island of flowers, jewel of the Caribbean",
+    department: "Martinique",
+    region: "Martinique",
   },
   {
     title: "Anjou, from Saumur to the meanders of the Loire",
     link: "https://www.youtube.com/watch?v=nV9jkAliJYA",
     type: "The 100 places you must see",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.259, -0.076],
   },
   {
@@ -175,6 +223,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oGbKTuA8an0",
     type: "The 100 places you must see",
     description: "In the heart of the bastides",
+    department: "Lot-et-Garonne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.333, 0.5],
   },
   {
@@ -182,6 +232,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nB6BvNXQEQ8",
     type: "The 100 places you must see",
     description: "Nature, history and shores",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.833, -0.667],
   },
   {
@@ -189,6 +241,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Uj78fIpQWcc",
     type: "The 100 places you must see",
     description: "Jewels of the Dordogne",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.183, 0.717],
   },
   {
@@ -196,6 +250,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=U2icSyYjSt8",
     type: "1000 Countries in one",
     description: "A gourmet getaway",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.5, 1.667],
   },
   {
@@ -203,6 +259,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JOAtWkxMBzU",
     type: "The 100 places you must see",
     description: "Bocages and golden beaches",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.667, -1.417],
   },
   {
@@ -210,6 +268,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QR5vvyJiTjs",
     type: "1000 Countries in One",
     description: "Discovery of the Alsace Vineyards",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [47.908, 7.213],
   },
   {
@@ -217,6 +277,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xJA7Mpg6W_U",
     type: "100 Places to See",
     description: "Hidden Treasures of Provence",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44, 5.167],
   },
   {
@@ -224,6 +286,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NzDboG4CEMw",
     type: "1000 Countries in One",
     description: "The City of 6 Ports",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.75, -3.367],
   },
   {
@@ -231,6 +295,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vDphSrn7co4",
     type: "100 Places to See",
     description: "The Soul of the South of France",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.083, 2.25],
   },
   {
@@ -238,6 +304,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-e3g3eX_p6A",
     type: "1000 Countries in One",
     description: "Canals and Nature Reserves",
+    department: "Nièvre",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47, 3.5],
   },
   {
@@ -245,6 +313,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VhjYf6RBENA",
     type: "1000 Countries in One",
     description: "Provence and Grands Crus",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.056, 4.832],
   },
   {
@@ -252,6 +322,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xQt0-lQjpdA",
     type: "1000 Countries in one",
     description: "at the heart of our regions",
+    department: "Mayenne",
+    region: "Pays de la Loire",
     coordinates: [48.073, -0.768],
   },
   {
@@ -259,6 +331,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4BXyqtN3GfU",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -266,6 +340,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=KI8LFjXLmO8",
     type: "The 100 places you must see",
     description: "The land of wines and castles",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.25, 0.667],
   },
   {
@@ -273,6 +349,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9bwyeUHmaVY",
     type: "Julie Raynaud",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.53, 4.5],
   },
   {
@@ -280,6 +358,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Lg2RDQGXOww",
     type: "1000 Countries in one",
     description: "The seal estuary 🦭",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50.2, 1.633],
   },
   {
@@ -287,6 +367,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=u1KFTJapGjc",
     type: "Julie Raynaud",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.6, 3.883],
   },
   {
@@ -294,6 +376,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oUOHWUQMf1M",
     type: "The 100 places you must see",
     description: "Village of Character",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.5, 2.833],
   },
   {
@@ -301,6 +385,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3CaiPUU12_4",
     type: "Julie Raynaud",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.083, 2.25],
   },
   {
@@ -308,6 +394,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mKFIS0hUQf0",
     type: "1000 Countries in One",
     description: "Beating Heart of Gascony",
+    department: "Gers",
+    region: "Occitanie",
     coordinates: [43.647, 0.585],
   },
   {
@@ -315,6 +403,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HQAvRImI6QI",
     type: "Julie Raynaud",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43, 6],
   },
   {
@@ -322,6 +412,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WfUu0fI03NM",
     type: "The 100 places you must see",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.2, 2.583],
   },
   {
@@ -329,6 +421,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VBpBYlog13I",
     type: "Julie Raynaud",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [42.7, 2.567],
   },
   {
@@ -336,6 +430,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Tr58m8G8wJU",
     type: "Documentary Travel in France",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49, 0],
   },
   {
@@ -343,6 +439,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=CX56BDHcO40",
     type: "Julie Raynaud",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.213, 2.351],
   },
   {
@@ -350,6 +448,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BZP_1cyPsSo",
     type: "100 Places to See",
     description: "Historic Heart of the Southwest",
+    department: "Gers",
+    region: "Occitanie",
     coordinates: [43.833, 0.167],
   },
   {
@@ -357,12 +457,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=jNo62VT4jBU",
     type: "Julie Raynaud",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
   },
   {
     title: "The country of Forcalquier",
     link: "https://www.youtube.com/watch?v=TERGAOjnhl8",
     type: "1000 Countries in one",
     description: "From the alleys to the citadel",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.96, 5.78],
   },
   {
@@ -370,6 +474,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8kUSs2X44iA",
     type: "Julie Raynaud",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.027, 0.571],
   },
   {
@@ -377,6 +483,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yjCCURltrc0",
     type: "The 100 places you must see",
     description: "Beaches of the South of France",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.5, 5],
   },
   {
@@ -384,6 +492,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ggKQiN7PQh4",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -391,6 +501,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=tJOn_w6GVgk",
     type: "1000 Countries in one",
     description: "At the heart of our regions",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.24, 6.02],
   },
   {
@@ -398,6 +510,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=cdaHMaaU7iU",
     type: "Julie Raynaud",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.3, -0.5],
   },
   {
@@ -405,6 +519,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VhRe_F4psAg",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -412,6 +528,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6yhTNmsHBAU",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [50.5, 4],
   },
   {
@@ -419,6 +537,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PRxsOiHBTu4",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [50.125, 5.189],
   },
   {
@@ -426,6 +546,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sxy-d_y1SuY",
     type: "Julie Raynaud",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.833, 4.667],
   },
   {
@@ -433,6 +555,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RrYG0OxNgcI",
     type: "Julie Raynaud",
     description: "",
+    department: "Meuse",
+    region: "Grand Est",
     coordinates: [49, 5.5],
   },
   {
@@ -440,6 +564,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XNlGdT6h_Zc",
     type: "Occitanie Region",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.855, 3.331],
   },
   {
@@ -447,6 +573,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RHiUxMqhc9Q",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -454,6 +582,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hWIL6uvw0hE",
     type: "Julie Raynaud",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48.08, 7.36],
   },
   {
@@ -461,6 +591,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=T1BACAJLiVs",
     type: "The 100 places you must see",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.8566, 2.3522],
   },
   {
@@ -468,12 +600,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ea8wAtfUijU",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
   },
   {
     title: "L'amazone qui danse avec les chevaux",
     link: "https://www.youtube.com/watch?v=WTL6HX0Muro",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -481,6 +617,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yrv_MNcStLY",
     type: "Provence-Alpes-Côte d'Azur Region",
     description: "",
+    department: "Hautes-Alpes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [45.045, 6.305],
   },
   {
@@ -488,6 +626,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Ey4yNHJAkxE",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -496,6 +636,8 @@ export const places: readonly Place[] = [
     type: "",
     description:
       "Flagship of the most beautiful islands in the Atlantic -Travel Documentary",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.933, -1.3],
   },
   {
@@ -503,6 +645,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fsJgynExFjM",
     type: "Julie Raynaud",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.5, 3.5],
   },
   {
@@ -510,6 +654,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2uXifZWdAaM",
     type: "Julie Raynaud",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.5, 1.667],
   },
   {
@@ -517,6 +663,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=KjdukbyLRZQ",
     type: "1000 Countries in one",
     description: "discovering the Auvergne Volcanoes",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.772, 2.964],
   },
   {
@@ -524,6 +672,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MswvyaJqhi0",
     type: "Julie Raynaud",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.6, 1.433],
   },
   {
@@ -531,6 +681,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ul_Jkat5xwo",
     type: "Julie Raynaud",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.61, -0.315],
   },
   {
@@ -538,6 +690,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=q-ZVWbSIzVY",
     type: "Nouvelle-Aquitaine Region",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.307, -1.499],
   },
   {
@@ -545,6 +699,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=qXhGJmUkZeE",
     type: "The 100 places you must see",
     description: "",
+    department: "Yvelines",
+    region: "Île-de-France",
     coordinates: [48.8, 1.917],
   },
   {
@@ -552,6 +708,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=59idibDOZ_4",
     type: "1000 Countries in one",
     description: "a journey to the heart of the Vosges",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.175, 6.449],
   },
   {
@@ -559,6 +717,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IGPpau7zd8o",
     type: "Julie Raynaud",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -566,6 +726,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=N95FdBcUKC4",
     type: "1000 Countries in one",
     description: "secret escape to the confines of the Loire",
+    department: "Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 4.083],
   },
   {
@@ -573,6 +735,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OXO2xdOmi5c",
     type: "Documentary Travel in France",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.5, 1],
   },
   {
@@ -580,6 +744,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=EqGnZ8v7Fa0",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -587,6 +753,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=e6eKaBldPEA",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -594,6 +762,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IJSWjDPaScU",
     type: "1000 Countries in one-Voyage- Documentary",
     description: "hiking in the heart of a land steeped in history",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.5, 2.5],
   },
   {
@@ -601,6 +771,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eb6RPYsc-Ik",
     type: "The 100 places you must see",
     description: "",
+    department: "Loir-et-Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.5, 1.833],
   },
   {
@@ -608,6 +780,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Lm81WvO97n4",
     type: "Auvergne-Rhône-Alpes Region",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.523, 5.37],
   },
   {
@@ -615,6 +789,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3XfgNzBB8U8",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -622,6 +798,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nLBeQ8Z104c",
     type: "1000 Countries in one",
     description: "the jewel of the North of France",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.75, 2.5],
   },
   {
@@ -629,6 +807,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eihaovV0zc4",
     type: "The 100 places you must see",
     description: "Between Landais Lakes and Exceptional Residences",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.658, -1.167],
   },
   {
@@ -636,6 +816,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lJk-tXqBvzE",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -643,6 +825,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=07NTac6jJxs",
     type: "Documentary Travel in France",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.75, 6],
   },
   {
@@ -650,6 +834,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ItKgs2mJ6P8",
     type: "1000 Countries in one",
     description: "gateway to the Béarnaise Pyrenees",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.194, -0.61],
   },
   {
@@ -657,6 +843,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ijZ2FXb16qE",
     type: "The 100 places you must see",
     description: "",
+    department: "Rhône",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.5, 4.833],
   },
   {
@@ -664,6 +852,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4STKR1zxQNA",
     type: "Guyana Region",
     description: "",
+    department: "Guyane",
+    region: "Guyane",
     coordinates: [3.617, -53.2],
   },
   {
@@ -671,6 +861,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dk_OQBugTkA",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -678,6 +870,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9Ou3zMN0UA8",
     type: "1000 Countries in one",
     description: "the valley of painters",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.083, 2],
   },
   {
@@ -685,6 +879,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mYH7_qwUc3Y",
     type: "Documentary Travel in France",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.935, 6.067],
   },
   {
@@ -692,6 +888,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ngB2x_JoSrA",
     type: "1000 Countries in one",
     description: "little-known charms of Essonne",
+    department: "Essonne",
+    region: "Île-de-France",
     coordinates: [48.5, 2.25],
   },
   {
@@ -700,6 +898,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=E_2v3LHtq7g",
     type: "The 100 places you must see",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.6, 1.433],
   },
   {
@@ -707,6 +907,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UdHl5phYvVw",
     type: "Brittany Region",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.403, -2.91],
   },
   {
@@ -714,6 +916,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0i6oLu40bw4",
     type: "1000 Countries in one",
     description: "an escapade among the Cathars",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [42.967, 1.617],
   },
   {
@@ -721,6 +925,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yqt7pqxj-Ws",
     type: "The 100 places you must see",
     description: "",
+    department: "Guadeloupe",
+    region: "Guadeloupe",
     coordinates: [16.265, -61.551],
   },
   {
@@ -728,6 +934,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6frED7xOEG8",
     type: "1000 Countries in one",
     description: "in the land of George Sand",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.083, 2.4],
   },
   {
@@ -735,6 +943,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bS98C9ePLk8",
     type: "The 100 places you must see",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.75, 2.5],
   },
   {
@@ -742,6 +952,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VnSoyazdjMo",
     type: "Grand Est Region",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48.205, 7.362],
   },
   {
@@ -749,6 +961,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=S67TuCeB69o",
     type: "Bourgogne",
     description: "a charming fortified city",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.49, 3.908],
   },
   {
@@ -756,6 +970,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Lm5aKcaBu1E",
     type: "1000 Countries in one",
     description: "banks of the Seine and seaside",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.667, 0.5],
   },
   {
@@ -763,6 +979,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MX-vo97u_qM",
     type: "The 100 places you must see",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48.633, -4],
   },
   {
@@ -770,6 +988,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Fy2PjkIuy10",
     type: "Brittany Region",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.383, -2.95],
   },
   {
@@ -777,6 +997,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QNIFiN9Jalo",
     type: "The 100 places you must see",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.318, 7.441],
   },
   {
@@ -784,6 +1006,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lAkMtx08gyg",
     type: "South of France",
     description: "an Atlantic escape",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.167, -0.75],
   },
   {
@@ -791,6 +1015,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Rn1274qtprY",
     type: "The 100 places you must see",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.5, 3.5],
   },
   {
@@ -798,6 +1024,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Dt7P5-Xbbxs",
     type: "1000 Countries in one",
     description: "kingdom of “Beauty and the Beast”",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.167, 2.833],
   },
   {
@@ -805,6 +1033,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IQeMTAzgnqY",
     type: "Normandy Region",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.355, 0.93],
   },
   {
@@ -812,6 +1042,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=wnKHHhM7ToM",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -819,6 +1051,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Ik-QjvZjs4E",
     type: "South of France",
     description: "a land of opportunities",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [43.233, 0.083],
   },
   {
@@ -826,6 +1060,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XZECfGtokn4",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -833,6 +1069,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vN_85eGNDZE",
     type: "1000 Countries in one",
     description: "a town in the mountains",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.903, 6.355],
   },
   {
@@ -840,6 +1078,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0jORAo9arSg",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -847,6 +1087,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7sTzwnP1JJ0",
     type: "South of France",
     description: "a modern fairy tale",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.213, 2.351],
   },
   {
@@ -854,6 +1096,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=orEWOtkBDSg",
     type: "Centre-Val de Loire Region",
     description: "",
+    department: "Indre",
+    region: "Centre-Val de Loire",
     coordinates: [46.978, 1.612],
   },
   {
@@ -861,6 +1105,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Pfcm3Z7TZ78",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -868,6 +1114,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=KkQFST83hJ8",
     type: "1000 Countries in one",
     description: "the thousand-year-old city",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.16, -1.152],
   },
   {
@@ -875,6 +1123,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3obQEQBqqsQ",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -882,6 +1132,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=r-9dJKIzGd4",
     type: "South of France",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.3, -1.5],
   },
   {
@@ -889,6 +1141,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=blQryX8i8d8",
     type: "Hauts de France region",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.373, 2.038],
   },
   {
@@ -896,6 +1150,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fCnVvI8_Vp4",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -903,6 +1159,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zhLUJooLIAM",
     type: "South of France",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.25, 3.75],
   },
   {
@@ -910,6 +1168,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gn-2CKtT41w",
     type: "Burgundy-FC Region",
     description: "",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.617, 3.2],
   },
   {
@@ -918,6 +1178,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_wuFWUnsjXo",
     type: "",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.75, -0.25],
   },
   {
@@ -925,6 +1187,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ltFg1V4ap5w",
     type: "Essonne Region",
     description: "",
+    department: "Essonne",
+    region: "Île-de-France",
     coordinates: [48.54, 2.17],
   },
   {
@@ -932,6 +1196,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2fDmS2FfoiM",
     type: "The 100 places you must see",
     description: "",
+    department: "Gers",
+    region: "Occitanie",
     coordinates: [44, 0.5],
   },
   {
@@ -939,6 +1205,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=qTVNEKiDWxg",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Sarthe",
+    region: "Pays de la Loire",
     coordinates: [48.283, 0.017],
   },
   {
@@ -946,6 +1214,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=c6vNWfIq-R0",
     type: "Documentaire Voyage en France",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [42.833, 0.167],
   },
   {
@@ -953,6 +1223,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WwkjIyMvC3g",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.933, 9.383],
   },
   {
@@ -960,6 +1232,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ByxLKREKT5E",
     type: "Documentaire Gastronomie et Art de vivre",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -967,12 +1241,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9kdnc9jaBls",
     type: "1000 Pays en un",
     description: "au coeur de nos régions",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
   },
   {
     title: "Port-Joinville",
     link: "https://www.youtube.com/watch?v=mwjL7q5AYbw",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.717, -2.333],
   },
   {
@@ -980,6 +1258,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-CfYxPvMLhM",
     type: "Documentaire Gastronomie et Art de vivre",
     description: "",
+    department: "Rhône",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 4.85],
   },
   {
@@ -987,12 +1267,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=It52MMBNmcU",
     type: "Documentaire Voyage en France",
     description: "",
+    department: "",
+    region: "Bretagne",
   },
   {
     title: "Winstubs, le meilleur de l'Alsace",
     link: "https://www.youtube.com/watch?v=_bYi0cbEdXo",
     type: "Documentaire Gastronomie et Art de vivre",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.318, 7.441],
   },
   {
@@ -1000,6 +1284,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8n3PuCB_U4s",
     type: "Stéphane Bern",
     description: "",
+    department: "Guadeloupe",
+    region: "Guadeloupe",
     coordinates: [16.317, -61.05],
   },
   {
@@ -1007,6 +1293,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=F57IJH03RY0",
     type: "Documentaire Voyage en France",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47, 4.5],
   },
   {
@@ -1014,6 +1302,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=96pUlA5RdBY",
     type: "Région Normandie",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49.4, 0.133],
   },
   {
@@ -1021,6 +1311,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ONzM3y09pX8",
     type: "Documentaire Gastronomie et Art de vivre",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.8566, 2.3522],
   },
   {
@@ -1028,6 +1320,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ocBAJL8FjTQ",
     type: "Région Grand Est",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.923, 4.522],
   },
   {
@@ -1035,6 +1329,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=u1UtEs-D3I4",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1042,12 +1338,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sYJKhnO6j50",
     type: "1000 Pays en un",
     description: "au coeur de nos régions",
+    department: "",
+    region: "Pays de la Loire",
   },
   {
     title: "Auvillar",
     link: "https://www.youtube.com/watch?v=TH4gzzk9A7k",
     type: "Région Occitanie",
     description: "",
+    department: "Tarn-et-Garonne",
+    region: "Occitanie",
     coordinates: [44.07, 0.9],
   },
   {
@@ -1055,6 +1355,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Um7TY_6Ucqw",
     type: "Documentaire Voyage",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [47, -2],
   },
   {
@@ -1062,6 +1364,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=O-Bx3fzzNT0",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50.05, 1.983],
   },
   {
@@ -1069,6 +1373,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bSBSyQHivWo",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1076,6 +1382,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7RPNFz7wAPs",
     type: "Documentaire Voyage en France",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.935, 6.067],
   },
   {
@@ -1083,6 +1391,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vj0EWmdvGZw",
     type: "Documentaire Gastronomie et Art de vivre",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.633, 3.067],
   },
   {
@@ -1090,6 +1400,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OTJeWN8YZn0",
     type: "Région Bourgogne",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.217, 5.133],
   },
   {
@@ -1097,6 +1409,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-KOzCMAMEFM",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1104,12 +1418,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fpnEr3QkGIs",
     type: "1000 Pays en un",
     description: "au coeur de nos régions",
+    department: "Gers",
+    region: "Occitanie",
   },
   {
     title: "Saint-Véran, plus haute commune d'Europe",
     link: "https://www.youtube.com/watch?v=OivdtY-ml9w",
     type: "Région Haute-Alpes",
     description: "",
+    department: "Hautes-Alpes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.7, 6.867],
   },
   {
@@ -1117,6 +1435,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hFtVLQ8oqnA",
     type: "Rencontre avec les passionnés de la crêpe",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.202, -2.932],
   },
   {
@@ -1124,6 +1444,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LJ84RLZLTj4",
     type: "élu Village Préféré des Français 2021",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.33, 2.833],
   },
   {
@@ -1131,6 +1453,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3mM5kZk9E0o",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1138,6 +1462,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=CafA6DQmL4M",
     type: "Région Haute-Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.683, 9.3],
   },
   {
@@ -1145,6 +1471,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yJtPFgZn2Ds",
     type: "Région Île-de-France",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.45, 2.75],
   },
   {
@@ -1152,18 +1480,24 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9Ne8JAdZrI0",
     type: "Les 100 Lieux qu'il faut voir",
     description: "territoire plein de mystères",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
   },
   {
     title: "Trôo",
     link: "https://www.youtube.com/watch?v=JtBiDy3GNKw",
     type: "Région Centre-Val de Loire",
     description: "Cité Troglodyte",
+    department: "Loir-et-Cher",
+    region: "Centre-Val de Loire",
   },
   {
     title: "Giverny",
     link: "https://www.youtube.com/watch?v=EwLmPAW4Ux8",
     type: "Région Normandie",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [49.075, 1.533],
   },
   {
@@ -1171,12 +1505,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ALnwZztHmTM",
     type: "Les 100 Lieux qu'il faut voir",
     description: "escapade dans le Perche",
+    department: "Orne",
+    region: "Normandie",
   },
   {
     title: "Saint-Bertrand de Comminges",
     link: "https://www.youtube.com/watch?v=EEflXsxIlf4",
     type: "Région Occitanie",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.027, 0.571],
   },
   {
@@ -1184,6 +1522,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=e6lF-KHQL58",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.283, -2.483],
   },
   {
@@ -1191,12 +1531,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eR6xnGoSHcQ",
     type: "Les 100 lieux qu'il faut voir",
     description: "rencontres à Martigues",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
   },
   {
     title: "Pierrefonds",
     link: "https://www.youtube.com/watch?v=GN_rWuajwGY",
     type: "Région Hauts de France",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.35, 2.983],
   },
   {
@@ -1204,6 +1548,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2CGnnIlVLPk",
     type: "La France de nos Régions",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.5, 2.5],
   },
   {
@@ -1211,6 +1557,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FR1vStJs54s",
     type: "Région Grand-Est",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.955, 7.94],
   },
   {
@@ -1218,12 +1566,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fu0eoNA4KBo",
     type: "Les 100 Lieux qu'il faut voir",
     description: "excursion dans le Perche",
+    department: "",
+    region: "",
   },
   {
     title: "Les Anses d'Arlet",
     link: "https://www.youtube.com/watch?v=n1feDcxD4h0",
     type: "Martinique",
     description: "",
+    department: "Martinique",
+    region: "Martinique",
     coordinates: [14.483, -61.083],
   },
   {
@@ -1231,6 +1583,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nrpoAqtV8uI",
     type: "région Corse-du-Sud",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [42.133, 8.6],
   },
   {
@@ -1238,6 +1592,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RXY9pcFk6vA",
     type: "Région Bourgogne Franche Comté",
     description: "",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.817, 3.8],
   },
   {
@@ -1245,12 +1601,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9dPxA94U-hI",
     type: "Les 100 Lieux qu'il faut voir",
     description: "au coeur de l'Histoire de France dans le Perche",
+    department: "",
+    region: "Normandie",
   },
   {
     title: "Rencontre les habitants du LIMOUSIN",
     link: "https://www.youtube.com/watch?v=frOVwuMznXw",
     type: "La France de nos Régions",
     description: "",
+    department: "Haute-Vienne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.833, 1.25],
   },
   {
@@ -1258,6 +1618,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pVYWKyihfyo",
     type: "Région Auvergne",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.617, 3.217],
   },
   {
@@ -1265,18 +1627,24 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mN-WuDqRuaQ",
     type: "Les 100 Lieux qu'il faut voir",
     description: "aux frontières du Vivarais",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
   },
   {
     title: "Sur les rives de la Loire",
     link: "https://www.youtube.com/watch?v=H776FjSDbEg",
     type: "Les 100 Lieux qu'il faut voir",
     description: "au coeur d'Orléans",
+    department: "",
+    region: "",
   },
   {
     title: "Du Haut Velay aux gorges de l'Allier",
     link: "https://www.youtube.com/watch?v=50sqig7kwJA",
     type: "Les 100 Lieux qu'il faut voir",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.083, 3.833],
   },
   {
@@ -1284,6 +1652,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=cxt-xnR-V3s",
     type: "La France de nos Régions",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.6, 3.883],
   },
   {
@@ -1291,6 +1661,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3dzYrYwgKC4",
     type: "Région Île-De-France",
     description: "",
+    department: "Yvelines",
+    region: "Île-de-France",
     coordinates: [48.777, 1.81],
   },
   {
@@ -1298,6 +1670,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lZci_mFkPBQ",
     type: "Les 100 lieux qu'il faut voir",
     description: "la beauté et l'histoire du Val de Loire",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
   },
   {
     title:
@@ -1305,6 +1679,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XtPngV42wKU",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.083, 3.833],
   },
   {
@@ -1313,12 +1689,16 @@ export const places: readonly Place[] = [
     type: "",
     description:
       "sur la route de l'Histoire du Val de Loire- Les 100 Lieux qu'il faut voir",
+    department: "",
+    region: "Centre-Val de Loire",
   },
   {
     title: "Le golfe du Lion, de la Provence à la côte catalane",
     link: "https://www.youtube.com/watch?v=tc6Jk1VL0_M",
     type: "Les 100 Lieux qu'il faut voir",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43, 3],
   },
   {
@@ -1326,6 +1706,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xY-jvJWbafk",
     type: "Régions Provence-Alpes-Côte-D'Azur",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.833, 5.2],
   },
   {
@@ -1333,6 +1715,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TWdVMpw8Rx0",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.167, 6.417],
   },
   {
@@ -1340,18 +1724,24 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fPJJUgL0lPM",
     type: "Les 100 Lieux qu'il faut voir",
     description: "aux détours du Puy-En-Velay",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
   },
   {
     title: "Sauver les poissons",
     link: "https://www.youtube.com/watch?v=AZYIMawwdI8",
     type: "Au P'tit Bonheur la France",
     description: "le vétérinaire spécialiste de France raconte",
+    department: "",
+    region: "",
   },
   {
     title: "Pont-Aven",
     link: "https://www.youtube.com/watch?v=g1jAcFf41-0",
     type: "Région Bretagne",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [47.85, -3.75],
   },
   {
@@ -1359,6 +1749,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Tiv9Rh_UUnU",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1366,12 +1758,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=A7vs703f968",
     type: "Les 100 lieux qu'il faut voir",
     description: "autour du Golfe du Lion",
+    department: "Hérault",
+    region: "Occitanie",
   },
   {
     title: "Rendez-vous avec un chasseur de fantômes à Mortemer",
     link: "https://www.youtube.com/watch?v=Ql_p5lshcfA",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "Val-d'Oise",
+    region: "Île-de-France",
     coordinates: [49.167, 1.833],
   },
   {
@@ -1379,6 +1775,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JeMA5MM_alI",
     type: "Les 100 lieux qu'il faut voir -Documentaire",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.5, 1],
   },
   {
@@ -1386,6 +1784,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Kx8Lw8CW-gA",
     type: "Région NOUVELLE AQUITAINE",
     description: "",
+    department: "Charente",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.27, 0.17],
   },
   {
@@ -1393,6 +1793,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=urN4-rGiIlg",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.5, 6.5],
   },
   {
@@ -1400,12 +1802,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=X815GsnOlgE",
     type: "Les 100 Lieux qu'il faut voir",
     description: "découverte de la vallée de l'Isère",
+    department: "Isère",
+    region: "Auvergne-Rhône-Alpes",
   },
   {
     title: "Créer un refuge pour cochons, le rêve de cette femme",
     link: "https://www.youtube.com/watch?v=miIDboiue_4",
     type: "Au p'tit bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1413,6 +1819,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=03kyangp1Xc",
     type: "Au p'tit bonheur la France",
     description: "",
+    department: "Meurthe-et-Moselle",
+    region: "Grand Est",
     coordinates: [48.69, 6.183],
   },
   {
@@ -1420,12 +1828,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eD1eCP0EQuE",
     type: "Les 100 lieux qu'il faut voir",
     description: "au coeur de l'Occitanie",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
   },
   {
     title: "Champion de course landaise, il raconte ce sport",
     link: "https://www.youtube.com/watch?v=tCEBBus8z5Q",
     type: "Au p'tit bonheur la France",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44, -0.833],
   },
   {
@@ -1433,6 +1845,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oYXqKAlI85g",
     type: "Au P'tit Bonheur la France -Philippe Gougler",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.75, 6],
   },
   {
@@ -1440,12 +1854,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=A0HlerbQSjs",
     type: "Les 100 Lieux qu'il faut voir",
     description: "traditions et patrimoine en Isère",
+    department: "Isère",
+    region: "Auvergne-Rhône-Alpes",
   },
   {
     title: "Découvrez la fantastique maison de Philippe Hermez",
     link: "https://www.youtube.com/watch?v=uPmArz8UwFU",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1453,6 +1871,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=63qZUv52ez0",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44, 6],
   },
   {
@@ -1460,12 +1880,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_CalINHWpa0",
     type: "Au P'tit Bonheur la France",
     description: "Faire des portraits de vaches",
+    department: "",
+    region: "",
   },
   {
     title: "Entre Creuse et Sédelle",
     link: "https://www.youtube.com/watch?v=dMIfHwFzCmI",
     type: "Les 100 lieux qu'il faut voir",
     description: "au temps de la fenaison",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
   },
   {
     title:
@@ -1473,12 +1897,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4bi7wJ89h2M",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
   },
   {
     title: "Le pouvoir magique de ces lamas est incroyable",
     link: "https://www.youtube.com/watch?v=rRElqB3I1nk",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1486,6 +1914,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=85dUDtP0c94",
     type: "Les 100 lieux qu'il Faut voir",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44, 6],
   },
   {
@@ -1493,6 +1923,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8Q9CWHrJ24Y",
     type: "Au P'tit bonheur la France",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 3],
   },
   {
@@ -1500,6 +1932,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RQEFbrC6E88",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.083, 2],
   },
   {
@@ -1507,6 +1941,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zrCeITd86Mk",
     type: "Au p'tit bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1514,12 +1950,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vNuulDt2yzw",
     type: "Les 100 lieux qu'il faut voir",
     description: "le paradis de Haute-Provence",
+    department: "",
+    region: "Provence-Alpes-Côte d'Azur",
   },
   {
     title: "Sauver les homards, la devise de deux bretonnes",
     link: "https://www.youtube.com/watch?v=_0aOsgpqucQ",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.202, -2.932],
   },
   {
@@ -1527,12 +1967,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1iVhj64ysC0",
     type: "Les 100 Lieux qu'il faut voir",
     description: "au coeur des Alpes de Haute-Provence",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
   },
   {
     title: "Amoureux des bisons, cet éleveur y consacre sa vie",
     link: "https://www.youtube.com/watch?v=T7nggCUOjjY",
     type: "Au P'tit Bonheur la France",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -1540,42 +1984,56 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GBx5UGfZasQ",
     type: "Champagne",
     description: "excursion dans les vignes",
+    department: "",
+    region: "Grand Est",
   },
   {
     title: "Sur la route de l'Aube",
     link: "https://www.youtube.com/watch?v=5HAFIXkok4A",
     type: "Les 100 Lieux qu'il faut voir",
     description: "découverte du patrimoine champenois",
+    department: "Aube",
+    region: "Grand Est",
   },
   {
     title: "Le Perche",
     link: "https://www.youtube.com/watch?v=vccFONEQK6g",
     type: "Les 100 lieux qu'il faut voir",
     description: "Terre de manoirs et de bocages",
+    department: "",
+    region: "",
   },
   {
     title: "La vallée des tapissiers",
     link: "https://www.youtube.com/watch?v=fokEZuz0Ljk",
     type: "Les 100 lieux qu'il faut voir",
     description: "escapade en terre creusoise",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
   },
   {
     title: "Le massif des écrins",
     link: "https://www.youtube.com/watch?v=0uXQcERgJaM",
     type: "Les 100 lieux qu'il faut voir",
     description: "périple en Isère",
+    department: "",
+    region: "",
   },
   {
     title: "La Marne",
     link: "https://www.youtube.com/watch?v=QWbayUbYQAQ",
     type: "Reims",
     description: "escapade dans les terres champenoises",
+    department: "Marne",
+    region: "Grand Est",
   },
   {
     title: "L'Isère, de Vienne aux terres pastorales",
     link: "https://www.youtube.com/watch?v=JHuRLIiT_Z0",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Isère",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.333, 5.5],
   },
   {
@@ -1583,6 +2041,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YlTslheCtC0",
     type: "Les 100 lieux qu'il faut voir",
     description: "Territoire d'histoire et de vignobles",
+    department: "Marne",
+    region: "Grand Est",
     coordinates: [49, 4],
   },
   {
@@ -1590,6 +2050,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Y2W5BUtPCpo",
     type: "unique adventure in the Massif Central",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 3],
   },
   {
@@ -1597,6 +2059,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NIN_3yBj7rQ",
     type: "Chamonix",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.833, 6.833],
   },
   {
@@ -1604,6 +2068,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dg5oEgdQpS0",
     type: "Région PACA",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.53, 6.15],
   },
   {
@@ -1611,6 +2077,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TR1meUijoZ8",
     type: "Région Occitanie",
     description: "",
+    department: "Tarn-et-Garonne",
+    region: "Occitanie",
     coordinates: [44.25, 1.133],
   },
   {
@@ -1618,6 +2086,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=a64ClZ73TVA",
     type: "Guadeloupe",
     description: "",
+    department: "Guadeloupe",
+    region: "Guadeloupe",
     coordinates: [15.867, -61.583],
   },
   {
@@ -1625,6 +2095,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AGNJbxdw8e4",
     type: "Région Grand Est",
     description: "",
+    department: "Aube",
+    region: "Grand Est",
     coordinates: [48, 4.367],
   },
   {
@@ -1632,6 +2104,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=z_UIVQdydlA",
     type: "Région Nouvelle Aquitaine",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.717, -1.033],
   },
   {
@@ -1639,6 +2113,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=T1FLew6lfoc",
     type: "Région Normandie",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49.583, -1.267],
   },
   {
@@ -1646,6 +2122,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PMtDR7-1v3I",
     type: "Région Ile-de-France",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.333, 2.7],
   },
   {
@@ -1653,6 +2131,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eaFFv6psxl4",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.183, 3.117],
   },
   {
@@ -1660,6 +2140,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fDBdBttQQPI",
     type: "Région Pays de La Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.367, -0.267],
   },
   {
@@ -1667,6 +2149,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JobhNPbamo0",
     type: "Région Bretagne",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48.033, -4.483],
   },
   {
@@ -1674,6 +2158,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=b32vqJCSRKs",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.583, 9.283],
   },
   {
@@ -1681,6 +2167,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bCNopj5BxZU",
     type: "Région Centre Val de Loire",
     description: "",
+    department: "Eure-et-Loir",
+    region: "Centre-Val de Loire",
     coordinates: [48.25, 1.067],
   },
   {
@@ -1688,6 +2176,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=i7HE5HZJAaM",
     type: "Région Franche-Comté",
     description: "",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.033, 6.267],
   },
   {
@@ -1695,6 +2185,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JisZJdPRl3w",
     type: "Région Auvergne Rhône Alpes",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.533, 3.183],
   },
   {
@@ -1702,6 +2194,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0q_VDHcPrIE",
     type: "Région Bretagne",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48.033, -4.85],
   },
   {
@@ -1709,6 +2203,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AM8lK_HoRvA",
     type: "Région Auvergne Rhône Alpes",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.7, 4.833],
   },
   {
@@ -1716,6 +2212,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oUXNvfMSUls",
     type: "Région PACA",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.9, 5.3],
   },
   {
@@ -1723,6 +2221,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lX_bDe3YOKs",
     type: "Région Grand Est",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.4, 7.45],
   },
   {
@@ -1730,6 +2230,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=18jpAerHFhE",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.683, 0.9],
   },
   {
@@ -1737,6 +2239,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=qxK__m_4fVo",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Sarthe",
+    region: "Pays de la Loire",
     coordinates: [47.95, -0.233],
   },
   {
@@ -1744,6 +2248,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0fRhKxo-jlo",
     type: "Région Ile de France",
     description: "",
+    department: "Essonne",
+    region: "Île-de-France",
     coordinates: [48.65, 2.15],
   },
   {
@@ -1751,6 +2257,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hwjwGWW-gMk",
     type: "Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.583, 9.167],
   },
   {
@@ -1758,6 +2266,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UohF1O6wsjA",
     type: "La Réunion",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [-21.067, 55.517],
   },
   {
@@ -1765,6 +2275,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lLV-dKKVQ-Y",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.8, 2.483],
   },
   {
@@ -1772,6 +2284,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1NYPQmK0Ap0",
     type: "Région Occitanie",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [43.917, 3.317],
   },
   {
@@ -1779,12 +2293,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Q3uUTMB6sH4",
     type: "Région Centre Val de Loire",
     description: "",
+    department: "Loiret",
+    region: "Centre-Val de Loire",
   },
   {
     title: "Mont Saint-Michel",
     link: "https://www.youtube.com/watch?v=kKfkQUci6Nw",
     type: "Région Normandie",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [48.636, -1.511],
   },
   {
@@ -1792,6 +2310,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VIzcepXSRMc",
     type: "Région Franche-Comté",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.267, 4.083],
   },
   {
@@ -1799,6 +2319,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sTiUaI7fX1Q",
     type: "Région Bretagne",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.667, -2.283],
   },
   {
@@ -1806,6 +2328,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5D7A8T-qGyA",
     type: "Corse",
     description: "",
+    department: "",
+    region: "Corse",
     coordinates: [48.636, -1.511],
   },
   {
@@ -1813,6 +2337,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=j-hjo7-EHss",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.933, -0.967],
   },
   {
@@ -1820,6 +2346,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7UAU7sTPeJI",
     type: "Région Occitanie",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.6, 1.433],
   },
   {
@@ -1827,6 +2355,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BWXazF702Ww",
     type: "Région Grand Est",
     description: "",
+    department: "Meurthe-et-Moselle",
+    region: "Grand Est",
     coordinates: [49.25, 6],
   },
   {
@@ -1834,6 +2364,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eWAlw5uhsIw",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.167, -0.067],
   },
   {
@@ -1841,6 +2373,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3F6TxSZ5x78",
     type: "Région Auvergne Rhône Alpes",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.25, 5.033],
   },
   {
@@ -1848,6 +2382,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HcrL7-l3eFQ",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [49.167, 1.167],
   },
   {
@@ -1855,6 +2391,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BJwTMJircZw",
     type: "La Réunion",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [48.8566, 2.3522],
   },
   {
@@ -1862,6 +2400,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Mvick4qCm0U",
     type: "Région PACA",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.7, 7.267],
   },
   {
@@ -1869,6 +2409,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1F4i1DSPOdU",
     type: "Région Hauts-de-France",
     description: "",
+    department: "",
+    region: "Hauts-de-France",
     coordinates: [48.8566, 2.3522],
   },
   {
@@ -1876,6 +2418,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PrXvPBgs63M",
     type: "Région Ile-de-France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.8566, 2.3522],
   },
   {
@@ -1883,6 +2427,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=i-FcoZh-UTo",
     type: "Région Centre Val de Loire",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.333, 0.5],
   },
   {
@@ -1890,6 +2436,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=os6Hd2HeIog",
     type: "Région Bourgogne Franche-Comté",
     description: "",
+    department: "Territoire de Belfort",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.633, 6.867],
   },
   {
@@ -1897,6 +2445,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=s9zJXCoGtRk",
     type: "Puy-de-Dôme",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.517, 3.333],
   },
   {
@@ -1904,6 +2454,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sg2gctf9v4w",
     type: "Puy-de-Dôme",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.5, 2.883],
   },
   {
@@ -1911,6 +2463,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_Wz5K6CrJiY",
     type: "Puy-de-Dôme",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.772, 2.964],
   },
   {
@@ -1918,6 +2472,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eG51bulrBHw",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.772, 2.964],
   },
   {
@@ -1925,6 +2481,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9CbL10ixMhQ",
     type: "Savoie",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.733, 5.867],
   },
   {
@@ -1932,6 +2490,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SwlsOfc38_Q",
     type: "Savoie",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.367, 7.05],
   },
   {
@@ -1939,6 +2499,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7ORyxsVCTeU",
     type: "Savoie",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 6.5],
   },
   {
@@ -1946,6 +2508,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=x3VvLzBHEBs",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.5, 6.5],
   },
   {
@@ -1953,6 +2517,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1ihSMzV9zqA",
     type: "La Réunion",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [-21.242, 55.708],
   },
   {
@@ -1960,6 +2526,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=E6emtYSfmeE",
     type: "La Réunion",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [-21.067, 55.517],
   },
   {
@@ -1967,6 +2535,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OWMfx-Qxhp0",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [-21.1151, 55.5364],
   },
   {
@@ -1974,6 +2544,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=E6Rpo8pwWYg",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "La Réunion",
+    region: "La Réunion",
     coordinates: [-21.1151, 55.5364],
   },
   {
@@ -1981,6 +2553,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MzrWxP2cUxc",
     type: "Saône-et-Loire",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.467, 4.733],
   },
   {
@@ -1988,6 +2562,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RsWssU0JPv0",
     type: "Saône-et-Loire",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.433, 4.65],
   },
   {
@@ -1995,6 +2571,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3Yv8BTqxzSo",
     type: "Saône-et-Loire",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.95, 4.3],
   },
   {
@@ -2002,6 +2580,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3jUVqfUek0s",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.5, 4.5],
   },
   {
@@ -2009,6 +2589,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fQvgY70hPd8",
     type: "Finistère",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.75, -3.5],
   },
   {
@@ -2016,6 +2598,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=S1ZPLHSc3GY",
     type: "Finistère",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48.45, -4.25],
   },
   {
@@ -2023,6 +2607,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BZul2zGNXpg",
     type: "Finistère",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48, -4.1],
   },
   {
@@ -2030,6 +2616,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xZ6owlDtoIA",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48.25, -4],
   },
   {
@@ -2037,6 +2625,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=b8ASsGpMAy4",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.935, 6.067],
   },
   {
@@ -2044,6 +2634,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=E7DK6UBLL10",
     type: "Alpes de Haute-Provence",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.75, 6.25],
   },
   {
@@ -2051,6 +2643,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=uP4a5ARvfoc",
     type: "Alpes de Haute Provence",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44, 6],
   },
   {
@@ -2058,6 +2652,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XkyXYvUy4Ds",
     type: "Alpes de Haute Provence",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44, 5.5],
   },
   {
@@ -2065,6 +2661,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mgV9fY6EHx4",
     type: "Pays Rethelois",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.5, 4.5],
   },
   {
@@ -2072,6 +2670,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gbr4B9INMxw",
     type: "Massif Ardennais",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.5, 4.5],
   },
   {
@@ -2079,6 +2679,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UDazyy1bwmA",
     type: "Gerberdy",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.333, 2.5],
   },
   {
@@ -2086,6 +2688,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fbpk4I5fVVs",
     type: "Charleville Mézières et sa région",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.5, 4.5],
   },
   {
@@ -2093,6 +2697,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QwHE3uEupZc",
     type: "Chantilly",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.333, 2.5],
   },
   {
@@ -2100,12 +2706,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BdEZ96u-jNo",
     type: "Bourges et ses environs",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
   },
   {
     title: "Berry",
     link: "https://www.youtube.com/watch?v=Hs2DavuGL38",
     type: "L'Indre",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.083, 2.4],
   },
   {
@@ -2113,6 +2723,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kGBWcyxyuxA",
     type: "Le Cher",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.083, 2.4],
   },
   {
@@ -2120,6 +2732,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OUnMJvE8D0g",
     type: "Pierrefonds",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.333, 2.5],
   },
   {
@@ -2127,6 +2741,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HJpH8FmkNME",
     type: "Le Sud Manche",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49, -1.5],
   },
   {
@@ -2134,6 +2750,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7iG4NFR5xx0",
     type: "Les Landes",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.833, 0.167],
   },
   {
@@ -2141,6 +2759,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LqJaRFhHcPk",
     type: "Rieux-Volvestre",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.5, 1.5],
   },
   {
@@ -2148,6 +2768,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=87CQEX-QvA8",
     type: "Toulouse",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.5, 1.5],
   },
   {
@@ -2155,6 +2777,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xq713yTv1jA",
     type: "Saint Bertand De Comminges",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.5, 1.5],
   },
   {
@@ -2162,6 +2786,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fxFhydFZ4MA",
     type: "Le Gers",
     description: "",
+    department: "Gers",
+    region: "Occitanie",
     coordinates: [43.833, 0.167],
   },
   {
@@ -2169,6 +2795,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=B3psy4tBCUU",
     type: "Le Centre Manche",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49, -1.5],
   },
   {
@@ -2176,12 +2804,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=s_YNhCyqbV8",
     type: "Le Nord Cotentin",
     description: "",
+    department: "Manche",
+    region: "Normandie",
   },
   {
     title: "Gascogne",
     link: "https://www.youtube.com/watch?v=3h8C9iJYnlI",
     type: "Le Béarn",
     description: "",
+    department: "Gers",
+    region: "Occitanie",
     coordinates: [43.833, 0.167],
   },
   {
@@ -2189,6 +2821,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pC2XvqQ7Y4U",
     type: "Îles Atlantiques",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, -1.167],
   },
   {
@@ -2196,6 +2830,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xSvaKFOU4Qc",
     type: "Îles Atlantiques",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.933, -1.3],
   },
   {
@@ -2203,6 +2839,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pQdM1jKrsz0",
     type: "Îles Atlantiques",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.7, -2.333],
   },
   {
@@ -2210,6 +2848,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=22wzMBYp1vs",
     type: "Allier",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 3],
   },
   {
@@ -2217,6 +2857,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=H_oCuP8sllg",
     type: "Allier",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.567, 3.333],
   },
   {
@@ -2224,6 +2866,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mFLKpJcJmbQ",
     type: "Allier",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.133, 3.417],
   },
   {
@@ -2231,6 +2875,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WcXgVnZWebc",
     type: "Hautes-Pyrénées",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [42.9, 0.35],
   },
   {
@@ -2238,6 +2884,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BjsDwwDEKu0",
     type: "Hautes-Pyrénées",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [42.883, -0.117],
   },
   {
@@ -2245,6 +2893,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_k2_thwOH0g",
     type: "Hautes-Pyrénées",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [43.1, -0.05],
   },
   {
@@ -2252,6 +2902,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WFk-VPDuGuI",
     type: "Cévennes",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.25, 3.75],
   },
   {
@@ -2259,6 +2911,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SEJyrB9Pns0",
     type: "Cévennes",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.25, 3.75],
   },
   {
@@ -2266,6 +2920,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RWdVVIZTxDE",
     type: "Cévennes- Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.5, 3.5],
   },
   {
@@ -2273,6 +2929,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gZjKIiMogN8",
     type: "Côte d'Opale",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.75, 1.833],
   },
   {
@@ -2280,6 +2938,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=tFQD1kcpkso",
     type: "Côte d'Opale",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.5, 1.75],
   },
   {
@@ -2287,6 +2947,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NUPp71TnF3s",
     type: "Côte d'Opale",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.75, 2.25],
   },
   {
@@ -2294,6 +2956,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2jiOSqUy828",
     type: "Corse du Sud",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [41.833, 9.167],
   },
   {
@@ -2301,6 +2965,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xziS0O97fDs",
     type: "Corse du Sud",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [41.383, 9.15],
   },
   {
@@ -2308,6 +2974,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xUbQDpA7vGk",
     type: "Corse du Sud",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [46, -1.167],
   },
   {
@@ -2315,6 +2983,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=x5nFk3HaCks",
     type: "Les 100 lieux qu'il faut voir Documentaire complet",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.7, 7.267],
   },
   {
@@ -2322,6 +2992,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=t1ilWqHdlAk",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.2, 2.583],
   },
   {
@@ -2329,6 +3001,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=r4gdnI1dENE",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.133, 3.417],
   },
   {
@@ -2336,6 +3010,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=U6YiT-x6fow",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.5, 4.5],
   },
   {
@@ -2343,6 +3019,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BqtnkdUS-1E",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [43.1, -0.05],
   },
   {
@@ -2350,6 +3028,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nHX7NMzEEM4&t=2034s",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.25, 3.75],
   },
   {
@@ -2357,6 +3037,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-ecdrpCmhC4",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [43.5, 1.5],
   },
   {
@@ -2364,6 +3046,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vtQp13DtXJ4",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49, -1.5],
   },
   {
@@ -2371,6 +3055,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mUrtImCDGIQ",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, -1.167],
   },
   {
@@ -2378,6 +3064,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LmBmxvbGHcE",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [41.833, 9.167],
   },
   {
@@ -2385,6 +3073,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9SLuc0NVVQk",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.75, 2.25],
   },
   {
@@ -2392,6 +3082,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mnNwqw71--A",
     type: "Périgord tricolore",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.783, 0.5],
   },
   {
@@ -2399,6 +3091,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=M-NCdHfV-kI",
     type: "Périgord tricolore",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.183, 0.717],
   },
   {
@@ -2406,6 +3100,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1mmJVpo4Fd4",
     type: "Périgord tricolore",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.367, 0.65],
   },
   {
@@ -2413,6 +3109,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XYCbTwTymNc",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.049, 2.667],
   },
   {
@@ -2420,6 +3118,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RRkUMqKO2Ug",
     type: "Le Cantal",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.033, 3.083],
   },
   {
@@ -2427,6 +3127,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NK0RP2bsPoo",
     type: "Le Cantal",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.133, 2.5],
   },
   {
@@ -2434,6 +3136,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Bop1-Tq-BWw",
     type: "Le Cantal",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.933, 2.45],
   },
   {
@@ -2441,6 +3145,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Oxx0AhuJTn0",
     type: "Bas-Rhin",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.833, 7.5],
   },
   {
@@ -2448,6 +3154,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=g_XSYiovHzo",
     type: "Bas-Rhin",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.25, 7.417],
   },
   {
@@ -2455,6 +3163,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MDBHcKzpZuo",
     type: "Bas-Rhin",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.433, 7.4],
   },
   {
@@ -2462,6 +3172,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=DfbSyI3VDAo",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.5, -2.75],
   },
   {
@@ -2469,6 +3181,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9ZnUbkISixs",
     type: "Côtes-d'Armor",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.75, -3.5],
   },
   {
@@ -2476,6 +3190,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VdR8FvXdWBI",
     type: "Côtes-d'Armor",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.633, -2],
   },
   {
@@ -2483,6 +3199,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TPZZsBQL2ao",
     type: "Côtes-d'Armor",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.75, -3],
   },
   {
@@ -2490,6 +3208,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IMOmzcLqvLE",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [42.965, 1.6],
   },
   {
@@ -2497,6 +3217,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rc5tcXAC68I",
     type: "L'Ariège",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [43.083, 1.867],
   },
   {
@@ -2504,6 +3226,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6BTYFejPL5I",
     type: "L'Ariège",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [43, 1.133],
   },
   {
@@ -2511,6 +3235,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=uBiEZPOFOmc",
     type: "L'Ariège",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [42.967, 1.617],
   },
   {
@@ -2518,6 +3244,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_nUUjBWH0Jw",
     type: "Hérault",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.333, 3.167],
   },
   {
@@ -2525,6 +3253,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6tD0fnKqZ0Y",
     type: "Hérault",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.3, 3.5],
   },
   {
@@ -2532,6 +3262,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QhEl8hhsKM0",
     type: "Hérault",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.68, 3.36],
   },
   {
@@ -2539,6 +3271,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=K5io_z9s0eM",
     type: "Alpes-Maritimes",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.167, 7.167],
   },
   {
@@ -2546,6 +3280,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9FwwEPhmQ4I",
     type: "Alpes-Maritimes",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.717, 7.117],
   },
   {
@@ -2553,6 +3289,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=D71c3NTsT3E",
     type: "Alpes-Maritimes",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.667, 6.917],
   },
   {
@@ -2560,6 +3298,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RssL4yD5AlA",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44, -0.833],
   },
   {
@@ -2567,6 +3307,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=e-8oiLJT_MQ",
     type: "Landes",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.75, -0.567],
   },
   {
@@ -2574,6 +3316,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AVUbyx1xhyw",
     type: "Landes",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.883, -0.5],
   },
   {
@@ -2581,6 +3325,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LvexRZuAkAI",
     type: "Landes",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.667, -1.417],
   },
   {
@@ -2588,6 +3334,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PbTNWGGkNCE",
     type: "Lot-et-Garonne",
     description: "",
+    department: "Lot-et-Garonne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.333, 0.5],
   },
   {
@@ -2595,6 +3343,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FOY0Vf_JTMs",
     type: "Lot-et-Garonne",
     description: "",
+    department: "Lot-et-Garonne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.5, 1.667],
   },
   {
@@ -2602,6 +3352,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=p2Od2RjAwoQ",
     type: "Lot-et-Garonne",
     description: "",
+    department: "Lot-et-Garonne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.5, 0.167],
   },
   {
@@ -2609,6 +3361,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xPu8xArmS3o",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.357, -1.706],
   },
   {
@@ -2616,6 +3370,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5gmmrAdC-yk",
     type: "Loire-Atlantique",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.117, -2.1],
   },
   {
@@ -2623,6 +3379,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bYcWSPmNelo",
     type: "Loire-Atlantique",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.333, -2.417],
   },
   {
@@ -2630,6 +3388,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ZpLl-AGZUk0",
     type: "Loire-Atlantique",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.217, -1.55],
   },
   {
@@ -2637,6 +3397,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6KUnoIRkhzc",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.833, 1.167],
   },
   {
@@ -2644,6 +3406,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ZqTqtglNyWE",
     type: "Périgord Noir",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45, 1.083],
   },
   {
@@ -2651,6 +3415,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vLavlL8zB2c",
     type: "Périgord Noir",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.833, 1.167],
   },
   {
@@ -2658,6 +3424,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3K_RsBc5oPM",
     type: "Périgord Noir",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.883, 1.217],
   },
   {
@@ -2665,6 +3433,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=KfsIG3Fcpzg",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.5, 5.167],
   },
   {
@@ -2672,6 +3442,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=aQthnVg8FDI",
     type: "Drôme",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.383, 4.75],
   },
   {
@@ -2679,6 +3451,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1HvFVY4S2pg",
     type: "Drôme",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45, 5],
   },
   {
@@ -2686,6 +3460,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5QgwcD3W9Uc",
     type: "Drôme",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.967, 5.417],
   },
   {
@@ -2693,6 +3469,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sKZra6DuatQ",
     type: "Touraine",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.167, 0.25],
   },
   {
@@ -2700,6 +3478,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8AYGAxG6JRc",
     type: "Touraine",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.417, 0.983],
   },
   {
@@ -2707,6 +3487,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kiVHvzXOcxo",
     type: "Touraine",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.267, 0.467],
   },
   {
@@ -2714,6 +3496,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2ZiXldVUV1k",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [44, 4.5],
   },
   {
@@ -2721,6 +3505,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MsBoB6gKUe8",
     type: "Gard",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.25, 3.75],
   },
   {
@@ -2728,6 +3514,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FHdeLUtrghw",
     type: "Gard",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [43.53, 4.5],
   },
   {
@@ -2735,6 +3523,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yZVHVhZbqpg",
     type: "Gard",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [43.833, 4.35],
   },
   {
@@ -2742,6 +3532,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Jnrq9z9ykbw",
     type: "Tarn",
     description: "",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [43.6, 2.25],
   },
   {
@@ -2749,6 +3541,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pDpe7UW7WI0",
     type: "Tarn",
     description: "",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [43.7, 2.133],
   },
   {
@@ -2756,6 +3550,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XQUF3OrxNAY",
     type: "Tarn",
     description: "",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [43.933, 2.15],
   },
   {
@@ -2763,6 +3559,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2bQ2Q66L1k4",
     type: "Vosges",
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.175, 6.449],
   },
   {
@@ -2770,6 +3568,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RyO2jSnSPvk",
     type: "Vosges",
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.167, 6.417],
   },
   {
@@ -2777,6 +3577,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yN-1z5xqimQ",
     type: "Vosges",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48, 7],
   },
   {
@@ -2784,6 +3586,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yyFCAGNhPQc",
     type: "Seine-et-Marne",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.367, 2.817],
   },
   {
@@ -2791,6 +3595,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TDsaLgBYeT4",
     type: "Seine-et-Marne",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.567, 3.3],
   },
   {
@@ -2798,6 +3604,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=p24viuAwqx8&t=231s",
     type: "Région Occitanie",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.8, 1.617],
   },
   {
@@ -2805,6 +3613,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=olFnC-wUzN0",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.717, 4.35],
   },
   {
@@ -2812,6 +3622,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dTYN4r9F4II",
     type: "Région Centre-Val de Loire",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.217, 0.067],
   },
   {
@@ -2819,6 +3631,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=O042Mx68fHk",
     type: "Région Centre-Val de Loire",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [46.9, 3.05],
   },
   {
@@ -2826,6 +3640,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=z2GR__w2F20",
     type: "Région Île-de-France",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.45, 2.6],
   },
   {
@@ -2833,6 +3649,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=wivDJyXhBZ8",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.633, 8.9],
   },
   {
@@ -2840,6 +3658,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vqSf9lSsnkE",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.333, -1.45],
   },
   {
@@ -2847,6 +3667,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=noqieMEpMrs",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.467, 5.267],
   },
   {
@@ -2854,6 +3676,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hSt6Y1dBKPU",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.833, 1.167],
   },
   {
@@ -2861,6 +3685,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=g_RhAECzO8Y",
     type: "Région Normandie",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49.183, 0.05],
   },
   {
@@ -2868,6 +3694,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fcy6VaAdXKY",
     type: "Région Normandie",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [48.367, 0.567],
   },
   {
@@ -2875,6 +3703,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fcNInna3oBk",
     type: "Région Grand Est",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.383, 7.417],
   },
   {
@@ -2882,6 +3712,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fTMmNJg4D5A",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.067, 1.65],
   },
   {
@@ -2889,6 +3721,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dUzTOW0rAAc",
     type: "Région Grand Est",
     description: "",
+    department: "Haute-Marne",
+    region: "Grand Est",
     coordinates: [48.033, 4.917],
   },
   {
@@ -2896,6 +3730,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=d6Q5-bdWnlE",
     type: "Région Occitanie",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [44.6, 2.4],
   },
   {
@@ -2903,6 +3739,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ca3dbjdFceA",
     type: "Région Normandie",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49.667, -1.267],
   },
   {
@@ -2910,6 +3748,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XCFYvtWdeII",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Vienne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.7, 0.883],
   },
   {
@@ -2917,6 +3757,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VXnkV4YH6rk",
     type: "Région Grand Est",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [47.5, 7.317],
   },
   {
@@ -2924,6 +3766,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TLniwDCvjh4",
     type: "Région Grand Est",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [48.85, 7.017],
   },
   {
@@ -2931,6 +3775,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Pk0RSvuT9ng",
     type: "Région Occitanie",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [42.617, 2.7],
   },
   {
@@ -2938,6 +3784,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PTsOjSQsXHc",
     type: "Région Centre-Val-de-Loire",
     description: "",
+    department: "Indre",
+    region: "Centre-Val de Loire",
     coordinates: [46.517, 1.6],
   },
   {
@@ -2945,6 +3793,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=M27xJvYAQL0",
     type: "Région PACA",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.75, 4.8],
   },
   {
@@ -2952,6 +3802,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JtKhj8y3wAM",
     type: "Région d'Auvergne-Rhône-Alpes",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.317, 3.167],
   },
   {
@@ -2959,6 +3811,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IofQDydwBgU",
     type: "Région Grand Est",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48.05, 7.3],
   },
   {
@@ -2966,6 +3820,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Io5OaiCZeTA",
     type: "Région d'Auvergne-Rhône-Alpes",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.183, 3.167],
   },
   {
@@ -2973,6 +3829,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GLtQmZTGXGE",
     type: "Région Grand Est",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48.133, 7.267],
   },
   {
@@ -2980,6 +3838,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=EKCqKg9GUUM",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Deux-Sèvres",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.3, -0.683],
   },
   {
@@ -2987,6 +3847,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=B8hLH_fdB40",
     type: "Région Grand Est",
     description: "",
+    department: "Aube",
+    region: "Grand Est",
     coordinates: [48.05, 4.533],
   },
   {
@@ -2994,6 +3856,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=23z4nkcRe4c",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.75, 5.633],
   },
   {
@@ -3001,6 +3865,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0tJbnFSvSrw",
     type: "Région Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.7, 0.2],
   },
   {
@@ -3008,6 +3874,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0TJ6gAFsF04",
     type: "Région Occitanie",
     description: "",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [44.067, 1.95],
   },
   {
@@ -3015,6 +3883,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zbnu6Oku3dE",
     type: "Région Bretagne",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.833, -3.483],
   },
   {
@@ -3022,6 +3892,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rWTu7fXIvv4",
     type: "Région Île-de-France",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.55, 2.7],
   },
   {
@@ -3029,6 +3901,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pAGsv4iwABU",
     type: "Région Grand Est",
     description: "",
+    department: "Meuse",
+    region: "Grand Est",
     coordinates: [49.45, 5.45],
   },
   {
@@ -3036,6 +3910,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=njhWwOCW4As",
     type: "Région Occitanie",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.467, 1.667],
   },
   {
@@ -3043,6 +3919,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mpawKZD9_n4",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.7, 3.983],
   },
   {
@@ -3050,6 +3928,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=i5H6uhgZfCE",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.133, 3.75],
   },
   {
@@ -3057,6 +3937,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=geRGVJtVw7U",
     type: "Région Grand Est",
     description: "",
+    department: "Aube",
+    region: "Grand Est",
     coordinates: [47.967, 4.5],
   },
   {
@@ -3064,6 +3946,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fHb3ycH8_HU",
     type: "Région Centre-Val de Loire",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.15, 1.2],
   },
   {
@@ -3071,6 +3955,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=f8Y6n6-tUqs",
     type: "Région Centre-Val de Loire",
     description: "",
+    department: "Loir-et-Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.733, 0.883],
   },
   {
@@ -3078,6 +3964,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eNKbCuLkRlA",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.517, 4.533],
   },
   {
@@ -3085,6 +3973,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dmAEOYhdUxg",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.6, 8.9],
   },
   {
@@ -3092,6 +3982,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dJjW663d2IU",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.533, 1.85],
   },
   {
@@ -3099,6 +3991,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_qTKQG9ZdU0",
     type: "Région Corse",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [42.233, 8.633],
   },
   {
@@ -3106,6 +4000,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_QK58WbM_bI",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Haute-Saône",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.283, 5.567],
   },
   {
@@ -3113,6 +4009,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Yt25hKx8Xeo",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Ain",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.9, 5.2],
   },
   {
@@ -3120,6 +4018,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WN6WlDSY3yM",
     type: "Région Normandie",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [48.383, 0.433],
   },
   {
@@ -3127,6 +4027,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Uz_6QMqinPo",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Aisne",
+    region: "Hauts-de-France",
     coordinates: [49.733, 4.15],
   },
   {
@@ -3134,6 +4036,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SWOwuGxz1Fc",
     type: "Région Grand Est",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48.167, 7.3],
   },
   {
@@ -3141,6 +4045,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RozX4AWCfZw",
     type: "Région PACA",
     description: "",
+    department: "",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.733, 1.383],
   },
   {
@@ -3148,6 +4054,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OYRa5Qu-VRs",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.033, 6.25],
   },
   {
@@ -3155,6 +4063,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OMQq6f9qs8k",
     type: "Région Normandie",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [49.233, 0.717],
   },
   {
@@ -3162,6 +4072,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NkUb4aSlQEM",
     type: "Région PACA",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.85, 6.217],
   },
   {
@@ -3169,6 +4081,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GEFOZoFKyIM",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.967, -0.183],
   },
   {
@@ -3176,6 +4090,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ETAgKyVDdv8",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.717, 5.65],
   },
   {
@@ -3183,6 +4099,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3mo2K-epY60",
     type: "Région Normandie",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [49.4, 1.467],
   },
   {
@@ -3190,6 +4108,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3PBo02DuLbY",
     type: "Région Île-de-France",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.317, 2.683],
   },
   {
@@ -3197,6 +4117,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2dJSLEifiQA",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.217, 0.05],
   },
   {
@@ -3204,6 +4126,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=227oIF9KZSg",
     type: "Région Grand Est",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [49.467, 6.233],
   },
   {
@@ -3211,6 +4135,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-PTbJUVAhNw",
     type: "Région Île-de-France",
     description: "",
+    department: "Val-d'Oise",
+    region: "Île-de-France",
     coordinates: [49.083, 1.633],
   },
   {
@@ -3218,6 +4144,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=B4YR9H9WqOE",
     type: "Région Occitanie",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.733, 3.55],
   },
   {
@@ -3225,6 +4153,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=wqxB_kFtZL4",
     type: "Région Bretagne",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.567, -2.017],
   },
   {
@@ -3232,6 +4162,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=S_1jQBD4tmc",
     type: "Région Occitanie",
     description: "",
+    department: "Tarn-et-Garonne",
+    region: "Occitanie",
     coordinates: [44.15, 1.75],
   },
   {
@@ -3239,6 +4171,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hQCqaynO_x8",
     type: "Seine-et-Marne",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [48.4, 2.7],
   },
   {
@@ -3246,6 +4180,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9KI0G2Od1TQ",
     type: '"1000 Pays en un"',
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.213, 2.351],
   },
   {
@@ -3253,6 +4189,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=8yF2yiFtXnI",
     type: "Aveyron",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.5, 3.5],
   },
   {
@@ -3260,6 +4198,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1wD6OKryzyo",
     type: "Aveyron",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [44.5, 3],
   },
   {
@@ -3267,6 +4207,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lVhgTKWMGZk",
     type: "Aveyron",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [44.5, 2.5],
   },
   {
@@ -3274,6 +4216,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LIMlQ7Gznos",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Mayenne",
+    region: "Pays de la Loire",
     coordinates: [48.1, -0.35],
   },
   {
@@ -3281,6 +4225,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zNJFl4_Atk0",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.35, 3.65],
   },
   {
@@ -3288,6 +4234,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Kd1LKb_LuyQ",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.133, 2.5],
   },
   {
@@ -3295,6 +4243,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=F-Ono37tdLs",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.883, -0.15],
   },
   {
@@ -3302,6 +4252,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5RxJpXiDjew",
     type: "Région Normandie",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [48.383, 0.433],
   },
   {
@@ -3309,6 +4261,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ewPFLbP4ubY",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.583, 2.983],
   },
   {
@@ -3316,6 +4270,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WMU4PTERaJY",
     type: "Région Grand Est",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [48.617, 7.067],
   },
   {
@@ -3323,6 +4279,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AKCr1p7hlUM",
     type: "Région Occitanie",
     description: "",
+    department: "Lozère",
+    region: "Occitanie",
     coordinates: [44.367, 3.417],
   },
   {
@@ -3330,6 +4288,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0U68kLUkMPU",
     type: "Région Bretagne",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.367, -3.217],
   },
   {
@@ -3337,6 +4297,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=wMwkz4y6SLE",
     type: "Région Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.867, 0.8],
   },
   {
@@ -3344,6 +4306,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=q1XisQvtuRU",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Aisne",
+    region: "Hauts-de-France",
     coordinates: [49.333, 3.35],
   },
   {
@@ -3351,6 +4315,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nTPyaAVVKWw",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.8, 2.533],
   },
   {
@@ -3358,6 +4324,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=n7L7pyNjsKU",
     type: "Stéphane Bern",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.567, -0.767],
   },
   {
@@ -3365,6 +4333,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kQRk_zM_yJY",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.3, 4.717],
   },
   {
@@ -3372,6 +4342,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kKiwwtdz8IA",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.883, 1.667],
   },
   {
@@ -3379,6 +4351,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gT6l4MzWkRM",
     type: "Région Occitanie",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [42.583, 2.367],
   },
   {
@@ -3386,6 +4360,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bg1OWo1pljo",
     type: "Région PACA",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.583, 6.3],
   },
   {
@@ -3393,6 +4369,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=a6mTjmaJEbk",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.2, -1.583],
   },
   {
@@ -3400,6 +4378,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Rvn68aDUDo4",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.467, 3.75],
   },
   {
@@ -3407,6 +4387,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NPLRUbvaHqQ",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.533, -0.917],
   },
   {
@@ -3414,6 +4396,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Ko9gDW1f52k",
     type: "",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -3421,6 +4405,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IPnB9kj7L-U",
     type: "Région Bourgogne-Franche-Comté",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.9, 5.767],
   },
   {
@@ -3428,6 +4414,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Exm0gClYRA8",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.383, -0.65],
   },
   {
@@ -3436,6 +4424,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=B4RnpsZ6Bi0",
     type: "",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.7, -2.333],
   },
   {
@@ -3443,6 +4433,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9jsg7S8I6Mo",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.05, 1.583],
   },
   {
@@ -3450,6 +4442,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6IGBH5sKUZk",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.367, 6.333],
   },
   {
@@ -3457,6 +4451,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pqk0Zw59mO8",
     type: "Région Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.9, 0.983],
   },
   {
@@ -3464,6 +4460,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=I5oZroYkQgc",
     type: "Région Nouvelle-Aquitaine",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.317, -1.583],
   },
   {
@@ -3471,6 +4469,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=38lh-TeKsoQ",
     type: "Région Île-de-France",
     description: "",
+    department: "Essonne",
+    region: "Île-de-France",
     coordinates: [48.433, 2.467],
   },
   {
@@ -3478,6 +4478,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=38FMW4rST-k",
     type: "Région Auvergne-Rhône-Alpes",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.55, 4.417],
   },
   {
@@ -3485,6 +4487,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zR13IcCRqqI",
     type: "Région PACA",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.9, 5.2],
   },
   {
@@ -3492,6 +4496,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ez0BEkCq8ic",
     type: "Région Grand Est",
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [47.967, 6.467],
   },
   {
@@ -3499,6 +4505,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bLYr0vf0lMU",
     type: "Région Haute-Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.783, 9.35],
   },
   {
@@ -3506,6 +4514,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IVj1Hj8WEjc",
     type: "Région Bretagne",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.7, -2.333],
   },
   {
@@ -3513,6 +4523,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GldVdBmg8Ho",
     type: "Région Hauts-de-France",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.467, 1.767],
   },
   {
@@ -3520,6 +4532,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=R8iCS9dodJA",
     type: "Bouches-du-Rhône",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.3, 5.4],
   },
   {
@@ -3527,6 +4541,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pOlq_fe_wy4",
     type: "Bouches-du-Rhône",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.533, 5.45],
   },
   {
@@ -3534,6 +4550,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Y3tllvHyEUk",
     type: "Bouches-du-Rhône",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.683, 4.633],
   },
   {
@@ -3541,6 +4559,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pupmxhqbmjU",
     type: "Haute-Savoie",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.25, 6.5],
   },
   {
@@ -3548,6 +4568,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=X94lL-JnQZ8",
     type: "Haute-Savoie",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.9, 6.133],
   },
   {
@@ -3555,6 +4577,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=PIO3KmxjzjU",
     type: "Haute-Savoie",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.833, 6.833],
   },
   {
@@ -3562,6 +4586,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rb0PIYaj3JM",
     type: "Vendée",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.5, -1.5],
   },
   {
@@ -3569,6 +4595,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SDSp57qXPZA",
     type: "Vendée",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.5, -1.5],
   },
   {
@@ -3576,6 +4604,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Zb8cwyNRbC4",
     type: "Vendée",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [46.5, -1.5],
   },
   {
@@ -3583,6 +4613,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-4r4cKVa9tg",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.5, 4.5],
   },
   {
@@ -3590,6 +4622,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=X1O6LKO3d_4",
     type: "Ardèche",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.067, 4.833],
   },
   {
@@ -3597,6 +4631,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=91bEe1gkD2g",
     type: "Ardèche",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.717, 4.35],
   },
   {
@@ -3604,6 +4640,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WTRHEf0Ulps",
     type: "Ardèche",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.4, 4.4],
   },
   {
@@ -3611,6 +4649,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GpwC8_ZHOS0",
     type: "Aude",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [42.983, 2.25],
   },
   {
@@ -3618,6 +4658,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vs2Oce5b0pg&t=133s",
     type: "Aude",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.1, 3.083],
   },
   {
@@ -3625,6 +4667,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-SYQPZ3e_WI",
     type: "Aude",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.213, 2.351],
   },
   {
@@ -3632,6 +4676,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bQmx3mKv7aA",
     type: "Gironde",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.133, -0.667],
   },
   {
@@ -3639,6 +4685,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=d7N6Tb6BDUQ",
     type: "Région Lorraine",
     description: "",
+    department: "Meuse",
+    region: "Grand Est",
     coordinates: [49.167, 5.383],
   },
   {
@@ -3646,6 +4694,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=b8WdFMHu4QY",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.5, 1.667],
   },
   {
@@ -3653,6 +4703,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=V1MZEAkqM60",
     type: "Région Ile de France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.886, 2.343],
   },
   {
@@ -3660,6 +4712,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QiPXkdD3U5Y",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Vendée",
+    region: "Pays de la Loire",
     coordinates: [47.017, -1.117],
   },
   {
@@ -3667,6 +4721,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QHQx5jbXVac",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.44, 1.095],
   },
   {
@@ -3674,6 +4730,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FGk5V63J5MY",
     type: "Région Picardie",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [49.895, 2.302],
   },
   {
@@ -3681,6 +4739,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BXtreQhSSuc",
     type: "Région Bretagne",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.733, -3.367],
   },
   {
@@ -3688,6 +4748,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6vlmNcc-Dv0",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Sarthe",
+    region: "Pays de la Loire",
     coordinates: [48, 0.2],
   },
   {
@@ -3695,6 +4757,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3fP3S746GEA",
     type: "Région Bourgogne",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.025, 4.838],
   },
   {
@@ -3702,6 +4766,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=yRmXTrc1q5M",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.467, 2.567],
   },
   {
@@ -3709,6 +4775,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xbplEeYA8tw",
     type: "Région Franche-Comté",
     description: "",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.233, 6.033],
   },
   {
@@ -3716,6 +4784,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=uC-RtXWeCiI",
     type: "Région Centre",
     description: "",
+    department: "Eure-et-Loir",
+    region: "Centre-Val de Loire",
     coordinates: [48.447, 1.487],
   },
   {
@@ -3723,6 +4793,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rkH6XVk-I9c",
     type: "Région Bretagne",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.633, -2.05],
   },
   {
@@ -3730,6 +4802,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=iDyxkGiPcDc",
     type: "Région Bourgogne",
     description: "",
+    department: "Yonne",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.467, 3.75],
   },
   {
@@ -3737,6 +4811,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_1UZkfDUyLU",
     type: "Région Alsace",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.582, 7.75],
   },
   {
@@ -3744,6 +4820,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Ze1M3r7by1E",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Vienne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.58, 0.34],
   },
   {
@@ -3751,6 +4829,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YVxcGhgIzVY",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "Marne",
+    region: "Grand Est",
     coordinates: [49.253, 4.034],
   },
   {
@@ -3758,6 +4838,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YAgHTr_AO2I",
     type: "Région Auvergne",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.043, 3.885],
   },
   {
@@ -3765,6 +4847,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=UYqCsymbB5A",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.567, 8.75],
   },
   {
@@ -3772,6 +4856,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=T-ayRwmAjlo",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "Rhône",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.762, 4.823],
   },
   {
@@ -3779,6 +4865,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RArcykxi2y8",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.8, 1.617],
   },
   {
@@ -3786,6 +4874,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=L97RqWXqjQ4",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.867, -1.067],
   },
   {
@@ -3793,6 +4883,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3dXLSE_cXi4",
     type: "Région Auvergne",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.317, 3.7],
   },
   {
@@ -3800,6 +4892,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3GWEXiYiBtU",
     type: "Région PACA",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.283, 5.367],
   },
   {
@@ -3807,6 +4901,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1FlWMTfCCyM",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.213, 2.351],
   },
   {
@@ -3814,6 +4910,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vSgEtlHEc_E",
     type: "Région Lorraine",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [49.11, 6.177],
   },
   {
@@ -3821,6 +4919,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=v2yQ9s-cpWE",
     type: "Région Lorraine",
     description: "",
+    department: "Meurthe-et-Moselle",
+    region: "Grand Est",
     coordinates: [48.693, 6.183],
   },
   {
@@ -3828,6 +4928,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=siQxVi-SYGU",
     type: "Région Limousin",
     description: "",
+    department: "Haute-Vienne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.835, 1.261],
   },
   {
@@ -3835,6 +4937,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=exCbLsyNvuk",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.633, 3.067],
   },
   {
@@ -3842,6 +4946,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_erMPRWjh7M",
     type: "Région Rhône-Alpes",
     description: "",
+    department: "Ardèche",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.4, 4.4],
   },
   {
@@ -3849,6 +4955,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YTU3HlySVug",
     type: "Région Alsace",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [47.867, 7.083],
   },
   {
@@ -3856,6 +4964,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=U42Ebpvk-sY",
     type: "Région Picardie",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50.033, 2.283],
   },
   {
@@ -3863,6 +4973,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0jRQ8MKb95g",
     type: "Région Basse Normandie",
     description: "",
+    department: "",
+    region: "Normandie",
     coordinates: [48.633, -2.05],
   },
   {
@@ -3870,6 +4982,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=y8lhxq9VZyE",
     type: "Région Aquitaine",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.3, -1.383],
   },
   {
@@ -3877,6 +4991,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=w3Ah_G4WP4w",
     type: "Région Basse-Normandie",
     description: "",
+    department: "",
+    region: "Normandie",
     coordinates: [48.633, -2.05],
   },
   {
@@ -3884,6 +5000,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=tYKgiYAgy5Q",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.933, -0.967],
   },
   {
@@ -3891,6 +5009,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=idHj6uLNM9Y",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "Meurthe-et-Moselle",
+    region: "Grand Est",
     coordinates: [48.69, 6.183],
   },
   {
@@ -3898,6 +5018,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=b6C2TzFDT9U",
     type: "Région Ile de France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.858, 2.294],
   },
   {
@@ -3905,6 +5027,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Tec3520LQmM",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.637, 3.063],
   },
   {
@@ -3912,6 +5036,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9WYAxorx4-A",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.717, 2.25],
   },
   {
@@ -3919,6 +5045,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7XPbz5NjrCw",
     type: "Région Franche-Comté",
     description: "",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.033, 5.783],
   },
   {
@@ -3926,6 +5054,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5phv5ouopZU",
     type: "Région PACA",
     description: "",
+    department: "Alpes-Maritimes",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.7, 7.3],
   },
   {
@@ -3933,6 +5063,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eFU7R1bTOPo",
     type: "Saint-Jeannet",
     description: "",
+    department: "",
+    region: "",
     coordinates: [46, 2],
   },
   {
@@ -3940,6 +5072,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VBucXJR3s6A",
     type: "Saône-et-Loire",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -3947,6 +5081,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OwLex1AxmQI",
     type: "Bas-Rhin",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -3954,6 +5090,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HdOt4VJzz0Q",
     type: "Indre et Loire",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [46, 2],
   },
   {
@@ -3961,6 +5099,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AUQLAVNt904",
     type: "Pyrénées-Atlantiques",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.3, -1.383],
   },
   {
@@ -3968,6 +5108,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=20rfWHIPN9Q",
     type: "Loire-Atlantique",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [48.202, -2.932],
   },
   {
@@ -3975,6 +5117,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0zxuS1BzDMY",
     type: "Eure",
     description: "",
+    department: "Manche",
+    region: "Normandie",
     coordinates: [49, -1.5],
   },
   {
@@ -3982,6 +5126,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zCkpjSNlRV8",
     type: "Morbihan",
     description: "",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
     coordinates: [48.202, -2.932],
   },
   {
@@ -3989,6 +5135,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vv9NL31aUWQ",
     type: "Corrèze",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -3996,6 +5144,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=qKQkKiyvLBA",
     type: "Puy-de-Dôme",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4003,6 +5153,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pw4QEH8so8I",
     type: "Somme",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4010,6 +5162,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=h18TSyrR7io",
     type: "Jura",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -4017,6 +5171,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WnvQ28X8ano",
     type: "Pyrénées-Orientales",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -4024,6 +5180,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SjWgJw8q6sc",
     type: "Ardennes",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -4031,6 +5189,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OxTgXPeP8qk",
     type: "Vosges",
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -4038,6 +5198,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Gmg9CDr-71M",
     type: "Oise",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4045,6 +5207,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=CxpDpVZ9qJw",
     type: "Bas-Rhin",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.318, 7.441],
   },
   {
@@ -4052,6 +5216,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Apdl38t1dF4",
     type: "Haute-Savoie",
     description: "",
+    department: "Haute-Savoie",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4059,6 +5225,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0RbT7e8tlUw",
     type: "Doubs",
     description: "",
+    department: "Doubs",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -4066,6 +5234,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=jTSEC8py0cg",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "Aube",
+    region: "Grand Est",
     coordinates: [48.15, 4.783],
   },
   {
@@ -4073,6 +5243,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ItOoNkXReJo",
     type: "Région Bretagne",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [47.867, -3.917],
   },
   {
@@ -4080,6 +5252,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BxLDQbP74sY",
     type: "Région Limousin",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.167, 1.667],
   },
   {
@@ -4087,6 +5261,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hST9ySsts7o",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.7, -0.333],
   },
   {
@@ -4094,6 +5270,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Vy5Cou5jaJc",
     type: "Région Bourgogne",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.467, 4.533],
   },
   {
@@ -4101,6 +5279,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RrSR2jFvpMc",
     type: "Région Limousin",
     description: "",
+    department: "Creuse",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.333, 2.217],
   },
   {
@@ -4108,6 +5288,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=QJYLjLXm6Mc",
     type: "Région Centre",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.267, 0.467],
   },
   {
@@ -4115,6 +5297,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Q965qkwZqnk",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.183, 0.05],
   },
   {
@@ -4122,6 +5306,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=F3mGJL2yqhY",
     type: "Région Pays de la Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.467, -0.55],
   },
   {
@@ -4129,6 +5315,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AS4mwo-wfBg",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [50.333, 3.167],
   },
   {
@@ -4136,6 +5324,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5bqiaeee5ag",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Ariège",
+    region: "Occitanie",
     coordinates: [42.967, 1.617],
   },
   {
@@ -4143,6 +5333,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4yemRnMfJ-0",
     type: "Région Bourgogne",
     description: "",
+    department: "Nièvre",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.383, 3.783],
   },
   {
@@ -4150,6 +5342,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xR8Z0sejegg",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.433, 0.817],
   },
   {
@@ -4157,6 +5351,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vhaW2k6yw_c",
     type: "Région Aquitaine",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.817, 1.15],
   },
   {
@@ -4164,6 +5360,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lpBodeGyeOA",
     type: "Région Limousin",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.167, 1.667],
   },
   {
@@ -4171,6 +5369,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=j-ZduMip-AE",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [49.017, 0.717],
   },
   {
@@ -4178,6 +5378,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TcIPi12lFgU",
     type: "Région Centre",
     description: "",
+    department: "Loir-et-Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.617, 1.517],
   },
   {
@@ -4185,6 +5387,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SnIM6R-OR_Q",
     type: "Région Auvergne",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.167, 2.5],
   },
   {
@@ -4192,6 +5396,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=S3ZPAA9hHik",
     type: "Région Languedoc-Roussillon",
     description: "",
+    department: "Aude",
+    region: "Occitanie",
     coordinates: [43.183, 3],
   },
   {
@@ -4199,6 +5405,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Nm9vDaCqfuc",
     type: "Région Basse Normandie",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [48.567, -0.15],
   },
   {
@@ -4206,6 +5414,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=KJzmBx-gJ2g",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.283, 2.783],
   },
   {
@@ -4213,6 +5423,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IToetFBdwjE",
     type: "Région Centre",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.417, 0.983],
   },
   {
@@ -4220,6 +5432,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FJtfuBh9C-o",
     type: "Région Picardie",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50.333, 1.833],
   },
   {
@@ -4227,6 +5441,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9Y9KQQwLRfM",
     type: "Région Bourgogne",
     description: "",
+    department: "Saône-et-Loire",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.433, 4.65],
   },
   {
@@ -4234,6 +5450,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7GZ595v3-KI",
     type: "Région Bretagne",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.583, -3.083],
   },
   {
@@ -4241,6 +5459,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=30rFxxP4Gqc",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [42.5, 2.75],
   },
   {
@@ -4248,6 +5468,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2RWbjSOUCEU",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [50.533, 2.633],
   },
   {
@@ -4255,6 +5477,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1cnJCi3jlAQ",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [44.417, 4.917],
   },
   {
@@ -4262,6 +5486,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=E7CjLg9Kcxw",
     type: "Gironde",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45, -0.75],
   },
   {
@@ -4269,6 +5495,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rpEDzfy5fnM",
     type: "Cantal",
     description: "",
+    department: "Cantal",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4276,6 +5504,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=o0oM2cEMeQk",
     type: "l'Aube",
     description: "",
+    department: "Aube",
+    region: "Grand Est",
     coordinates: [46.083, 2],
   },
   {
@@ -4283,6 +5513,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Z7gM4YObmFQ",
     type: "Corse-du-Sud",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [42.3, 8.75],
   },
   {
@@ -4290,6 +5522,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=OaVZ8X3syuY",
     type: "Haute Garonne",
     description: "",
+    department: "Haute-Garonne",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -4297,6 +5531,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=D7mvdG_3qrA",
     type: "l'Indre",
     description: "",
+    department: "Indre",
+    region: "Centre-Val de Loire",
     coordinates: [46, 2],
   },
   {
@@ -4304,6 +5540,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=jQz9VCGEs0g",
     type: "Moselle",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -4311,6 +5549,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=h6sua2wtBEM",
     type: "Yvelines",
     description: "",
+    department: "Yvelines",
+    region: "Île-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4318,6 +5558,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eQXeKsoHlAg",
     type: "Seine-et-Marne",
     description: "",
+    department: "Seine-et-Marne",
+    region: "Île-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4325,6 +5567,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_RKfcMYei84",
     type: "Haute-Corse",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [42.3, 8.75],
   },
   {
@@ -4332,6 +5576,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Z7l8RLyDIjg",
     type: "Charente-Maritime",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.2, -1.367],
   },
   {
@@ -4339,6 +5585,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YazVhGW45x4",
     type: "Nord",
     description: "",
+    department: "Nord",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4346,6 +5594,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SnI_WNkrjSI",
     type: "Corrèze",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -4353,6 +5603,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NnDgo0vE5wI",
     type: "Maine-et-Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [46, 2],
   },
   {
@@ -4360,6 +5612,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GqpJhGZM2jQ",
     type: "Drôme",
     description: "",
+    department: "Drôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4367,6 +5621,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GcMtMXIkGIc",
     type: "l'Aveyron",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -4374,6 +5630,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=6foyWSfyl_4",
     type: "Bouches-du-Rhône",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [46, 2],
   },
   {
@@ -4381,6 +5639,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5PTFWlCfQcQ",
     type: "l'Orne",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -4388,6 +5648,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4-QC-2Rs4hI",
     type: "Landes",
     description: "",
+    department: "Landes",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -4395,6 +5657,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=2t2XRnKkqj8",
     type: "Languedoc-Roussillon",
     description: "",
+    department: "",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -4402,6 +5666,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=uobboLAbdtI",
     type: "Région Picardie",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.35, 2.983],
   },
   {
@@ -4409,6 +5675,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9NYWMtK-kxM",
     type: "Région Aquitaine",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.783, 0.5],
   },
   {
@@ -4416,6 +5684,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ngDDx4irVlE",
     type: "Région Alsace",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.433, 7.4],
   },
   {
@@ -4423,6 +5693,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=K9B1BA5qXfg",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.517, 0.117],
   },
   {
@@ -4430,6 +5702,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GOudmi-CC1I",
     type: "Région Alsace",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.25, 7.417],
   },
   {
@@ -4437,6 +5711,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=9aNVWHQ4aMU",
     type: "Région Auvergne",
     description: "",
+    department: "Puy-de-Dôme",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 3],
   },
   {
@@ -4444,6 +5720,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0v5z7zTB59I",
     type: "Région Ile de France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.861, 2.336],
   },
   {
@@ -4451,6 +5729,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xbwl_Uku6mk",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Tarn",
+    region: "Occitanie",
     coordinates: [43.933, 2.15],
   },
   {
@@ -4458,6 +5738,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vFR_IbvCoDo",
     type: "Région Alsace",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.967, 7.917],
   },
   {
@@ -4465,6 +5747,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ttC0iPj1kp0",
     type: "Région Picardie",
     description: "",
+    department: "Aisne",
+    region: "Hauts-de-France",
     coordinates: [49.833, 3.333],
   },
   {
@@ -4472,6 +5756,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=nR04K4DYqxY",
     type: "Région Lorraine",
     description: "",
+    department: "Moselle",
+    region: "Grand Est",
     coordinates: [49.133, 6.167],
   },
   {
@@ -4479,6 +5765,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=kTWPv5myrF4",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.217, -1.55],
   },
   {
@@ -4486,6 +5774,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=k0shtCSk95A",
     type: "Région Limousin",
     description: "",
+    department: "Haute-Vienne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.817, 0.817],
   },
   {
@@ -4493,6 +5783,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eS8TpjQCtFk",
     type: "Région PACA",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.95, 4.8],
   },
   {
@@ -4500,6 +5792,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=e2d2AFUxrfY",
     type: "Région Centre",
     description: "",
+    department: "Cher",
+    region: "Centre-Val de Loire",
     coordinates: [47.083, 2.4],
   },
   {
@@ -4507,6 +5801,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=b5-Fk7YRJ40",
     type: "Région Aquitaine",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [44.842, -0.573],
   },
   {
@@ -4514,6 +5810,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YBJLKkjag9U",
     type: "Région PACA",
     description: "",
+    department: "Bouches-du-Rhône",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.28, 5.325],
   },
   {
@@ -4521,6 +5819,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XSULzqaaHyo",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "Isère",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.083, 5.767],
   },
   {
@@ -4528,6 +5828,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SrxJzkdIwfs",
     type: "Région Picardie",
     description: "",
+    department: "Oise",
+    region: "Hauts-de-France",
     coordinates: [49.194, 2.484],
   },
   {
@@ -4535,6 +5837,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=S3QuPq9C7F8",
     type: "Région Centre",
     description: "",
+    department: "Indre-et-Loire",
+    region: "Centre-Val de Loire",
     coordinates: [47.25, 0.3],
   },
   {
@@ -4542,6 +5846,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=IXKYeo6XZiw",
     type: "Région Ile de France",
     description: "",
+    department: "Yvelines",
+    region: "Île-de-France",
     coordinates: [48.804, 2.123],
   },
   {
@@ -4549,6 +5855,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Fz7rtiJIbEs",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.6, 0.683],
   },
   {
@@ -4556,6 +5864,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FDRKerFL8zg",
     type: "Région Alsace",
     description: "",
+    department: "Bas-Rhin",
+    region: "Grand Est",
     coordinates: [48.582, 7.75],
   },
   {
@@ -4563,6 +5873,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ARPUySD6yHc",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "Ain",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.2, 5.233],
   },
   {
@@ -4570,6 +5882,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5Ziu3PwoaQo",
     type: "Région Basse Normandie",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49.2, -0.383],
   },
   {
@@ -4577,6 +5891,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0LK4k7hS4SQ",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "Ardennes",
+    region: "Grand Est",
     coordinates: [49.7, 4.95],
   },
   {
@@ -4584,6 +5900,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-tS1IJiV6Jo",
     type: "Région Basse Normandie",
     description: "",
+    department: "Orne",
+    region: "Normandie",
     coordinates: [48.733, 0.15],
   },
   {
@@ -4591,6 +5909,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NqKLxFWrjjI",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.833, -2.833],
   },
   {
@@ -4598,6 +5918,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RxxLwPOX8sw",
     type: "Morbihan",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.6, -2.833],
   },
   {
@@ -4605,6 +5927,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VxVNDzbKgog",
     type: "Morbihan",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.833, -2.833],
   },
   {
@@ -4612,6 +5936,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pplbcOCkaC0",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.483, 0.117],
   },
   {
@@ -4619,6 +5945,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Pv_TZoWRrPk",
     type: "Région Alsace",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [48.633, -2.05],
   },
   {
@@ -4626,6 +5954,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=579ZHZfoEM4",
     type: "Côte-d'Or",
     description: "",
+    department: "Côte-d'Or",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -4633,6 +5963,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xiOezZ68iBI",
     type: "l'Eure",
     description: "",
+    department: "Eure",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -4640,6 +5972,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=v6KjmDnDm00",
     type: "Charente-Maritime",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -4647,6 +5981,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Vu0kZ39tzA4",
     type: "Pas-de-Calais",
     description: "",
+    department: "Pas-de-Calais",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4654,6 +5990,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GL3h1fEE4JU",
     type: "Région Haute-Normandie",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.483, 0.117],
   },
   {
@@ -4661,6 +5999,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FOD2E-5g0ws",
     type: "Calvados",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -4668,6 +6008,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=tPADUeheMYQ",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.27, 0.17],
   },
   {
@@ -4675,6 +6017,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rvodYAJ1cRw",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46.16, -1.152],
   },
   {
@@ -4682,6 +6026,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=eBLWzfsZKW0",
     type: "Région Bretagne",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [47.8, -4.367],
   },
   {
@@ -4689,6 +6035,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=_oAXO1Fq8Ng",
     type: "Région PACA",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.133, 4.8],
   },
   {
@@ -4696,6 +6044,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NWof0Z8OA28",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "Marne",
+    region: "Grand Est",
     coordinates: [49.253, 4.034],
   },
   {
@@ -4703,6 +6053,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=K-AsdSBQaGg",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "Rhône",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.75, 4.85],
   },
   {
@@ -4710,6 +6062,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=DPnkWEO3wSY",
     type: "Région Centre",
     description: "",
+    department: "Loiret",
+    region: "Centre-Val de Loire",
     coordinates: [47.633, 2.733],
   },
   {
@@ -4717,6 +6071,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=CAdjTrCzuM0",
     type: "Région Ile-de-France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.856, 2.312],
   },
   {
@@ -4724,6 +6080,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=C6BaJEtomko",
     type: "Région Bretagne",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.65, -2.017],
   },
   {
@@ -4731,6 +6089,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=BUZf2mV8Uh4",
     type: "Région Aquitaine",
     description: "",
+    department: "Dordogne",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.05, 1.167],
   },
   {
@@ -4738,6 +6098,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=5EO9QWm7rKo",
     type: "Région Corse",
     description: "",
+    department: "Haute-Corse",
+    region: "Corse",
     coordinates: [42.7, 9.45],
   },
   {
@@ -4745,6 +6107,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=3N7fQZemsNw",
     type: "Région Normandie",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49.15, 0.217],
   },
   {
@@ -4752,6 +6116,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=xOTq9lDEEtg",
     type: "Région Auvergne",
     description: "",
+    department: "Haute-Loire",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [45.05, 3.883],
   },
   {
@@ -4759,6 +6125,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=sTNomVUNBfc",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [43.567, 4.183],
   },
   {
@@ -4766,6 +6134,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mw_5yOl4_cw",
     type: "Région Ile de France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.871, 2.331],
   },
   {
@@ -4773,6 +6143,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mfrZhLdl6nE",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [43.833, 4.35],
   },
   {
@@ -4780,6 +6152,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=im5XcgB5Kto",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Aveyron",
+    region: "Occitanie",
     coordinates: [44.083, 3.017],
   },
   {
@@ -4787,6 +6161,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=fOxl8Y3X_Ms",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.933, -0.967],
   },
   {
@@ -4794,6 +6170,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=buzi43RQUiw",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Loire-Atlantique",
+    region: "Pays de la Loire",
     coordinates: [47.217, -1.55],
   },
   {
@@ -4801,6 +6179,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=YbNoKbqhKQs",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Hautes-Pyrénées",
+    region: "Occitanie",
     coordinates: [43.1, -0.05],
   },
   {
@@ -4808,6 +6188,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WOW9cHDKopM",
     type: "Région Auvergne",
     description: "",
+    department: "Allier",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46.133, 3.417],
   },
   {
@@ -4815,6 +6197,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=TA16EmLieIs",
     type: "Région Pays-de-la-Loire",
     description: "",
+    department: "Maine-et-Loire",
+    region: "Pays de la Loire",
     coordinates: [47.2, -0.283],
   },
   {
@@ -4822,6 +6206,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SQO1mxoRvIY",
     type: "Région Ile de France",
     description: "",
+    department: "Paris",
+    region: "Île-de-France",
     coordinates: [48.853, 2.35],
   },
   {
@@ -4829,6 +6215,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=RtWiva6oMPk",
     type: "Région Auvergne",
     description: "",
+    department: "",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4836,6 +6224,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Or4tXS2vv4c",
     type: "Région Franche-Comté",
     description: "",
+    department: "Haute-Saône",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [47.7, 6.617],
   },
   {
@@ -4843,6 +6233,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=L-njuhCmlew",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Hérault",
+    region: "Occitanie",
     coordinates: [43.3, 3.5],
   },
   {
@@ -4850,6 +6242,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HUjmiuMTQpU",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.45, 1.433],
   },
   {
@@ -4857,6 +6251,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4xr4-8iLw10",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "Gard",
+    region: "Occitanie",
     coordinates: [43.95, 4.533],
   },
   {
@@ -4864,6 +6260,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1lqo7eTnBf4",
     type: "Région Aquitaine",
     description: "",
+    department: "Gironde",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.583, -1.167],
   },
   {
@@ -4871,6 +6269,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ijEQtM7DTcs",
     type: "Morbihan",
     description: "",
+    department: "Morbihan",
+    region: "Bretagne",
     coordinates: [47.65, -3.2],
   },
   {
@@ -4878,6 +6278,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=btFAhEhrDoE",
     type: "Seine Maritime",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.44, 1.095],
   },
   {
@@ -4885,6 +6287,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=alzhL608IlE",
     type: "Seine Maritime",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.8, 0.733],
   },
   {
@@ -4892,6 +6296,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pyNdvGjURD0",
     type: "Seine Maritime",
     description: "",
+    department: "Seine-Maritime",
+    region: "Normandie",
     coordinates: [49.867, 0.8],
   },
   {
@@ -4899,6 +6305,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zoxfZznJoIw",
     type: "Région Rhone-Alpes",
     description: "",
+    department: "",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4906,6 +6314,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=MC4gOSgzwII",
     type: "Région Poitou-Charentes",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -4913,6 +6323,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bTTOqNTOflo",
     type: "Région Languedoc-Roussillon",
     description: "",
+    department: "",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -4920,6 +6332,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0_AyGGKkI7g",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.5, 6.5],
   },
   {
@@ -4927,6 +6341,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gLAx4mCYRuY",
     type: "Var",
     description: "",
+    department: "Alpes-de-Haute-Provence",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.85, 6.217],
   },
   {
@@ -4934,6 +6350,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=HXTffBDJ6Is",
     type: "Région Basse Normandie",
     description: "",
+    department: "",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -4941,6 +6359,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=A0OxYT-lsig",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4948,6 +6368,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=NwuZn211QzM",
     type: "Région Rhone Alpes",
     description: "",
+    department: "",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4955,6 +6377,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LIr8Q4JQt14",
     type: "Région Ile de France",
     description: "",
+    department: "",
+    region: "Île-de-France",
     coordinates: [46, 2],
   },
   {
@@ -4962,6 +6386,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=72042YS4jt4",
     type: "Var",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.583, 6.3],
   },
   {
@@ -4969,6 +6395,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=tqlG6bpw0u8",
     type: "Région PACA",
     description: "",
+    department: "",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [46, 2],
   },
   {
@@ -4976,6 +6404,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=hDBa2MZLvRM",
     type: "Région Auvergne",
     description: "",
+    department: "",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -4983,6 +6413,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=JCBXUl2wdbY",
     type: "Var",
     description: "",
+    department: "Var",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.267, 6.633],
   },
   {
@@ -4990,6 +6422,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zGiy99phVB8",
     type: "Région PACA",
     description: "",
+    department: "",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [46, 2],
   },
   {
@@ -4997,6 +6431,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Fvo2O2IbmNs",
     type: "Région Aquitaine",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -5004,6 +6440,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oV6QLDzDKdU",
     type: "Région Champagne Ardenne",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -5011,6 +6449,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=0XxytBpb_TA",
     type: "Région Franche-Comté",
     description: "",
+    department: "",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -5018,6 +6458,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XeSVjI994_U",
     type: "Région Lorraine",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -5025,6 +6467,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-eLlKpM12Xw",
     type: "Région Franche Comté",
     description: "",
+    department: "",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -5032,6 +6476,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rw5igNnOgXM",
     type: "Région Pays de la Loire",
     description: "",
+    department: "",
+    region: "Pays de la Loire",
     coordinates: [44.842, -0.573],
   },
   {
@@ -5039,6 +6485,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=AZDrmmJBkMI",
     type: "Région Bourgogne",
     description: "",
+    department: "",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -5046,6 +6494,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=dsNo67a1vNQ",
     type: "Région Limousin",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -5053,6 +6503,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=7nLFSBryd3M",
     type: "Région Bourgogne",
     description: "",
+    department: "",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46, 2],
   },
   {
@@ -5060,6 +6512,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=oe_LU2jAsyA",
     type: "Région Limousin",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -5067,6 +6521,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=phr9nlWd1BI",
     type: "Région Alsace",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -5074,6 +6530,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rahdixkraXE",
     type: "Région Centre",
     description: "",
+    department: "",
+    region: "Centre-Val de Loire",
     coordinates: [46, 2],
   },
   {
@@ -5081,6 +6539,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=mUVBNn-MJc8",
     type: "Région Haute Normandie",
     description: "",
+    department: "",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -5088,6 +6548,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=SBMRyeilyxY",
     type: "Région Midi Pyrénées",
     description: "",
+    department: "",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -5095,6 +6557,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=1A3shtkDMd8",
     type: "Région Corse",
     description: "",
+    department: "Corse-du-Sud",
+    region: "Corse",
     coordinates: [42.3, 8.75],
   },
   {
@@ -5102,6 +6566,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VpvJKF_OerQ",
     type: "Région Aquitaine",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -5109,6 +6575,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=03SnjUkKr6g",
     type: "Région Nord-Pas-de-Calais",
     description: "",
+    department: "",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -5116,6 +6584,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=myKl7wEcXH0&t=49s",
     type: '"1000 Pays en un"',
     description: "",
+    department: "Vosges",
+    region: "Grand Est",
     coordinates: [48.167, 6.417],
   },
   {
@@ -5123,6 +6593,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XIrt5-r1hbk",
     type: "Région Alsace",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -5130,6 +6602,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=P2zSWb055zw",
     type: "Région Bretagne",
     description: "",
+    department: "",
+    region: "Bretagne",
     coordinates: [46, 2],
   },
   {
@@ -5137,6 +6611,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=pxl7-IgFKE0",
     type: "Région Bretagne",
     description: "",
+    department: "",
+    region: "Bretagne",
     coordinates: [46, 2],
   },
   {
@@ -5144,6 +6620,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=DBhlI5MTmkc",
     type: "Région Languedoc Roussillon",
     description: "",
+    department: "",
+    region: "Occitanie",
     coordinates: [46, 2],
   },
   {
@@ -5151,6 +6629,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ypBEWM5eFwg",
     type: "Région Pays de la Loire",
     description: "",
+    department: "",
+    region: "Pays de la Loire",
     coordinates: [46, 2],
   },
   {
@@ -5158,6 +6638,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lofSjC263kE",
     type: "Région Picardie",
     description: "",
+    department: "",
+    region: "Hauts-de-France",
     coordinates: [46, 2],
   },
   {
@@ -5165,6 +6647,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-QSupKe3Nto",
     type: "Région Poitou Charentes",
     description: "",
+    department: "",
+    region: "Nouvelle-Aquitaine",
     coordinates: [46, 2],
   },
   {
@@ -5172,6 +6656,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=jj5owwqEsTo",
     type: "Région Auvergne",
     description: "",
+    department: "",
+    region: "Auvergne-Rhône-Alpes",
     coordinates: [46, 2],
   },
   {
@@ -5179,6 +6665,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=FDnsoNktPuE",
     type: "Région Basse Normandie",
     description: "",
+    department: "",
+    region: "Normandie",
     coordinates: [46, 2],
   },
   {
@@ -5186,12 +6674,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=zb6pICjZWcs",
     type: "Région Midi-Pyrénées",
     description: "",
+    department: "",
+    region: "Occitanie",
   },
   {
     title: "Les jardins de Maizicourt -Région Picardie",
     link: "https://www.youtube.com/watch?v=FJ7DJh3GFfI",
     type: "Le jardin préféré des Français",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50, 2],
   },
   {
@@ -5199,6 +6691,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=VDHA1a6V0Ss",
     type: "Région Corse",
     description: "",
+    department: "",
+    region: "Corse",
     coordinates: [46, 2],
   },
   {
@@ -5206,6 +6700,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Foa91C4GnvA",
     type: "Région Champagne-Ardenne",
     description: "",
+    department: "",
+    region: "Grand Est",
     coordinates: [46, 2],
   },
   {
@@ -5213,6 +6709,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=m3jy9gs9vYM",
     type: "Région Ile de France",
     description: "",
+    department: "",
+    region: "Île-de-France",
     coordinates: [46, 2],
   },
   {
@@ -5220,6 +6718,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=XYbeLz8GtLo",
     type: "Région Centre",
     description: "",
+    department: "",
+    region: "Centre-Val de Loire",
     coordinates: [46, 2],
   },
   {
@@ -5227,6 +6727,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=CJ6OqO5UzFw",
     type: "Le Vaucluse",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.917, 5.05],
   },
   {
@@ -5234,6 +6736,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=lJyP7JP2J5k",
     type: "Le Vaucluse",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [44.133, 4.8],
   },
   {
@@ -5241,6 +6745,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=WKZrNqQhiCI",
     type: "Le Vaucluse",
     description: "",
+    department: "Vaucluse",
+    region: "Provence-Alpes-Côte d'Azur",
     coordinates: [43.9, 5.2],
   },
   {
@@ -5248,6 +6754,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=-IYnnXru5gw",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.3, -1.5],
   },
   {
@@ -5255,6 +6763,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ekpYhYAAft8",
     type: "Le pays basque",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.167, -1.233],
   },
   {
@@ -5262,6 +6772,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=rUPTAX5UUf4",
     type: "Le pays basque",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.217, -0.883],
   },
   {
@@ -5269,6 +6781,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=v6agMwYHt58",
     type: "Le pays basque",
     description: "",
+    department: "Pyrénées-Atlantiques",
+    region: "Nouvelle-Aquitaine",
     coordinates: [43.383, -1.667],
   },
   {
@@ -5276,6 +6790,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=38Il4Uq3f5s",
     type: "Ille et Vilaine",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.117, -1.683],
   },
   {
@@ -5283,6 +6799,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=ky3h4X9glLw",
     type: "Ille et Vilaine",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48.65, -2.017],
   },
   {
@@ -5290,6 +6808,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=4TPeDD51Nc4",
     type: "Ille et Vilaine",
     description: "",
+    department: "Ille-et-Vilaine",
+    region: "Bretagne",
     coordinates: [48, -2.167],
   },
   {
@@ -5297,12 +6817,16 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=wSXDF9_7ybU",
     type: '"1000 Pays en un"',
     description: "",
+    department: "",
+    region: "Hauts-de-France",
   },
   {
     title: "Pyrénées Orientales",
     link: "https://www.youtube.com/watch?v=CZ157ewicGU",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Pyrénées-Orientales",
+    region: "Occitanie",
     coordinates: [42.52706042394565, 3.0781734709901256],
   },
   {
@@ -5310,6 +6834,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Qf_hyBDVRBQ",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Haut-Rhin",
+    region: "Grand Est",
     coordinates: [48, 7.5],
   },
   {
@@ -5317,6 +6843,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=GtIE09E3NcU",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Lot",
+    region: "Occitanie",
     coordinates: [44.5, 1.667],
   },
   {
@@ -5324,6 +6852,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=Spm-t3a5vc0",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Jura",
+    region: "Bourgogne-Franche-Comté",
     coordinates: [46.75, 6],
   },
   {
@@ -5331,6 +6861,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=q1BERKFENH4",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Charente-Maritime",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.75, -0.75],
   },
   {
@@ -5338,6 +6870,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=bCy0_hpUZlI",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Corrèze",
+    region: "Nouvelle-Aquitaine",
     coordinates: [45.333, 1.833],
   },
   {
@@ -5345,6 +6879,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=LXzEiybejTo",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Finistère",
+    region: "Bretagne",
     coordinates: [48, -4.1],
   },
   {
@@ -5352,6 +6888,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=gsuPqpL4j9Y",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Calvados",
+    region: "Normandie",
     coordinates: [49.167, 0.167],
   },
   {
@@ -5359,6 +6897,8 @@ export const places: readonly Place[] = [
     link: "https://www.youtube.com/watch?v=vsVzWPrdg_I",
     type: "Les 100 lieux qu'il faut voir",
     description: "",
+    department: "Somme",
+    region: "Hauts-de-France",
     coordinates: [50.2, 1.633],
   },
 ];

@@ -10,14 +10,14 @@ An interactive map of travel videos about France. Every place is a marker: open 
 
 - Full-screen Leaflet map with OpenStreetMap tiles (attribution included), opening on metropolitan France
 - Clustered markers that expand as you zoom in; hovering a place in the list highlights its marker (or the cluster hiding it)
-- Place popups built with [shadcn/ui](https://ui.shadcn.com): YouTube thumbnail (skeleton while it loads), title, series or region, tagline and a "Watch video" button
+- Place popups built with [shadcn/ui](https://ui.shadcn.com): YouTube thumbnail (skeleton while it loads), title, département and region, series, tagline and a "Watch video" button
 - shadcn-styled zoom and "fit all" controls
 - Light and dark themes that follow your system setting, with a manual toggle
 
 **Floating sidebar**
 
-- Accent-insensitive search across title, series or region and tagline, with matches highlighted
-- Sort A to Z or Z to A; places are grouped under sticky letter headers, with thumbnails
+- Accent-insensitive search across title, département, region, series and tagline (try `Occitanie`, `Tarn` or `bretagne`), with matches highlighted
+- Sort A to Z or Z to A; places are grouped under sticky letter headers, with thumbnails and each place's département and region
 - Selecting a place flies the map to it (un-clustering if needed) and opens its popup; picking a marker on the map highlights and scrolls to its row. The camera accounts for the sidebar so nothing hides behind it
 - "Surprise me" picks a random place from the current results
 - Shareable deep links: opening a place puts `?place=<video id>` in the URL
@@ -120,7 +120,8 @@ CI (`.github/workflows/ci.yml`) runs lint, format check, typecheck, tests and bu
 ├── hooks/
 │   └── use-mobile.ts               # Sheet-vs-floating sidebar switch (customized from shadcn)
 ├── lib/
-│   ├── place.ts                    # The Place type (immutable), video id, thumbnail, framing helpers
+│   ├── departments.ts              # Every département with its region, and the types built from it
+│   ├── place.ts                    # The Place type (immutable), video id, thumbnail, location, framing
 │   ├── place.test-d.ts             # Compile-time type tests, checked by `pnpm typecheck`
 │   ├── place-utils.ts              # Search, sort, group, highlight (pure functions)
 │   ├── viewport.ts                 # Responsive thresholds, popup sizing, viewport hook
@@ -142,9 +143,11 @@ All content lives in [`data/places.ts`](data/places.ts), a typed array of places
 | `link`        | string       | YouTube watch URL, optionally with a start time (`&t=2034s`); other hosts don't compile |
 | `type`        | string       | Series, region or department the video belongs to (free text, empty if unknown)         |
 | `description` | string       | Short tagline (empty if none)                                                           |
+| `department`  | string       | Official département name, e.g. `"Tarn"` (empty if unknown)                             |
+| `region`      | string       | Current region, e.g. `"Occitanie"`: must be the département's own (empty if unknown)    |
 | `coordinates` | `[lat, lng]` | Latitude first, then longitude. Optional: a place without them stays off the map        |
 
-The thumbnail is not stored: it comes from the video id in `link`.
+The thumbnail is not stored: it comes from the video id in `link`. The département and region are checked by the compiler against [`lib/departments.ts`](lib/departments.ts), so a misspelled name, or `"Tarn"` paired with `"Bretagne"`, does not build. A place's département is the one its marker is in; where a marker is known to be wrong, only the region (taken from the place's own label) is set.
 
 ### Adding a place
 
@@ -156,11 +159,13 @@ Append an object to the array in `data/places.ts`:
   link: "https://www.youtube.com/watch?v=VIDEO_ID",
   type: "Région Bretagne",
   description: "",
+  department: "Ille-et-Vilaine",
+  region: "Bretagne",
   coordinates: [48.1173, -1.6778], // [latitude, longitude]
 },
 ```
 
-Use empty strings for unknown `type` and `description`, and leave `coordinates` out until you know them. Then run `pnpm test`: it checks that every link is a YouTube watch URL, that each video appears only once, that coordinates are in range and ordered `[lat, lng]`, and that text has no stray whitespace. Search and the letter sections pick the new place up automatically.
+Use empty strings for unknown `type`, `description`, `department` and `region`, and leave `coordinates` out until you know them. Then run `pnpm test`: it checks that every link is a YouTube watch URL, that each video appears only once, that coordinates are in range and ordered `[lat, lng]`, and that text has no stray whitespace. Search and the letter sections pick the new place up automatically.
 
 ### Adding a UI component
 

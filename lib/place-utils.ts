@@ -8,7 +8,7 @@ export function isSortOrder(value: unknown): value is SortOrder {
 }
 
 export type PlaceFilters = Readonly<{
-  /** Free-text search across title, series or region, and description. */
+  /** Free-text search across title, series label, description, département and region. */
   query: string;
 }>;
 
@@ -43,7 +43,15 @@ const haystacks = new WeakMap<Place, string>();
 function haystack(place: Place): string {
   let value = haystacks.get(place);
   if (value === undefined) {
-    value = normalize([place.title, place.type, place.description].join(" "));
+    value = normalize(
+      [
+        place.title,
+        place.type,
+        place.description,
+        place.department,
+        place.region,
+      ].join(" "),
+    );
     haystacks.set(place, value);
   }
   return value;

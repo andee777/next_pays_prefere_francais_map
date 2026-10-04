@@ -1,3 +1,5 @@
+import type { Territory } from "./departments";
+
 /** `[latitude, longitude]`, latitude first. */
 export type Coordinates = readonly [lat: number, lng: number];
 
@@ -11,6 +13,10 @@ export type YouTubeLink = `https://www.youtube.com/watch?v=${string}`;
  * One place featured in a video. Unknown text is an empty string, never omitted.
  * Names are not unique (several videos can share a title), so use `placeId`
  * to tell places apart.
+ *
+ * It also carries its `department` and `region` (see `Territory`): both, only
+ * the region, or neither when nothing reliable is known. A département can only
+ * be paired with its own region.
  */
 export type Place = Readonly<{
   /** Name of the place, as titled on the video. */
@@ -22,7 +28,8 @@ export type Place = Readonly<{
   description: string;
   /** Absent while the place has not been located; such places stay off the map. */
   coordinates?: Coordinates;
-}>;
+}> &
+  Readonly<Territory>;
 
 /** A place that can be put on the map. */
 export type MappablePlace = Place & Readonly<{ coordinates: Coordinates }>;
@@ -45,6 +52,16 @@ export function placeId(place: Place): PlaceId {
     ids.set(place, id);
   }
   return id;
+}
+
+/**
+ * Where the place is, for display: `"Tarn · Occitanie"`, just the region when
+ * the département is unknown, `"La Réunion"` once for an overseas département
+ * (which is its own region), or `""` when nothing is known.
+ */
+export function placeLocation(place: Place): string {
+  const parts = [place.department, place.region].filter(Boolean);
+  return parts[0] === parts[1] ? (parts[0] ?? "") : parts.join(" · ");
 }
 
 /** YouTube's own thumbnail for the place's video, `""` if there is no video id. */

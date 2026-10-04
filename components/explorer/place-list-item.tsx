@@ -5,7 +5,13 @@ import { memo } from "react";
 
 import { PlaceThumbnail } from "@/components/place-thumbnail";
 import { SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
-import { placeId, placeThumbnail, type Place, type PlaceId } from "@/lib/place";
+import {
+  placeId,
+  placeLocation,
+  placeThumbnail,
+  type Place,
+  type PlaceId,
+} from "@/lib/place";
 import { highlightRanges } from "@/lib/place-utils";
 
 /** Renders `text` with the parts matching the search query marked. */
@@ -51,6 +57,7 @@ export const PlaceListItem = memo(function PlaceListItem({
 }: PlaceListItemProps) {
   const id = placeId(place);
   const thumbnail = placeThumbnail(place);
+  const location = placeLocation(place);
 
   return (
     <SidebarMenuItem
@@ -87,8 +94,13 @@ export const PlaceListItem = memo(function PlaceListItem({
           <span className="line-clamp-2 text-sm leading-snug font-medium whitespace-normal">
             <Highlight text={place.title} query={query} />
           </span>
-          {place.type && (
+          {location && (
             <span className="truncate text-xs text-sidebar-foreground/80">
+              <Highlight text={location} query={query} />
+            </span>
+          )}
+          {place.type && (
+            <span className="truncate text-xs text-muted-foreground">
               <Highlight text={place.type} query={query} />
             </span>
           )}

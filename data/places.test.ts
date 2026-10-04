@@ -1,9 +1,19 @@
 import { describe, expect, it } from "vitest";
 
+import { regionOf } from "@/lib/departments";
 import { groupByLetter, sortPlaces } from "@/lib/place-utils";
 import { hasCoordinates, isInMetropolitanFrance, placeId } from "@/lib/place";
 
 import { places } from "./places";
+
+/** What a geocoder returns when it finds nothing: roughly the centre of France. */
+const PLACEHOLDER = "46,2";
+
+/** Places that are really in Belgium: no French département or region. */
+const OUTSIDE_FRANCE = [
+  "Arrivée en Belgique",
+  "En route pour les grottes de Han",
+];
 
 describe("places data", () => {
   it("is not empty", () => {
@@ -64,5 +74,76 @@ describe("places data", () => {
       );
       expect(new Set(letters).size, order).toBe(letters.length);
     }
+  });
+});
+
+describe("places data: département and region", () => {
+  const credible = places
+    .filter(hasCoordinates)
+    .filter((place) => place.coordinates.join(",") !== PLACEHOLDER)
+    .filter((place) => !OUTSIDE_FRANCE.includes(place.title));
+
+  it("pairs every département with its own region", () => {
+    // The compiler checks this too; this guards data that gets cast or generated.
+    for (const place of places) {
+      if (place.department) {
+        expect(place.region, place.title).toBe(regionOf(place.department));
+      }
+    }
+  });
+
+  it("knows the region of every place with a credible position", () => {
+    for (const place of credible)
+      expect(place.region, place.title).not.toBe("");
+  });
+
+  it("knows the département of nearly every place with a credible position", () => {
+    // A few are region-only on purpose: their marker sits in the wrong region.
+    const known = credible.filter((place) => place.department !== "");
+    expect(known.length / credible.length).toBeGreaterThan(0.98);
+  });
+
+  it.each([
+    ["Albi", "Tarn", "Occitanie"],
+    ["Mont Saint-Michel", "Manche", "Normandie"],
+    ["Cargèse", "Corse-du-Sud", "Corse"],
+    ["Ile de Sein", "Finistère", "Bretagne"],
+    ["Houat Island", "Morbihan", "Bretagne"],
+    ["Étretat", "Seine-Maritime", "Normandie"],
+    ["Gruissan", "Aude", "Occitanie"],
+    ["Rocamadour", "Lot", "Occitanie"],
+    [
+      "Moustiers Sainte-Marie",
+      "Alpes-de-Haute-Provence",
+      "Provence-Alpes-Côte d'Azur",
+    ],
+    ["Candes-Saint-Martin", "Indre-et-Loire", "Centre-Val de Loire"],
+    ["Mussy-sur-Seine", "Aube", "Grand Est"],
+    ["Hell-Bourg", "La Réunion", "La Réunion"],
+  ] as const)("puts %s in %s (%s)", (title, department, region) => {
+    const matches = places.filter((place) => place.title === title);
+    expect(matches.length, title).toBeGreaterThan(0);
+    for (const place of matches) {
+      expect(place.department).toBe(department);
+      expect(place.region).toBe(region);
+    }
+  });
+
+  it("gives places outside France neither a département nor a region", () => {
+    for (const title of OUTSIDE_FRANCE) {
+      const place = places.find((candidate) => candidate.title === title);
+      expect(place, title).toBeDefined();
+      expect(place?.department, title).toBe("");
+      expect(place?.region, title).toBe("");
+    }
+  });
+
+  it("does not add places pinned at the placeholder position", () => {
+    // 103 places sit at [46, 2], the centre of France, because their position was
+    // never found. Don't add more; fix their coordinates and lower this number.
+    const pinned = places.filter(
+      (place) => place.coordinates?.join(",") === PLACEHOLDER,
+    );
+    expect(pinned.length).toBeLessThanOrEqual(103);
   });
 });

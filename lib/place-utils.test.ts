@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 
+import type { Territory } from "./departments";
 import type { Place } from "./place";
 import {
   DEFAULT_FILTERS,
@@ -15,13 +16,22 @@ import {
   tokenize,
 } from "./place-utils";
 
-function make(overrides: Partial<Place> = {}): Place {
+type Fields = Partial<
+  Pick<Place, "title" | "link" | "type" | "description" | "coordinates">
+>;
+
+/** A complete place. The département and region come as a pair: see `Territory`. */
+function make(
+  overrides: Fields = {},
+  territory: Territory = { department: "", region: "" },
+): Place {
   return {
     title: "Lieu",
     link: "https://www.youtube.com/watch?v=aaaaaaaaaaa",
     type: "",
     description: "",
     ...overrides,
+    ...territory,
   };
 }
 
@@ -54,6 +64,27 @@ describe("matchesQuery", () => {
     for (const query of ["pont-aven", "bretagne", "peintres"]) {
       expect(matchesQuery(place, query), query).toBe(true);
     }
+  });
+
+  it("finds a place by its département or its region", () => {
+    const located = make(
+      { title: "Albi" },
+      { department: "Tarn", region: "Occitanie" },
+    );
+    for (const query of ["tarn", "occitanie", "TARN occitanie", "albi tarn"]) {
+      expect(matchesQuery(located, query), query).toBe(true);
+    }
+    expect(matchesQuery(located, "bretagne")).toBe(false);
+  });
+
+  it("matches accented names without accents", () => {
+    const place = make(
+      {},
+      { department: "Drôme", region: "Auvergne-Rhône-Alpes" },
+    );
+    expect(matchesQuery(place, "drome")).toBe(true);
+    const paris = make({}, { department: "", region: "Île-de-France" });
+    expect(matchesQuery(paris, "ile de france")).toBe(true);
   });
 
   it("ignores case and accents in both directions", () => {

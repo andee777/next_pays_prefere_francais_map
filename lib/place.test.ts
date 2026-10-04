@@ -1,21 +1,32 @@
 import { describe, expect, it } from "vitest";
 
+import type { Territory } from "./departments";
 import {
   hasCoordinates,
   isInMetropolitanFrance,
   placeId,
+  placeLocation,
   placeThumbnail,
   type MappablePlace,
   type Place,
 } from "./place";
 
-function make(overrides: Partial<Place> = {}): Place {
+type Fields = Partial<
+  Pick<Place, "title" | "link" | "type" | "description" | "coordinates">
+>;
+
+/** A complete place. The département and region come as a pair: see `Territory`. */
+function make(
+  overrides: Fields = {},
+  territory: Territory = { department: "", region: "" },
+): Place {
   return {
     title: "Lieu",
     link: "https://www.youtube.com/watch?v=aIpaeTkgR_0",
     type: "",
     description: "",
     ...overrides,
+    ...territory,
   };
 }
 
@@ -51,6 +62,32 @@ describe("placeId / placeThumbnail", () => {
     expect(placeThumbnail(make())).toBe(
       "https://i.ytimg.com/vi/aIpaeTkgR_0/hqdefault.jpg",
     );
+  });
+});
+
+describe("placeLocation", () => {
+  it("shows the département and its region", () => {
+    expect(
+      placeLocation(make({}, { department: "Tarn", region: "Occitanie" })),
+    ).toBe("Tarn · Occitanie");
+  });
+
+  it("shows just the region when the département is unknown", () => {
+    expect(
+      placeLocation(make({}, { department: "", region: "Bretagne" })),
+    ).toBe("Bretagne");
+  });
+
+  it("shows an overseas département once, since it is its own region", () => {
+    expect(
+      placeLocation(
+        make({}, { department: "La Réunion", region: "La Réunion" }),
+      ),
+    ).toBe("La Réunion");
+  });
+
+  it("is empty when nothing is known", () => {
+    expect(placeLocation(make())).toBe("");
   });
 });
 

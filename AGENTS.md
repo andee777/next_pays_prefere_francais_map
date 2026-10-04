@@ -14,7 +14,7 @@ Guidance for AI coding agents working in this repository. For a human-oriented o
 
 ## What this project is
 
-A single-page Next.js app that plots travel videos about France on a Leaflet map, with a floating sidebar to search and browse them. Each place is a marker: its popup shows the video's thumbnail, the series or region it belongs to, a tagline, and a link to watch it on YouTube. All content comes from one static typed array in `data/places.ts`. There is no backend, database, API route, auth, or environment variable. The only thing remembered about a visitor is their theme choice (`next-themes`, in `localStorage`).
+A single-page Next.js app that plots travel videos about France on a Leaflet map, with a floating sidebar to search and browse them. Each place is a marker: its popup shows the video's thumbnail, where the place is (département and region), the series it belongs to, a tagline, and a link to watch it on YouTube. All content comes from one static typed array in `data/places.ts`. There is no backend, database, API route, auth, or environment variable. The only thing remembered about a visitor is their theme choice (`next-themes`, in `localStorage`).
 
 ## Commands
 
@@ -95,58 +95,59 @@ The layout has three regimes, defined once in `lib/viewport.ts` (`COMPACT_QUERY`
 
 ## Repository map
 
-| Path                                          | Role                                                                                                                                         |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `app/page.tsx`                                | Home page, a **Server Component**. Renders `<PlaceExplorer places={…} />` with the places that have coordinates.                             |
-| `app/layout.tsx`                              | Root layout: Geist font (`--font-sans`), `ThemeProvider`, `TooltipProvider`, `metadata`.                                                     |
-| `app/globals.css`                             | Tailwind + shadcn theme tokens, layered Leaflet CSS, `.place-popup` and `.place-marker-hover` rules.                                         |
-| `components/explorer/place-explorer.tsx`      | Top-level client component: state, selection, deep links, hotkeys, map framing, `getInsets`.                                                 |
-| `components/explorer/place-sidebar.tsx`       | The shadcn `Sidebar` (floating, offcanvas): header, search, letter-grouped list, footer, arrow-key navigation.                               |
-| `components/explorer/place-list-item.tsx`     | One list row (memoized): thumbnail, search-match highlighting, hover/focus → `hovered`.                                                      |
-| `components/explorer/filters-panel.tsx`       | Search field, result count, sort menu.                                                                                                       |
-| `components/explorer/map-controls.tsx`        | Zoom and fit buttons (replace Leaflet's default control).                                                                                    |
-| `components/explorer/sidebar-open-button.tsx` | Floating "Places" pill, visible when the sidebar is collapsed or on mobile.                                                                  |
-| `components/explorer/theme-toggle.tsx`        | Light / dark / system menu.                                                                                                                  |
-| `components/explorer/use-place-filters.ts`    | Search and sort state; derives `results`, letter `groups`, and `filtersKey`.                                                                 |
-| `components/place-map/place-map.tsx`          | Client wrapper: `dynamic(() => import("./map-view"), { ssr: false })` with a Skeleton fallback.                                              |
-| `components/place-map/map-view.tsx`           | `MapContainer`, OSM `TileLayer`, `MarkerClusterGroup`, `PlaceMarker` (memoized), and `MapBridge` (the imperative API).                       |
-| `components/place-map/place-popup.tsx`        | Popup content built from shadcn `Card`, `Badge`, `Button`, `AspectRatio`, `Skeleton`; "Watch video" link.                                    |
-| `components/place-map/types.ts`               | `PlaceMapApi`, `PlaceMapProps`, `MapInsets`.                                                                                                 |
-| `components/place-map/marker-icons.ts`        | `defaultIcon` / `selectedIcon`.                                                                                                              |
-| `components/ui/*`                             | shadcn components. **Owned by the shadcn CLI**; see below.                                                                                   |
-| `components/place-thumbnail.tsx`              | YouTube thumbnail with a skeleton while loading and an "unavailable" icon when the image 404s. Used by the list rows and the popup.          |
-| `components/theme-provider.tsx`               | `next-themes` wrapper (`attribute="class"`, system default).                                                                                 |
-| `data/places.ts`                              | `export const places: readonly Place[]`, the only data source.                                                                               |
-| `data/places.test.ts`, `lib/*.test.ts`        | Data integrity tests; unit tests for place helpers, search, sort, grouping and highlighting.                                                 |
-| `lib/place.ts`                                | `Place`, `MappablePlace`, `Coordinates`, `YouTubeLink` types; `placeId`, `placeThumbnail`, `hasCoordinates`, `isInMetropolitanFrance`.       |
-| `lib/place-utils.ts`                          | Pure functions: `normalize`, `matchesQuery`, `filterPlaces`, `sortPlaces`, `isSortOrder`, `placeLetter`, `groupByLetter`, `highlightRanges`. |
-| `lib/place.test-d.ts`                         | Compile-time type tests (`expectTypeOf`, `@ts-expect-error`), checked by `pnpm typecheck`; never executed.                                   |
-| `types/react-css.d.ts`                        | Lets `style` props take CSS custom properties (`"--sidebar-width"`) without a cast.                                                          |
-| `types/next-image.d.ts`                       | Pulls in Next's image-module types (`*.png`) so lint doesn't depend on the generated, git-ignored `next-env.d.ts`.                           |
-| `lib/viewport.ts`, `lib/viewport.test.ts`     | Responsive thresholds shared with CSS, `popupLayout()` (popup width and orientation), `useViewportSize()`.                                   |
-| `hooks/use-mobile.ts`                         | `useIsMobile()`: **customized** from shadcn's to use `COMPACT_QUERY` (see Responsive modes).                                                 |
-| `lib/utils.ts`                                | `export { cn } from "cn"` (shadcn's class-name helper package).                                                                              |
-| `components.json`                             | shadcn config (`base-nova`, `lucide`, aliases).                                                                                              |
-| `next.config.ts`                              | `images.remotePatterns` for `i.ytimg.com`.                                                                                                   |
+| Path                                          | Role                                                                                                                                                               |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `app/page.tsx`                                | Home page, a **Server Component**. Renders `<PlaceExplorer places={…} />` with the places that have coordinates.                                                   |
+| `app/layout.tsx`                              | Root layout: Geist font (`--font-sans`), `ThemeProvider`, `TooltipProvider`, `metadata`.                                                                           |
+| `app/globals.css`                             | Tailwind + shadcn theme tokens, layered Leaflet CSS, `.place-popup` and `.place-marker-hover` rules.                                                               |
+| `components/explorer/place-explorer.tsx`      | Top-level client component: state, selection, deep links, hotkeys, map framing, `getInsets`.                                                                       |
+| `components/explorer/place-sidebar.tsx`       | The shadcn `Sidebar` (floating, offcanvas): header, search, letter-grouped list, footer, arrow-key navigation.                                                     |
+| `components/explorer/place-list-item.tsx`     | One list row (memoized): thumbnail, title, "département · region", series label, search-match highlighting, hover/focus → `hovered`.                               |
+| `components/explorer/filters-panel.tsx`       | Search field, result count, sort menu.                                                                                                                             |
+| `components/explorer/map-controls.tsx`        | Zoom and fit buttons (replace Leaflet's default control).                                                                                                          |
+| `components/explorer/sidebar-open-button.tsx` | Floating "Places" pill, visible when the sidebar is collapsed or on mobile.                                                                                        |
+| `components/explorer/theme-toggle.tsx`        | Light / dark / system menu.                                                                                                                                        |
+| `components/explorer/use-place-filters.ts`    | Search and sort state; derives `results`, letter `groups`, and `filtersKey`.                                                                                       |
+| `components/place-map/place-map.tsx`          | Client wrapper: `dynamic(() => import("./map-view"), { ssr: false })` with a Skeleton fallback.                                                                    |
+| `components/place-map/map-view.tsx`           | `MapContainer`, OSM `TileLayer`, `MarkerClusterGroup`, `PlaceMarker` (memoized), and `MapBridge` (the imperative API).                                             |
+| `components/place-map/place-popup.tsx`        | Popup content built from shadcn `Card`, `Badge`, `Button`, `AspectRatio`; location, series badge, tagline, "Watch video" link.                                     |
+| `components/place-map/types.ts`               | `PlaceMapApi`, `PlaceMapProps`, `MapInsets`.                                                                                                                       |
+| `components/place-map/marker-icons.ts`        | `defaultIcon` / `selectedIcon`.                                                                                                                                    |
+| `components/ui/*`                             | shadcn components. **Owned by the shadcn CLI**; see below.                                                                                                         |
+| `components/place-thumbnail.tsx`              | YouTube thumbnail with a skeleton while loading and an "unavailable" icon when the image 404s. Used by the list rows and the popup.                                |
+| `components/theme-provider.tsx`               | `next-themes` wrapper (`attribute="class"`, system default).                                                                                                       |
+| `data/places.ts`                              | `export const places: readonly Place[]`, the only data source.                                                                                                     |
+| `data/places.test.ts`, `lib/*.test.ts`        | Data integrity tests; unit tests for place helpers, search, sort, grouping and highlighting.                                                                       |
+| `lib/departments.ts`                          | `DEPARTMENTS` (every département with its region), the `Department`, `Region` and `Territory` types, and `regionOf()`. `lib/departments.test.ts` checks the table. |
+| `lib/place.ts`                                | `Place`, `MappablePlace`, `Coordinates`, `YouTubeLink` types; `placeId`, `placeThumbnail`, `placeLocation`, `hasCoordinates`, `isInMetropolitanFrance`.            |
+| `lib/place-utils.ts`                          | Pure functions: `normalize`, `matchesQuery`, `filterPlaces`, `sortPlaces`, `isSortOrder`, `placeLetter`, `groupByLetter`, `highlightRanges`.                       |
+| `lib/place.test-d.ts`                         | Compile-time type tests (`expectTypeOf`, `@ts-expect-error`), checked by `pnpm typecheck`; never executed.                                                         |
+| `types/react-css.d.ts`                        | Lets `style` props take CSS custom properties (`"--sidebar-width"`) without a cast.                                                                                |
+| `types/next-image.d.ts`                       | Pulls in Next's image-module types (`*.png`) so lint doesn't depend on the generated, git-ignored `next-env.d.ts`.                                                 |
+| `lib/viewport.ts`, `lib/viewport.test.ts`     | Responsive thresholds shared with CSS, `popupLayout()` (popup width and orientation), `useViewportSize()`.                                                         |
+| `hooks/use-mobile.ts`                         | `useIsMobile()`: **customized** from shadcn's to use `COMPACT_QUERY` (see Responsive modes).                                                                       |
+| `lib/utils.ts`                                | `export { cn } from "cn"` (shadcn's class-name helper package).                                                                                                    |
+| `components.json`                             | shadcn config (`base-nova`, `lucide`, aliases).                                                                                                                    |
+| `next.config.ts`                              | `images.remotePatterns` for `i.ytimg.com`.                                                                                                                         |
 
 ### Where to make common changes
 
-| Task                                         | Where                                                                                        |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Add or edit a place                          | `data/places.ts` (then `pnpm test`)                                                          |
-| Change what search matches                   | `haystack()` in `lib/place-utils.ts` (and its tests)                                         |
-| Change how the list is sorted or grouped     | `sortPlaces` / `groupByLetter` in `lib/place-utils.ts`                                       |
-| Change sidebar layout or width               | `place-sidebar.tsx`; width is `--sidebar-width` on `SidebarProvider` in `place-explorer.tsx` |
-| Change a list row                            | `components/explorer/place-list-item.tsx`                                                    |
-| Change popup content or layout               | `components/place-map/place-popup.tsx`                                                       |
-| Change the opening view of the map           | `handleMapReady` in `place-explorer.tsx`, `isInMetropolitanFrance` in `lib/place.ts`         |
-| Change tile source                           | `TileLayer` in `components/place-map/map-view.tsx`                                           |
-| Change camera behavior (fly, fit, popup pan) | `MapBridge` in `components/place-map/map-view.tsx`                                           |
-| Change marker icons                          | `components/place-map/marker-icons.ts`                                                       |
-| Change popup frame (tip, shadow, wrapper)    | `.place-popup` rules in `app/globals.css`                                                    |
-| Allow a new thumbnail host                   | `images.remotePatterns` in `next.config.ts`                                                  |
-| Change title, description, `lang`            | `metadata` and `<html>` in `app/layout.tsx`                                                  |
-| Add a UI primitive                           | `pnpm dlx shadcn@latest add <name>`                                                          |
+| Task                                                                     | Where                                                                                        |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Add or edit a place                                                      | `data/places.ts` (then `pnpm test`)                                                          |
+| Change what search matches (title, series, tagline, département, region) | `haystack()` in `lib/place-utils.ts` (and its tests)                                         |
+| Change how the list is sorted or grouped                                 | `sortPlaces` / `groupByLetter` in `lib/place-utils.ts`                                       |
+| Change sidebar layout or width                                           | `place-sidebar.tsx`; width is `--sidebar-width` on `SidebarProvider` in `place-explorer.tsx` |
+| Change a list row                                                        | `components/explorer/place-list-item.tsx`                                                    |
+| Change popup content or layout                                           | `components/place-map/place-popup.tsx`                                                       |
+| Change the opening view of the map                                       | `handleMapReady` in `place-explorer.tsx`, `isInMetropolitanFrance` in `lib/place.ts`         |
+| Change tile source                                                       | `TileLayer` in `components/place-map/map-view.tsx`                                           |
+| Change camera behavior (fly, fit, popup pan)                             | `MapBridge` in `components/place-map/map-view.tsx`                                           |
+| Change marker icons                                                      | `components/place-map/marker-icons.ts`                                                       |
+| Change popup frame (tip, shadow, wrapper)                                | `.place-popup` rules in `app/globals.css`                                                    |
+| Allow a new thumbnail host                                               | `images.remotePatterns` in `next.config.ts`                                                  |
+| Change title, description, `lang`                                        | `metadata` and `<html>` in `app/layout.tsx`                                                  |
+| Add a UI primitive                                                       | `pnpm dlx shadcn@latest add <name>`                                                          |
 
 ## Data model
 
@@ -157,15 +158,22 @@ title: string                       name of the place, as titled on the video
 link: YouTubeLink                   `https://www.youtube.com/watch?v=${string}`
 type: string                        series, region or department. Free text, "" if unknown
 description: string                 short tagline, "" if none
+department: Department | ""         official name, e.g. "Tarn" (lib/departments.ts)
+region: Region | ""                 current region, e.g. "Occitanie"
 coordinates?: readonly [lat: number, lng: number]
 ```
 
 Every field is `readonly` (`Place` is `Readonly<{…}>`), and the dataset is a `readonly Place[]`. Nothing may mutate place data. `MappablePlace` is a `Place` whose `coordinates` is present; `hasCoordinates` is the type guard that narrows to it.
 
+`department` and `region` are one `Territory` (`lib/departments.ts`): a département together with **its own region** (`department: "Tarn"` with `region: "Bretagne"` does not compile), or only a region, or neither. The names come from the `DEPARTMENTS` table (101 départements, the 18 regions in force since 2016), so a typo is a compile error too.
+
 Rules when editing data:
 
 - `coordinates` is **`[lat, lng]`**, latitude first. It may be **omitted** while a place has not been located; such a place stays in the file but is kept off the map and out of the list. This is the one exception to "never omit keys".
-- Use `""` for unknown `type` and `description`; don't use `null`.
+- Use `""` for unknown `type`, `description`, `department` and `region`; don't use `null`.
+- **A place's département is the one its marker is in**, so the list always agrees with the pin on the map. It was computed from the coordinates against the official département outlines. When a place's own `type` label names a different _region_ than its marker, the marker is wrong: the label wins, and the département is kept only if the label names one (otherwise it is `""` and only the region is set). A label naming another département of the _same_ region is ignored. Regional videos ("Cévennes", "Berry") get the département that contains their marker, which is somewhat arbitrary.
+- **A marker at `[46, 2]` carries no information.** That is the centre of France, what a geocoder returns when it finds nothing, and 103 places sit there. Give such a place a département only from its label, never from the coordinates. Fix the coordinates when you can, then set the département from the new position.
+- To find the département of a new place, locate its coordinates in the official outlines (for example `departements-version-simplifiee.geojson` from `gregoiredavid/france-geojson`, matched point-in-polygon); islands and some coastal places fall just outside the simplified outlines, so use the nearest one.
 - `link` must be `https://www.youtube.com/watch?v=<11 chars>`, optionally followed by a start time (`&t=2034s`). The compiler checks the prefix; `pnpm test` checks the 11-character id.
 - **Every video appears once.** The video id is the place's identity (`placeId`), so two places with the same video would collide. `pnpm test` fails on a duplicate. The title does not need to be unique.
 - The thumbnail is not stored: it is derived from the video id (`placeThumbnail` → `https://i.ytimg.com/vi/<id>/hqdefault.jpg`). A video that has been removed or made private has no thumbnail, and the UI shows a "video unavailable" icon instead.
@@ -245,6 +253,8 @@ Existing behavior, listed so it isn't mistaken for a regression. Mention these i
 
 - Tests cover the data and the pure logic in `lib/`. There are no component or end-to-end tests; map and sidebar behavior is verified in a browser.
 - 41 of the 770 places have no `coordinates`, so they are not on the map and not in the list. They stay in `data/places.ts` until someone locates them.
+- 103 places are pinned at `[46, 2]`, the centre of France (a geocoder's "not found"), so on the map they all sit on top of each other in Creuse. Their département is only known from their label (32 of them), their region for 40 more, and 31 have neither.
+- Of the 729 places on the map, 649 have a département, 47 only a region and 33 neither (two of those are in Belgium, and have neither on purpose). The département of a regional video is the one holding its marker, and a handful of markers are plainly wrong (a Normandy villa pinned at Saint-Malo); the label is used for those. Nothing re-checks this when coordinates change.
 - Some videos have been removed or made private (113 of 765 when last checked: their thumbnail answers 404 and YouTube's oEmbed answers 403). They keep their row and marker, show the "video unavailable" icon, and "Watch video" leads to an unavailable video. Nothing checks this automatically.
 - `type` is inconsistent free text (mixed languages, spellings and kinds of label), so it is only displayed and searched.
 - The list shows every place at once (about 730 rows) instead of a virtualized window. Memoized rows and `content-visibility` keep it smooth; a much bigger dataset would need virtualization.
@@ -259,7 +269,7 @@ Existing behavior, listed so it isn't mistaken for a regression. Mention these i
 
 - Run `pnpm lint`, `pnpm format:check`, `pnpm typecheck`, `pnpm test` and `pnpm build` after changing code (a data-only edit still warrants `pnpm test`).
 - Check UI changes in a browser: markers render, clusters expand, a popup opens with its thumbnail and stays open when you click inside it, selecting a list row flies there and highlights it, search works, a deep link (`/?place=aIpaeTkgR_0`) opens on a cold load, the mobile sheet closes on selection, and dark mode looks right. For layout changes, check at least: 320×568 and 390×844 (portrait phones), 844×390 (landscape phone), 768×1024 (tablet), 1280×720 and 2560×1080 (desktop, ultrawide), and rotate with a popup open. Nothing may overflow horizontally, and a popup must stay fully on screen and clear of the sidebar, the pill and the controls.
-- Keep `coordinates` as `[lat, lng]`, and keep `title`, `link`, `type` and `description` present on every `Place`.
+- Keep `coordinates` as `[lat, lng]`, and keep `title`, `link`, `type`, `description`, `department` and `region` present on every `Place`.
 
 **Ask first**
 

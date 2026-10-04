@@ -1,7 +1,7 @@
 "use client";
 
 import type { Popup as LeafletPopup } from "leaflet";
-import { ExternalLink, X } from "lucide-react";
+import { ExternalLink, MapPin, X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Popup, useMap } from "react-leaflet";
 
@@ -17,7 +17,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { placeThumbnail, type Place } from "@/lib/place";
+import { placeLocation, placeThumbnail, type Place } from "@/lib/place";
 import { cn } from "@/lib/utils";
 import { popupLayout, useViewportSize } from "@/lib/viewport";
 
@@ -63,10 +63,22 @@ export function PlacePopup({ place }: { place: Place }) {
     </Button>
   );
 
-  // Most places have neither a series label nor a tagline, so both are optional.
+  // Every part is optional: many places have no tagline, and a few have no known
+  // location or series label.
+  const location = placeLocation(place);
   const details =
-    place.type || place.description ? (
+    location || place.type || place.description ? (
       <>
+        {location && (
+          <p className="flex items-center gap-2">
+            <MapPin
+              className="size-4 shrink-0 text-muted-foreground"
+              aria-hidden
+            />
+            <span className="sr-only">Location: </span>
+            {location}
+          </p>
+        )}
         {place.type && (
           <div className="flex">
             <Badge variant="secondary" className="max-w-full">

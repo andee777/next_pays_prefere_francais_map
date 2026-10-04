@@ -43,5 +43,43 @@ expectTypeOf(filterPlaces(located, { query: "" })).toEqualTypeOf<
   MappablePlace[]
 >();
 
+// A place's département can only be paired with its own region.
+const base = {
+  title: "Albi",
+  link: "https://www.youtube.com/watch?v=aaaaaaaaaaa",
+  type: "",
+  description: "",
+} as const;
+
+export const albi: Place = { ...base, department: "Tarn", region: "Occitanie" };
+
+// @ts-expect-error -- Tarn is in Occitanie, not Bretagne
+export const wrongRegion: Place = {
+  ...base,
+  department: "Tarn",
+  region: "Bretagne",
+};
+
+export const notADepartment: Place = {
+  ...base,
+  // @ts-expect-error -- not a French département
+  department: "Atlantis",
+  region: "",
+};
+
+// @ts-expect-error -- a département needs its region
+export const noRegion: Place = { ...base, department: "Tarn", region: "" };
+
+// A region alone, or nothing at all, is allowed: some places have no reliable position.
+export const regionOnly: Place = {
+  ...base,
+  department: "",
+  region: "Bretagne",
+};
+export const unknown: Place = { ...base, department: "", region: "" };
+
+// @ts-expect-error -- the fields themselves are required
+export const forgotten: Place = { ...base };
+
 declare const raw: string;
 if (isSortOrder(raw)) expectTypeOf(raw).toEqualTypeOf<SortOrder>();
